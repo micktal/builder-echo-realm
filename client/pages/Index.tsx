@@ -65,7 +65,7 @@ export default function Index() {
       reasoning: "Les traumatismes créent des 'blocages' dans le traitement de l'information par le cerveau, maintenant la personne dans un état de stress post-traumatique. L'EMDR 'débloque' ces souvenirs figés et permet leur intégration naturelle, réduisant drastiquement les symptômes de stress.",
       usage: "Stress post-traumatique, traumatismes complexes, phobies, attaques de panique, deuils compliqués",
       efficacy: "84-90% d'efficacité pour le PTSD selon les études. Recommandée par l'OMS et l'HAS",
-      duration: "Variable selon le trauma, généralement 6 à 12 séances",
+      duration: "Variable selon le trauma, généralement 6 �� 12 séances",
       techniques: ["Mouvements oculaires", "Stimulation tactile bilatérale", "Stimulation auditive", "Protocole en 8 phases"]
     },
     {
@@ -1380,110 +1380,130 @@ export default function Index() {
           </Card>
         </section>
 
-        {/* Bloc 6 - Séquence 4: Ressources */}
+        {/* Bloc 6 - Séquences 4 et 5: Ressources et Communication */}
         <section>
           <Card className="border-indigo-200">
             <CardHeader className="bg-gradient-to-r from-green-50 to-teal-50">
               <CardTitle className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 text-green-600" />
-                <span>Séquence 4 : Ressources internes et externes</span>
+                <span>Séquences 4 et 5 : Ressources et Communication d'aide</span>
               </CardTitle>
+              <p className="text-gray-600">
+                Identifier les ressources disponibles et maîtriser les techniques de communication pour un accompagnement efficace.
+              </p>
             </CardHeader>
-            <CardContent className="pt-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-blue-900 mb-4 flex items-center space-x-2">
-                    <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                    <span>Ressources internes Fiducial</span>
-                  </h3>
-                  <div className="space-y-3">
-                    {[
-                      "Médecine du travail",
-                      "Cellule d'écoute psychologique", 
-                      "Formation continue sur la gestion du stress",
-                      "Réseau HSE et référents RPS"
-                    ].map((resource, index) => (
-                      <div key={index} className="flex items-center space-x-2">
-                        <CheckCircle className="h-4 w-4 text-blue-600" />
-                        <span className="text-blue-800">{resource}</span>
+            <CardContent className="pt-6 space-y-8">
+
+              {/* Partie Ressources */}
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">Ressources disponibles</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                    <h4 className="text-lg font-semibold text-blue-900 mb-4 flex items-center space-x-2">
+                      <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                      <span>Ressources internes Fiducial</span>
+                    </h4>
+                    <div className="space-y-3">
+                      {[
+                        "Médecine du travail",
+                        "Formation continue sur la gestion du stress",
+                        "Réseau HSE et référents RPS"
+                      ].map((resource, index) => (
+                        <div key={index} className="flex items-center space-x-2">
+                          <CheckCircle className="h-4 w-4 text-blue-600" />
+                          <span className="text-blue-800">{resource}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-6">
+                    <h4 className="text-lg font-semibold text-green-900 mb-4 flex items-center space-x-2">
+                      <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                      <span>Ressources externes</span>
+                    </h4>
+                    <div className="space-y-3">
+                      {[
+                        "Médecins généralistes",
+                        "Psychologues",
+                        "Associations spécialisées"
+                      ].map((resource, index) => (
+                        <div key={index} className="flex items-center space-x-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <span className="text-green-800">{resource}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Partie Communication */}
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">Communication et relation d'aide</h3>
+
+                <div className="bg-teal-50 border border-teal-200 rounded-lg p-6 mb-6">
+                  <h4 className="font-medium text-teal-900 mb-4">Principes de l'écoute active</h4>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="text-center">
+                      <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                        <Shield className="h-6 w-6 text-teal-600" />
                       </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-green-50 border border-green-200 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-green-900 mb-4 flex items-center space-x-2">
-                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                    <span>Ressources externes</span>
-                  </h3>
-                  <div className="space-y-3">
-                    {[
-                      "Médecins généralistes",
-                      "Psychologues",
-                      "Associations spécialisées",
-                      "Numéros nationaux : 3114 (prévention suicide)"
-                    ].map((resource, index) => (
-                      <div key={index} className="flex items-center space-x-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span className="text-green-800">{resource}</span>
+                      <span className="text-teal-800 font-medium">Bienveillance</span>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                        <Users className="h-6 w-6 text-teal-600" />
                       </div>
-                    ))}
+                      <span className="text-teal-800 font-medium">Neutralité</span>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                        <CheckCircle className="h-6 w-6 text-teal-600" />
+                      </div>
+                      <span className="text-teal-800 font-medium">Non-jugement</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
 
-        {/* Bloc 7 - Séquence 5: Communication */}
-        <section>
-          <Card className="border-indigo-200">
-            <CardHeader className="bg-gradient-to-r from-teal-50 to-cyan-50">
-              <CardTitle>Séquence 5 : Communiquer et instaurer une relation d'aide</CardTitle>
-            </CardHeader>
-            <CardContent className="pt-6 space-y-6">
-              <div className="bg-teal-50 border border-teal-200 rounded-lg p-6">
-                <h4 className="font-medium text-teal-900 mb-3">Principes de l'écoute active :</h4>
-                <div className="grid md:grid-cols-3 gap-4">
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <Shield className="h-6 w-6 text-teal-600" />
-                    </div>
-                    <span className="text-teal-800 font-medium">Bienveillance</span>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-white border border-gray-200 rounded-lg p-5">
+                    <h4 className="font-medium text-gray-900 mb-3">Communication à l'entreprise</h4>
+                    <ul className="space-y-2 text-sm text-gray-700">
+                      <li className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Informer sur les dispositifs disponibles</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Orienter vers les ressources appropriées</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Maintenir la confidentialité</span>
+                      </li>
+                    </ul>
                   </div>
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <Users className="h-6 w-6 text-teal-600" />
-                    </div>
-                    <span className="text-teal-800 font-medium">Neutralité</span>
-                  </div>
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <CheckCircle className="h-6 w-6 text-teal-600" />
-                    </div>
-                    <span className="text-teal-800 font-medium">Non-jugement</span>
+                  <div className="bg-white border border-gray-200 rounded-lg p-5">
+                    <h4 className="font-medium text-gray-900 mb-3">Communication à la personne</h4>
+                    <ul className="space-y-2 text-sm text-gray-700">
+                      <li className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Rassurer et apporter du soutien</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Accompagner sans porter de jugement</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Respecter son rythme et ses choix</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white border border-gray-200 rounded-lg p-4">
-                  <h4 className="font-medium text-gray-900 mb-3">À l'entreprise :</h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li>• Informer sur les dispositifs</li>
-                    <li>• Orienter vers les ressources</li>
-                    <li>• Maintenir la confidentialité</li>
-                  </ul>
-                </div>
-                <div className="bg-white border border-gray-200 rounded-lg p-4">
-                  <h4 className="font-medium text-gray-900 mb-3">À la personne :</h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li>• Rassurer et soutenir</li>
-                    <li>• Accompagner sans juger</li>
-                    <li>• Respecter son rythme</li>
-                  </ul>
-                </div>
-              </div>
             </CardContent>
           </Card>
         </section>
