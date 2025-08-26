@@ -34,6 +34,207 @@ export default function Index() {
     setShowMidQuizResults(true);
   };
 
+  const downloadChecklist = () => {
+    const checklistContent = `
+CHECKLIST D'ACCOMPAGNEMENT - GESTION DU STRESS
+==============================================
+Module 5 - Formation Fiducial
+
+📋 AVANT L'ACCOMPAGNEMENT
+========================
+
+🎯 PRÉPARATION PERSONNELLE
+• ✅ J'ai vérifié mon propre état émotionnel
+• ✅ Je me sens disponible et serein(e)
+• ✅ J'ai prévu suffisamment de temps (pas de rush)
+• ✅ J'ai identifié un lieu calme et confidentiel
+• ✅ J'ai mis mon téléphone en silencieux
+• ✅ Je me suis rappelé mes limites de rôle (ne pas jouer au thérapeute)
+
+📚 CONNAISSANCES REQUISES
+• ✅ Je connais les ressources internes Fiducial disponibles
+• ✅ Je maîtrise les principes de l'écoute active
+• ✅ Je connais les signaux d'alerte de stress chronique
+• ✅ Je sais différencier urgence/non-urgence
+• ✅ J'ai en tête les coordonnées des professionnels (médecine du travail, RH)
+
+⚖️ RAPPEL CADRE LÉGAL ET ÉTHIQUE
+• ✅ Je respecterai la confidentialité absolue
+• ✅ Je ne forcerai pas la personne à parler
+• ✅ Je demanderai l'autorisation avant tout signalement
+• ✅ Je ne poserai pas de questions trop personnelles
+• ✅ Je respecterai le rythme de la personne
+
+🔍 OBSERVATION PRÉALABLE
+• ✅ J'ai repéré des changements de comportement
+• ✅ J'ai noté la fréquence et l'intensité des signaux
+• ✅ J'ai observé sans juger ni interpréter
+• ✅ Je distingue les faits de mes impressions
+
+🌟 PENDANT L'ACCOMPAGNEMENT
+===========================
+
+🗣️ AMORCE DU DIALOGUE
+• ✅ "J'ai remarqué que tu sembles préoccupé(e), est-ce que ça va ?"
+• ✅ Ton bienveillant et non accusateur
+• ✅ Cadre posé : "Je suis là pour t'écouter si tu en as besoin"
+• ✅ Respect immédiat si la personne refuse de parler
+
+👂 ÉCOUTE ACTIVE - ATTITUDE
+• ✅ Position d'écoute (regard, posture ouverte)
+• ✅ Bienveillance sans jugement
+• ✅ Neutralité (pas de conseil personnel)
+• ✅ Patience (je laisse des silences)
+• ✅ Empathie sans se substituer à un professionnel
+
+🎯 TECHNIQUES D'ÉCOUTE
+• ✅ Questions ouvertes : "Comment te sens-tu ?" "Peux-tu m'en dire plus ?"
+• ✅ Reformulations : "Si je comprends bien, tu ressens..."
+• ✅ Validation des émotions : "C'est compréhensible de se sentir ainsi"
+• ✅ Pas de minimisation : éviter "ce n'est pas grave"
+• ✅ Relances douces : "Et ensuite ?" "Comment ça se passe pour toi ?"
+
+🚨 SIGNAUX D'ALERTE À REPÉRER
+• ✅ Fatigue chronique, troubles du sommeil
+• ✅ Changements d'apparence, négligence inhabituelle
+• ✅ Isolement social, évitement des collègues
+• ✅ Erreurs inhabituelles, baisse de performance
+• ✅ Irritabilité, réactions disproportionnées
+• ✅ Expressions de dévalorisation
+• ✅ Propos inquiétants ("ça ne sert à rien", "personne ne remarque")
+
+⚠️ SIGNAUX D'ALARME MAJEURS
+• 🚨 Propos suicidaires ou de désespoir profond
+• 🚨 Désinvestissement total ("plus rien n'a d'importance")
+• 🚨 Idées de fuite ("je vais tout plaquer")
+• 🚨 Comportements à risque (alcool, substances)
+• ➡️ ORIENTATION URGENTE vers professionnels
+
+💬 COMMUNICATION ADAPTÉE
+À l'entreprise :
+• ✅ "Nous avons des ressources pour t'aider"
+• ✅ "La médecine du travail peut te recevoir"
+• ✅ "Les RH sont là pour t'accompagner"
+• ✅ Information claire sur les dispositifs
+• ✅ Respect de la procédure interne
+
+À la personne :
+• ✅ "Tu n'es pas seul(e) dans cette situation"
+• ✅ "Il est normal de demander de l'aide"
+• ✅ "Tu as fait le bon choix en parlant"
+• ✅ Rassurance sans fausse promesse
+• ✅ Respect de ses choix et de son rythme
+
+🔄 ORIENTATION ET RESSOURCES
+• ✅ Médecine du travail (santé physique et mentale)
+• ✅ Service RH (accompagnement social et administratif)
+• ✅ Réseau HSE (prévention des risques)
+• ✅ Formation continue (gestion du stress)
+• ✅ Médecin généraliste (suivi médical)
+• ✅ Psychologue (accompagnement spécialisé)
+• ✅ Associations spécialisées selon le besoin
+
+📝 APRÈS L'ACCOMPAGNEMENT
+=========================
+
+🤝 SUIVI IMMÉDIAT
+• ✅ J'ai résumé ce qui a été dit et convenu
+• ✅ J'ai clarifié les prochaines étapes
+• ✅ J'ai donné les coordonnées des ressources mentionnées
+• ✅ J'ai fixé un point de suivi si approprié
+• ✅ J'ai remercié la personne pour sa confiance
+
+📋 TRAÇABILITÉ (CONFIDENTIELLE)
+• ✅ Note personnelle des éléments factuels principaux
+• ✅ Actions convenues et engagements pris
+• ✅ Ressources proposées et orientations données
+• ✅ Date et contexte de l'échange
+• ✅ AUCUNE diffusion sans accord explicite
+
+🔒 CONFIDENTIALITÉ
+• ✅ Information gardée strictement confidentielle
+• ✅ Aucune discussion avec d'autres collègues
+• ✅ Signalement uniquement aux personnes autorisées
+• ✅ Autorisation demandée avant tout partage d'information
+• ✅ Respect absolu de la vie privée
+
+🧠 AUTO-ÉVALUATION DE L'ACCOMPAGNANT
+• ✅ Comment je me sens après cet échange ?
+• ✅ Ai-je respecté mes limites de rôle ?
+• ✅ Ai-je été bienveillant(e) et professionnel(le) ?
+• ✅ Quels points améliorer pour la prochaine fois ?
+• ✅ Ai-je besoin de soutien ou de supervision ?
+
+💡 PREVENTION DU STRESS SECONDAIRE
+• ✅ Je prends du recul émotionnel
+• ✅ Je ne porte pas la responsabilité de résoudre le problème
+• ✅ Je reconnais mes propres limites
+• ✅ Je cherche du soutien si nécessaire
+• ✅ Je prends soin de mon propre bien-être
+
+⏰ SUIVI À PRÉVOIR
+• ✅ Point de situation dans [délai approprié]
+• ✅ Vérification que les ressources ont été contactées
+• ✅ Maintien d'une attitude bienveillante au quotidien
+• ✅ Respect du rythme de la personne
+• ✅ Disponibilité continue sans insistance
+
+🔄 PASSATION DU RELAIS SI NÉCESSAIRE
+• ✅ Evaluation du besoin de transmission aux professionnels
+• ✅ Accord de la personne pour la passation
+• ✅ Transmission des éléments essentiels uniquement
+• ✅ Maintien du lien de confiance
+• ✅ Information de la personne sur la suite du processus
+
+📞 CONTACTS UTILES - RESSOURCES FIDUCIAL
+==========================================
+
+INTERNES :
+• Médecine du travail : [coordonnées locale]
+• Service RH : [coordonnées locale]
+• Référent HSE : [coordonnées locale]
+• Manager de proximité : [coordonnées]
+
+EXTERNES :
+• Médecin traitant de la personne
+• Psychologues libéraux locaux
+• Associations d'aide locales
+• Services sociaux municipaux
+
+⚠️ URGENCES :
+• SAMU : 15
+• Pompiers : 18
+• Police/Gendarmerie : 17
+• Numéro d'urgence européen : 112
+• SOS Amitié : 09 72 39 40 50
+
+RAPPELS IMPORTANTS :
+===================
+✅ L'accompagnement n'est pas de la thérapie
+✅ La confidentialité est un pilier essentiel
+✅ Chaque personne a son rythme et ses choix
+✅ L'orientation vers les professionnels est souvent nécessaire
+✅ Prendre soin de soi est indispensable pour bien accompagner
+
+Cette checklist est un guide, chaque situation est unique.
+Adaptez votre approche tout en respectant ces principes fondamentaux.
+
+© 2024 Fiducial - Module 5 : Gestion du stress et accompagnement
+Document confidentiel - Usage interne uniquement
+`;
+
+    // Créer le fichier et déclencher le téléchargement
+    const blob = new Blob([checklistContent], { type: 'text/plain;charset=utf-8' });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Checklist-Accompagnement-Stress-Fiducial.txt';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  };
+
   const therapeuticApproaches = [
     {
       title: "Thérapies cognitivo-comportementales (TCC)",
