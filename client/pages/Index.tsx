@@ -1057,6 +1057,260 @@ export default function Index() {
           </Card>
         </section>
 
+        {/* Bloc - Éthique et confidentialité */}
+        <section>
+          <Card className="border-teal-200">
+            <CardHeader className="bg-gradient-to-r from-teal-50 to-emerald-50">
+              <CardTitle className="flex items-center space-x-2">
+                <Shield className="h-5 w-5 text-teal-600" />
+                <span>Éthique et confidentialité</span>
+              </CardTitle>
+              <p className="text-gray-600">
+                Savoir accompagner sans violer la vie privée : respecter les limites et maintenir la confidentialité.
+              </p>
+            </CardHeader>
+            <CardContent className="pt-6 space-y-8">
+
+              {/* Principes clés */}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Principes éthiques fondamentaux</h3>
+                <div className="grid md:grid-cols-3 gap-6">
+
+                  <div className="bg-teal-50 border border-teal-200 rounded-lg p-5">
+                    <div className="flex items-center mb-3">
+                      <div className="w-3 h-3 bg-teal-500 rounded-full mr-2"></div>
+                      <h4 className="font-semibold text-teal-900">Non-contrainte</h4>
+                    </div>
+                    <p className="text-teal-800 text-sm">
+                      Ne jamais forcer une personne à parler. Le dialogue doit rester volontaire et respectueux.
+                    </p>
+                  </div>
+
+                  <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-5">
+                    <div className="flex items-center mb-3">
+                      <div className="w-3 h-3 bg-emerald-500 rounded-full mr-2"></div>
+                      <h4 className="font-semibold text-emerald-900">Confidentialité</h4>
+                    </div>
+                    <p className="text-emerald-800 text-sm">
+                      Pas de diffusion hors des circuits officiels. Les informations reçues sont protégées.
+                    </p>
+                  </div>
+
+                  <div className="bg-cyan-50 border border-cyan-200 rounded-lg p-5">
+                    <div className="flex items-center mb-3">
+                      <div className="w-3 h-3 bg-cyan-500 rounded-full mr-2"></div>
+                      <h4 className="font-semibold text-cyan-900">Juste mesure</h4>
+                    </div>
+                    <p className="text-cyan-800 text-sm">
+                      Trouver l'équilibre entre vigilance bienveillante et intrusion dans la vie privée.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Études de cas comparatives */}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-6">Études de cas : Manager insistant vs Manager respectueux</h3>
+
+                {/* Cas 1 */}
+                <div className="mb-8">
+                  <h4 className="font-medium text-gray-900 mb-4">Situation : Paul semble stressé et s'isole depuis quelques jours</h4>
+
+                  <div className="grid md:grid-cols-2 gap-6">
+
+                    {/* Manager trop insistant */}
+                    <div className="bg-red-50 border border-red-200 rounded-lg p-5">
+                      <div className="flex items-center mb-3">
+                        <div className="w-4 h-4 bg-red-500 rounded-full mr-2"></div>
+                        <h5 className="font-semibold text-red-900">Approche inadaptée</h5>
+                      </div>
+                      <div className="space-y-3 text-sm text-red-800">
+                        <div className="bg-white p-3 rounded border">
+                          <p className="font-medium mb-1">Actions du manager :</p>
+                          <div className="space-y-1">
+                            <div>• Convoque Paul dans son bureau</div>
+                            <div>• "Il faut qu'on parle, je vois que ça ne va pas"</div>
+                            <div>• Insiste quand Paul dit que tout va bien</div>
+                            <div>• "Tu ne sortiras pas d'ici sans m'avoir dit ce qui ne va pas"</div>
+                            <div>• En parle avec d'autres collègues</div>
+                          </div>
+                        </div>
+                        <div className="bg-red-100 p-3 rounded">
+                          <p className="font-medium mb-1">Conséquences :</p>
+                          <div>• Paul se sent agressé et se ferme</div>
+                          <div>• Violation de la confidentialité</div>
+                          <div>• Perte de confiance</div>
+                          <div>• Stress supplémentaire</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Manager respectueux */}
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-5">
+                      <div className="flex items-center mb-3">
+                        <div className="w-4 h-4 bg-green-500 rounded-full mr-2"></div>
+                        <h5 className="font-semibold text-green-900">Approche adaptée</h5>
+                      </div>
+                      <div className="space-y-3 text-sm text-green-800">
+                        <div className="bg-white p-3 rounded border">
+                          <p className="font-medium mb-1">Actions du manager :</p>
+                          <div className="space-y-1">
+                            <div>• Crée un moment informel (pause café)</div>
+                            <div>• "Paul, j'ai remarqué que tu sembles préoccupé"</div>
+                            <div>• "Je suis là si tu as besoin d'en parler"</div>
+                            <div>• Respecte son refus initial</div>
+                            <div>• Garde les informations confidentielles</div>
+                            <div>• Propose des ressources sans forcer</div>
+                          </div>
+                        </div>
+                        <div className="bg-green-100 p-3 rounded">
+                          <p className="font-medium mb-1">Résultats :</p>
+                          <div>• Paul se sent respecté</div>
+                          <div>• Maintien de la confiance</div>
+                          <div>• Ouverture progressive possible</div>
+                          <div>• Cadre sécurisant</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Cas 2 */}
+                <div className="mb-8">
+                  <h4 className="font-medium text-gray-900 mb-4">Situation : Sophie confie avoir des difficultés personnelles</h4>
+
+                  <div className="grid md:grid-cols-2 gap-6">
+
+                    {/* Manager trop insistant */}
+                    <div className="bg-red-50 border border-red-200 rounded-lg p-5">
+                      <div className="flex items-center mb-3">
+                        <div className="w-4 h-4 bg-red-500 rounded-full mr-2"></div>
+                        <h5 className="font-semibold text-red-900">Violation de la confidentialité</h5>
+                      </div>
+                      <div className="space-y-3 text-sm text-red-800">
+                        <div className="bg-white p-3 rounded border">
+                          <p className="font-medium mb-1">Actions problématiques :</p>
+                          <div className="space-y-1">
+                            <div>• Pose des questions trop personnelles</div>
+                            <div>• "Raconte-moi tout en détail"</div>
+                            <div>• En parle aux RH sans autorisation</div>
+                            <div>• Évoque la situation en réunion équipe</div>
+                            <div>• Donne des conseils personnels non sollicités</div>
+                          </div>
+                        </div>
+                        <div className="bg-red-100 p-3 rounded">
+                          <p className="font-medium mb-1">Violations :</p>
+                          <div>• Curiosité déplacée</div>
+                          <div>• Rupture de confidentialité</div>
+                          <div>• Dépassement de rôle</div>
+                          <div>• Atteinte à la vie privée</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Manager respectueux */}
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-5">
+                      <div className="flex items-center mb-3">
+                        <div className="w-4 h-4 bg-green-500 rounded-full mr-2"></div>
+                        <h5 className="font-semibold text-green-900">Respect de l'éthique</h5>
+                      </div>
+                      <div className="space-y-3 text-sm text-green-800">
+                        <div className="bg-white p-3 rounded border">
+                          <p className="font-medium mb-1">Actions respectueuses :</p>
+                          <div className="space-y-1">
+                            <div>• Écoute sans poser de questions indiscrètes</div>
+                            <div>• "Merci de ta confiance"</div>
+                            <div>• Garde l'information confidentielle</div>
+                            <div>• Propose des ressources appropriées</div>
+                            <div>• Demande l'autorisation avant tout signalement</div>
+                            <div>• Respecte les limites de Sophie</div>
+                          </div>
+                        </div>
+                        <div className="bg-green-100 p-3 rounded">
+                          <p className="font-medium mb-1">Bénéfices :</p>
+                          <div>• Confiance préservée</div>
+                          <div>• Accompagnement adapté</div>
+                          <div>• Respect de la dignité</div>
+                          <div>• Cadre professionnel maintenu</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bonnes pratiques résum��es */}
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Bonnes pratiques à retenir</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+
+                  <div>
+                    <h4 className="font-medium text-green-700 mb-3">À faire :</h4>
+                    <div className="space-y-2 text-sm text-green-800">
+                      <div className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-green-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Créer un cadre bienveillant et non jugeant</span>
+                      </div>
+                      <div className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-green-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Respecter le rythme et les choix de la personne</span>
+                      </div>
+                      <div className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-green-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Maintenir la confidentialité absolue</span>
+                      </div>
+                      <div className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-green-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Orienter vers les ressources appropriées</span>
+                      </div>
+                      <div className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-green-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Demander l'autorisation avant tout signalement</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="font-medium text-red-700 mb-3">À éviter :</h4>
+                    <div className="space-y-2 text-sm text-red-800">
+                      <div className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-red-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Forcer le dialogue ou insister lourdement</span>
+                      </div>
+                      <div className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-red-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Poser des questions trop personnelles</span>
+                      </div>
+                      <div className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-red-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Divulguer les informations reçues</span>
+                      </div>
+                      <div className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-red-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Jouer le rôle du thérapeute</span>
+                      </div>
+                      <div className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-red-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                        <span>Agir sans l'accord de la personne concernée</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Message clé */}
+              <div className="bg-teal-50 border border-teal-200 rounded-lg p-6 text-center">
+                <h4 className="font-semibold text-teal-900 mb-3">Message clé</h4>
+                <p className="text-teal-800 text-lg italic">
+                  "L'accompagnement éthique repose sur le respect, la confidentialité et la non-intrusion.
+                  C'est en respectant ces principes que nous créons un environnement de confiance propice à l'aide."
+                </p>
+              </div>
+
+            </CardContent>
+          </Card>
+        </section>
+
         {/* Bloc 5 - Séquence 3: Rôles et limites */}
         <section>
           <Card className="border-indigo-200">
