@@ -280,34 +280,276 @@ export default function Index() {
                 Il est essentiel d'identifier les signaux précoces et d'agir avant qu'ils ne s'aggravent.
               </p>
             </CardHeader>
-            <CardContent className="pt-6 space-y-6">
-              <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
-                <h4 className="font-medium text-orange-900 mb-3">Signaux d'alerte :</h4>
-                <div className="grid md:grid-cols-2 gap-2 text-sm">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
-                    <span>Fatigue chronique</span>
+            <CardContent className="pt-6 space-y-8">
+
+              {/* Facteurs déclencheurs détaillés */}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">🚨 Facteurs déclencheurs de stress</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+
+                  <div className="bg-red-50 border border-red-200 rounded-lg p-5">
+                    <h4 className="font-semibold text-red-900 mb-3 flex items-center">
+                      <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
+                      Professionnels
+                    </h4>
+                    <div className="space-y-2 text-sm text-red-800">
+                      <div>• <strong>Surcharge de travail :</strong> Plus de 60h/semaine, délais impossibles</div>
+                      <div>• <strong>Conflits relationnels :</strong> Harcèlement, tensions équipe</div>
+                      <div>• <strong>Insécurité professionnelle :</strong> Restructuration, licenciements</div>
+                      <div>• <strong>Manque de reconnaissance :</strong> Efforts non valorisés</div>
+                      <div>• <strong>Évolutions négatives :</strong> Rétrogradation, mutation forcée</div>
+                      <div>• <strong>Inadéquation poste :</strong> Compétences vs exigences</div>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
-                    <span>Isolement social</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
-                    <span>Erreurs fréquentes</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
-                    <span>Propos inquiétants</span>
+
+                  <div className="bg-orange-50 border border-orange-200 rounded-lg p-5">
+                    <h4 className="font-semibold text-orange-900 mb-3 flex items-center">
+                      <div className="w-3 h-3 bg-orange-500 rounded-full mr-2"></div>
+                      Personnels
+                    </h4>
+                    <div className="space-y-2 text-sm text-orange-800">
+                      <div>• <strong>Événements familiaux :</strong> Décès, divorce, maladie proche</div>
+                      <div>• <strong>Problèmes financiers :</strong> Endettement, perte de revenus</div>
+                      <div>• <strong>Santé :</strong> Maladie chronique, accident, diagnostic</div>
+                      <div>• <strong>Déménagement :</strong> Changement d'environnement</div>
+                      <div>• <strong>Isolement social :</strong> Rupture relationnelle</div>
+                      <div>• <strong>Transitions de vie :</strong> Retraite, parentalité</div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                <h4 className="font-medium text-blue-900 mb-2">Exemple de phrase bienveillante :</h4>
-                <p className="text-blue-800 italic">
-                  "J'ai remarqué que tu sembles plus fatigué, veux-tu en parler ?"
-                </p>
+              {/* Signaux d'alerte détaillés avec exemples */}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">⚠️ Signaux d'alerte à reconnaître</h3>
+
+                <Accordion type="single" collapsible className="w-full">
+
+                  <AccordionItem value="physiques">
+                    <AccordionTrigger className="text-left">
+                      <span className="flex items-center space-x-2">
+                        <div className="w-3 h-3 bg-red-400 rounded-full"></div>
+                        <span className="font-medium">Signaux physiques</span>
+                      </span>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="grid md:grid-cols-2 gap-4 pt-2">
+                        <div className="space-y-3">
+                          <div className="bg-white border rounded p-3">
+                            <h5 className="font-medium text-gray-900 mb-2">Fatigue anormale</h5>
+                            <div className="text-sm text-gray-600 space-y-1">
+                              <div>• "Je n'arrive plus à récupérer le week-end"</div>
+                              <div>• Endormissement au bureau</div>
+                              <div>• Épuisement dès le matin</div>
+                            </div>
+                          </div>
+                          <div className="bg-white border rounded p-3">
+                            <h5 className="font-medium text-gray-900 mb-2">Troubles du sommeil</h5>
+                            <div className="text-sm text-gray-600 space-y-1">
+                              <div>• Réveils à 3h du matin avec pensées négatives</div>
+                              <div>• Difficultés d'endormissement (plus d'1h)</div>
+                              <div>• Cauchemars récurrents liés au travail</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="space-y-3">
+                          <div className="bg-white border rounded p-3">
+                            <h5 className="font-medium text-gray-900 mb-2">Symptômes physiques</h5>
+                            <div className="text-sm text-gray-600 space-y-1">
+                              <div>• Maux de tête fréquents sans cause médicale</div>
+                              <div>• Tensions musculaires (nuque, épaules)</div>
+                              <div>• Troubles digestifs persistants</div>
+                              <div>• Palpitations, oppression thoracique</div>
+                            </div>
+                          </div>
+                          <div className="bg-white border rounded p-3">
+                            <h5 className="font-medium text-gray-900 mb-2">Changements d'apparence</h5>
+                            <div className="text-sm text-gray-600 space-y-1">
+                              <div>• Perte ou prise de poids rapide</div>
+                              <div>• Négligence vestimentaire inhabituelle</div>
+                              <div>• Cernes marqués, teint terne</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="comportementaux">
+                    <AccordionTrigger className="text-left">
+                      <span className="flex items-center space-x-2">
+                        <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                        <span className="font-medium">Signaux comportementaux</span>
+                      </span>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="grid md:grid-cols-2 gap-4 pt-2">
+                        <div className="space-y-3">
+                          <div className="bg-white border rounded p-3">
+                            <h5 className="font-medium text-gray-900 mb-2">Au travail</h5>
+                            <div className="text-sm text-gray-600 space-y-1">
+                              <div>• <strong>Erreurs inhabituelles :</strong> Marie, comptable rigoureuse, fait 3 erreurs de calcul en une semaine</div>
+                              <div>• <strong>Retards fréquents :</strong> Pierre, toujours ponctuel, arrive en retard 4 fois ce mois</div>
+                              <div>• <strong>Procrastination :</strong> Sophie reporte constamment ses tâches importantes</div>
+                              <div>• <strong>Perfectionnisme excessif :</strong> Luc refait 5 fois la même présentation</div>
+                            </div>
+                          </div>
+                          <div className="bg-white border rounded p-3">
+                            <h5 className="font-medium text-gray-900 mb-2">Relations sociales</h5>
+                            <div className="text-sm text-gray-600 space-y-1">
+                              <div>• <strong>Isolement :</strong> "Je préfère déjeuner seul maintenant"</div>
+                              <div>• <strong>Évitement :</strong> Ne participe plus aux réunions informelles</div>
+                              <div>• <strong>Irritabilité :</strong> Réactions disproportionnées pour des détails</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="space-y-3">
+                          <div className="bg-white border rounded p-3">
+                            <h5 className="font-medium text-gray-900 mb-2">Habitudes personnelles</h5>
+                            <div className="text-sm text-gray-600 space-y-1">
+                              <div>• <strong>Consommation :</strong> Augmentation alcool, tabac, médicaments</div>
+                              <div>• <strong>Alimentation :</strong> Saute des repas ou mange de façon compulsive</div>
+                              <div>• <strong>Activités :</strong> Abandon des loisirs habituels</div>
+                            </div>
+                          </div>
+                          <div className="bg-white border rounded p-3">
+                            <h5 className="font-medium text-gray-900 mb-2">Performance</h5>
+                            <div className="text-sm text-gray-600 space-y-1">
+                              <div>• <strong>Concentration :</strong> "Je n'arrive plus à me concentrer plus de 10 minutes"</div>
+                              <div>• <strong>Mémoire :</strong> Oublie des informations importantes</div>
+                              <div>• <strong>Décisions :</strong> Évite de prendre des décisions simples</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="emotionnels">
+                    <AccordionTrigger className="text-left">
+                      <span className="flex items-center space-x-2">
+                        <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
+                        <span className="font-medium">Signaux émotionnels</span>
+                      </span>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="grid md:grid-cols-2 gap-4 pt-2">
+                        <div className="space-y-3">
+                          <div className="bg-white border rounded p-3">
+                            <h5 className="font-medium text-gray-900 mb-2">Expressions verbales inquiétantes</h5>
+                            <div className="text-sm text-gray-600 space-y-1">
+                              <div>• <strong>Dévalorisation :</strong> "Je suis nul(le), je n'y arrive plus"</div>
+                              <div>• <strong>Désespoir :</strong> "À quoi bon, rien ne changera"</div>
+                              <div>• <strong>Catastrophisme :</strong> "C'est la catastrophe, tout va s'écrouler"</div>
+                              <div>• <strong>Épuisement :</strong> "Je n'en peux plus, je suis au bout"</div>
+                            </div>
+                          </div>
+                          <div className="bg-white border rounded p-3">
+                            <h5 className="font-medium text-gray-900 mb-2">Changements émotionnels</h5>
+                            <div className="text-sm text-gray-600 space-y-1">
+                              <div>• <strong>Pleurs fréquents :</strong> Sans raison apparente</div>
+                              <div>• <strong>Colères :</strong> Explosions pour des détails mineurs</div>
+                              <div>• <strong>Anxiété :</strong> "J'ai tout le temps peur qu'il arrive quelque chose"</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="space-y-3">
+                          <div className="bg-white border rounded p-3">
+                            <h5 className="font-medium text-gray-900 mb-2">Signaux d'alarme majeurs</h5>
+                            <div className="text-sm text-gray-600 space-y-1 bg-red-50 p-2 rounded">
+                              <div>⚠️ <strong>Propos suicidaires :</strong> "La vie ne vaut plus la peine"</div>
+                              <div>��️ <strong>Désinvestissement total :</strong> "Plus rien n'a d'importance"</div>
+                              <div>⚠️ <strong>Idées de fuite :</strong> "Je vais tout plaquer"</div>
+                              <div className="text-red-600 font-medium mt-2">→ Orientation urgente nécessaire</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </div>
+
+              {/* Cas pratiques détaillés */}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">📝 Cas pratiques et situations concrètes</h3>
+
+                <div className="space-y-4">
+                  {[
+                    {
+                      id: "cas1",
+                      title: "Cas n°1 : Sarah, 35 ans, manager",
+                      situation: "Depuis la réorganisation il y a 2 mois, Sarah mange à son bureau, ne sourit plus, fait des erreurs dans ses rapports. Elle dit : 'Je n'y arrive plus, j'ai l'impression de décevoir tout le monde.'",
+                      signaux: ["Changement alimentaire", "Modification comportement social", "Erreurs inhabituelles", "Dévalorisation"],
+                      action: "Entretien bienveillant pour explorer les difficultés et proposer un soutien RH"
+                    },
+                    {
+                      id: "cas2",
+                      title: "Cas n°2 : Marc, 45 ans, technicien",
+                      situation: "Après un accident de travail sans gravité, Marc évite certaines tâches, a des sueurs, dit : 'Je n'ai plus confiance, et si ça recommence ?' Il boit plus qu'avant.",
+                      signaux: ["Évitement", "Symptômes anxieux", "Perte de confiance", "Consommation d'alcool"],
+                      action: "Orientation vers médecine du travail et éventuellement vers un spécialiste trauma"
+                    },
+                    {
+                      id: "cas3",
+                      title: "Cas n°3 : Julie, 28 ans, assistante",
+                      situation: "Depuis son divorce, Julie arrive en retard, pleure parfois au bureau, dit : 'Je ne sais plus où j'en suis, tout se mélange.' Performance en baisse notable.",
+                      signaux: ["Événement personnel", "Pleurs au travail", "Confusion", "Baisse performance"],
+                      action: "Soutien empathique, aménagement temporaire, orientation cellule d'aide"
+                    }
+                  ].map((cas) => (
+                    <div key={cas.id} className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+                      <h4 className="font-semibold text-gray-900 mb-3">{cas.title}</h4>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div>
+                          <h5 className="font-medium text-gray-700 mb-2">🎯 Situation :</h5>
+                          <p className="text-sm text-gray-600 mb-3">{cas.situation}</p>
+                          <h5 className="font-medium text-gray-700 mb-2">🔍 Signaux identifiés :</h5>
+                          <div className="flex flex-wrap gap-1">
+                            {cas.signaux.map((signal, idx) => (
+                              <span key={idx} className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">
+                                {signal}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                        <div className="bg-white rounded p-3">
+                          <h5 className="font-medium text-green-700 mb-2">✅ Action recommandée :</h5>
+                          <p className="text-sm text-green-800">{cas.action}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Phrases d'approche bienveillantes */}
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                <h4 className="font-semibold text-blue-900 mb-4">💬 Exemples de phrases d'approche bienveillantes</h4>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-3">
+                    <div className="bg-white rounded p-3">
+                      <p className="text-sm text-blue-800 italic">"J'ai remarqué que tu sembles préoccupé ces derniers temps, est-ce que ça va ?"</p>
+                    </div>
+                    <div className="bg-white rounded p-3">
+                      <p className="text-sm text-blue-800 italic">"Tu n'as pas l'air dans ton assiette, veux-tu qu'on en parle ?"</p>
+                    </div>
+                    <div className="bg-white rounded p-3">
+                      <p className="text-sm text-blue-800 italic">"Je sens que quelque chose te tracasse, je suis là si tu as besoin"</p>
+                    </div>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="bg-white rounded p-3">
+                      <p className="text-sm text-blue-800 italic">"Ce n'est pas ton style habituel, y a-t-il quelque chose qui te préoccupe ?"</p>
+                    </div>
+                    <div className="bg-white rounded p-3">
+                      <p className="text-sm text-blue-800 italic">"J'ai l'impression que tu traverses une période difficile, comment puis-je t'aider ?"</p>
+                    </div>
+                    <div className="bg-white rounded p-3">
+                      <p className="text-sm text-blue-800 italic">"Prendre soin de toi, c'est important. On peut en parler si tu veux"</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div>
