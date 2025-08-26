@@ -43,7 +43,7 @@ Module 5 - Formation Fiducial
 📋 AVANT L'ACCOMPAGNEMENT
 ========================
 
-��� PRÉPARATION PERSONNELLE
+🎯 PRÉPARATION PERSONNELLE
 • ✅ J'ai vérifié mon propre état émotionnel
 • ✅ Je me sens disponible et serein(e)
 • ✅ J'ai prévu suffisamment de temps (pas de rush)
@@ -74,7 +74,7 @@ Module 5 - Formation Fiducial
 🌟 PENDANT L'ACCOMPAGNEMENT
 ===========================
 
-🗣��� AMORCE DU DIALOGUE
+🗣️ AMORCE DU DIALOGUE
 • ✅ "J'ai remarqué que tu sembles préoccupé(e), est-ce que ça va ?"
 • ✅ Ton bienveillant et non accusateur
 • ✅ Cadre posé : "Je suis là pour t'écouter si tu en as besoin"
@@ -229,6 +229,85 @@ Document confidentiel - Usage interne uniquement
     const link = document.createElement('a');
     link.href = url;
     link.download = 'Checklist-Accompagnement-Stress-Fiducial.txt';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  };
+
+  const download7StepsGuide = () => {
+    const guideContent = `
+GUIDE D'ACCOMPAGNEMENT EN 7 ÉTAPES
+==================================
+Module 5 - Formation Fiducial
+
+🎯 ÉTAPE 1 : OBSERVER
+=====================
+• Repérer les changements de comportement
+• Noter les signaux d'alerte (fatigue, isolement, erreurs)
+• Distinguer les faits de vos impressions
+• Respecter la confidentialité dès l'observation
+
+📞 ÉTAPE 2 : APPROCHER
+======================
+• Choisir un moment et lieu appropriés
+• Utiliser une phrase bienveillante : "J'ai remarqué que..."
+• Ton non accusateur et empathique
+• Respecter immédiatement un éventuel refus
+
+👂 ÉTAPE 3 : ��COUTER
+====================
+• Appliquer l'écoute active (bienveillance, neutralité, non-jugement)
+• Poser des questions ouvertes
+• Reformuler pour montrer la compréhension
+• Laisser du temps et des silences
+
+⚠️ ÉTAPE 4 : ÉVALUER
+====================
+• Identifier le niveau d'urgence
+• Repérer les signaux d'alarme majeurs
+• Distinguer accompagnement de proximité vs orientation professionnelle
+• Ne pas diagnostiquer, rester dans son rôle
+
+🤝 ÉTAPE 5 : ORIENTER
+=====================
+• Proposer les ressources adaptées :
+  - Médecine du travail
+  - Service RH
+  - Psychologues
+• Expliquer les dispositifs disponibles
+• Accompagner dans la démarche sans forcer
+
+📋 ÉTAPE 6 : SUIVRE
+===================
+• Prévoir un point de situation
+• Maintenir une attitude bienveillante
+• Vérifier que les ressources ont été contactées
+• Respecter le rythme de la personne
+
+🛡️ ÉTAPE 7 : SE PROTÉGER
+=========================
+• Prendre du recul émotionnel
+• Reconnaître ses limites
+• Chercher du soutien si nécessaire
+• Maintenir la confidentialité absolue
+
+RAPPELS ESSENTIELS :
+===================
+✅ Confidentialité absolue
+✅ Pas de diagnostic, pas de thérapie
+✅ Respect du choix de la personne
+✅ Orientation vers les professionnels
+✅ Prendre soin de soi
+
+© 2024 Fiducial - Module 5 : Gestion du stress
+`;
+
+    const blob = new Blob([guideContent], { type: 'text/plain;charset=utf-8' });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Guide-7-Etapes-Accompagnement-Fiducial.txt';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
