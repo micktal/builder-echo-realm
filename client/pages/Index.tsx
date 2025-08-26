@@ -758,6 +758,305 @@ export default function Index() {
           </Card>
         </section>
 
+        {/* Quiz d'évaluation intermédiaire */}
+        <section>
+          <Card className="border-violet-200">
+            <CardHeader className="bg-gradient-to-r from-violet-50 to-purple-50">
+              <CardTitle className="flex items-center space-x-2">
+                <Award className="h-5 w-5 text-violet-600" />
+                <span>Quiz d'évaluation - Module 5 (Partie 1)</span>
+              </CardTitle>
+              <p className="text-gray-600">
+                Évaluez vos connaissances sur les contenus vus jusqu'à présent : approches thérapeutiques,
+                repérage et orientation, cadre légal.
+              </p>
+            </CardHeader>
+            <CardContent className="pt-6">
+              <div className="space-y-8">
+
+                {/* Questions à choix multiples */}
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-6">Questions à choix multiples</h3>
+
+                  {/* Question 1 */}
+                  <div className="bg-white border border-gray-200 rounded-lg p-6 mb-6">
+                    <h4 className="font-medium text-gray-900 mb-4">Question 1 : Laquelle de ces approches utilise des mouvements oculaires pour traiter les traumatismes ?</h4>
+                    <div className="space-y-2">
+                      {[
+                        { id: "tcc", text: "Thérapies cognitivo-comportementales (TCC)", correct: false },
+                        { id: "emdr", text: "EMDR (Eye Movement Desensitization and Reprocessing)", correct: true },
+                        { id: "mindfulness", text: "Pleine conscience (Mindfulness)", correct: false },
+                        { id: "medicament", text: "Soutien médicamenteux", correct: false }
+                      ].map((option) => (
+                        <Button
+                          key={option.id}
+                          variant={midQuizAnswers[1] === option.id ? "default" : "outline"}
+                          className="w-full text-left justify-start"
+                          onClick={() => handleMidQuizAnswer(1, option.id)}
+                        >
+                          {option.text}
+                        </Button>
+                      ))}
+                    </div>
+                    {showMidQuizResults && midQuizAnswers[1] && (
+                      <div className={`mt-4 p-3 rounded text-sm ${
+                        midQuizAnswers[1] === "emdr"
+                          ? "bg-green-50 text-green-800 border border-green-200"
+                          : "bg-red-50 text-red-800 border border-red-200"
+                      }`}>
+                        {midQuizAnswers[1] === "emdr" ? "Correct ! L'EMDR utilise effectivement les mouvements oculaires." : "Incorrect. La bonne réponse est EMDR."}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Question 2 */}
+                  <div className="bg-white border border-gray-200 rounded-lg p-6 mb-6">
+                    <h4 className="font-medium text-gray-900 mb-4">Question 2 : Selon le Code du travail (art. L4121-1), l'employeur doit :</h4>
+                    <div className="space-y-2">
+                      {[
+                        { id: "physique", text: "Protéger uniquement la santé physique des salariés", correct: false },
+                        { id: "mentale", text: "Protéger uniquement la santé mentale des salari��s", correct: false },
+                        { id: "physique_mentale", text: "Protéger la santé physique et mentale des salariés", correct: true },
+                        { id: "aucune", text: "Aucune obligation spécifique", correct: false }
+                      ].map((option) => (
+                        <Button
+                          key={option.id}
+                          variant={midQuizAnswers[2] === option.id ? "default" : "outline"}
+                          className="w-full text-left justify-start"
+                          onClick={() => handleMidQuizAnswer(2, option.id)}
+                        >
+                          {option.text}
+                        </Button>
+                      ))}
+                    </div>
+                    {showMidQuizResults && midQuizAnswers[2] && (
+                      <div className={`mt-4 p-3 rounded text-sm ${
+                        midQuizAnswers[2] === "physique_mentale"
+                          ? "bg-green-50 text-green-800 border border-green-200"
+                          : "bg-red-50 text-red-800 border border-red-200"
+                      }`}>
+                        {midQuizAnswers[2] === "physique_mentale" ? "Correct ! L'obligation générale couvre les deux aspects." : "Incorrect. L'employeur doit protéger la santé physique ET mentale."}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Question 3 */}
+                  <div className="bg-white border border-gray-200 rounded-lg p-6 mb-6">
+                    <h4 className="font-medium text-gray-900 mb-4">Question 3 : Parmi ces signaux, lesquels sont des indicateurs d'alerte de stress chronique ?</h4>
+                    <div className="space-y-2">
+                      {[
+                        { id: "fatigue", text: "Fatigue chronique et troubles du sommeil", correct: true },
+                        { id: "energie", text: "Regain d'énergie et optimisme", correct: false },
+                        { id: "social", text: "Augmentation des interactions sociales", correct: false },
+                        { id: "performance", text: "Amélioration des performances", correct: false }
+                      ].map((option) => (
+                        <Button
+                          key={option.id}
+                          variant={midQuizAnswers[3] === option.id ? "default" : "outline"}
+                          className="w-full text-left justify-start"
+                          onClick={() => handleMidQuizAnswer(3, option.id)}
+                        >
+                          {option.text}
+                        </Button>
+                      ))}
+                    </div>
+                    {showMidQuizResults && midQuizAnswers[3] && (
+                      <div className={`mt-4 p-3 rounded text-sm ${
+                        midQuizAnswers[3] === "fatigue"
+                          ? "bg-green-50 text-green-800 border border-green-200"
+                          : "bg-red-50 text-red-800 border border-red-200"
+                      }`}>
+                        {midQuizAnswers[3] === "fatigue" ? "Correct ! Ce sont des signaux d'alerte classiques." : "Incorrect. La fatigue chronique et les troubles du sommeil sont des indicateurs clés."}
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* Questions Vrai/Faux */}
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-6">Questions Vrai/Faux</h3>
+
+                  {/* Question 4 */}
+                  <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4">
+                    <h4 className="font-medium text-gray-900 mb-4">Question 4 : Le MBSR (Mindfulness-Based Stress Reduction) est un programme de 8 semaines.</h4>
+                    <div className="flex space-x-4">
+                      <Button
+                        variant={midQuizAnswers[4] === "true" ? "default" : "outline"}
+                        onClick={() => handleMidQuizAnswer(4, "true")}
+                      >
+                        Vrai
+                      </Button>
+                      <Button
+                        variant={midQuizAnswers[4] === "false" ? "default" : "outline"}
+                        onClick={() => handleMidQuizAnswer(4, "false")}
+                      >
+                        Faux
+                      </Button>
+                    </div>
+                    {showMidQuizResults && midQuizAnswers[4] && (
+                      <div className={`mt-4 p-3 rounded text-sm ${
+                        midQuizAnswers[4] === "true"
+                          ? "bg-green-50 text-green-800 border border-green-200"
+                          : "bg-red-50 text-red-800 border border-red-200"
+                      }`}>
+                        {midQuizAnswers[4] === "true" ? "Correct ! Le MBSR est effectivement un programme de 8 semaines." : "Incorrect. Le MBSR est bien un programme de 8 semaines."}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Question 5 */}
+                  <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4">
+                    <h4 className="font-medium text-gray-900 mb-4">Question 5 : Le DUERP doit intégrer les risques psychosociaux au même titre que les autres risques.</h4>
+                    <div className="flex space-x-4">
+                      <Button
+                        variant={midQuizAnswers[5] === "true" ? "default" : "outline"}
+                        onClick={() => handleMidQuizAnswer(5, "true")}
+                      >
+                        Vrai
+                      </Button>
+                      <Button
+                        variant={midQuizAnswers[5] === "false" ? "default" : "outline"}
+                        onClick={() => handleMidQuizAnswer(5, "false")}
+                      >
+                        Faux
+                      </Button>
+                    </div>
+                    {showMidQuizResults && midQuizAnswers[5] && (
+                      <div className={`mt-4 p-3 rounded text-sm ${
+                        midQuizAnswers[5] === "true"
+                          ? "bg-green-50 text-green-800 border border-green-200"
+                          : "bg-red-50 text-red-800 border border-red-200"
+                      }`}>
+                        {midQuizAnswers[5] === "true" ? "Correct ! C'est une obligation légale." : "Incorrect. Le DUERP doit effectivement intégrer les RPS."}
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* Cas pratique */}
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-6">Cas pratique</h3>
+
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
+                    <h4 className="font-medium text-blue-900 mb-4">Question 6 : Situation</h4>
+                    <p className="text-blue-800 mb-4">
+                      Marie, responsable comptable, arrive systématiquement en retard depuis 3 semaines.
+                      Elle qui était toujours impeccable néglige son apparence. Hier, elle a dit :
+                      "De toute façon, personne ne fait attention à mon travail, je pourrais disparaître, ça ne changerait rien."
+                    </p>
+                    <h5 className="font-medium text-blue-900 mb-3">Quelle est la meilleure approche ?</h5>
+                    <div className="space-y-2">
+                      {[
+                        { id: "ignorer", text: "Ignorer ces comportements, elle va se reprendre", correct: false },
+                        { id: "recadrer", text: "La recadrer immédiatement sur ses retards", correct: false },
+                        { id: "bienveillant", text: "L'approcher en privé avec bienveillance pour proposer d'échanger", correct: true },
+                        { id: "collegues", text: "En parler avec d'autres collègues pour avoir leur avis", correct: false }
+                      ].map((option) => (
+                        <Button
+                          key={option.id}
+                          variant={midQuizAnswers[6] === option.id ? "default" : "outline"}
+                          className="w-full text-left justify-start text-sm"
+                          onClick={() => handleMidQuizAnswer(6, option.id)}
+                        >
+                          {option.text}
+                        </Button>
+                      ))}
+                    </div>
+                    {showMidQuizResults && midQuizAnswers[6] && (
+                      <div className={`mt-4 p-3 rounded text-sm ${
+                        midQuizAnswers[6] === "bienveillant"
+                          ? "bg-green-50 text-green-800 border border-green-200"
+                          : "bg-red-50 text-red-800 border border-red-200"
+                      }`}>
+                        {midQuizAnswers[6] === "bienveillant" ? "Correct ! L'approche bienveillante est la plus appropriée face aux signaux multiples." : "Incorrect. Face à ces signaux multiples, une approche bienveillante est nécessaire."}
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* Question ouverte */}
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-6">Question de réflexion</h3>
+
+                  <div className="bg-white border border-gray-200 rounded-lg p-6 mb-6">
+                    <h4 className="font-medium text-gray-900 mb-4">Question 7 : Citez trois facteurs déclencheurs de stress professionnel</h4>
+                    <div className="bg-gray-50 border border-gray-200 rounded p-4">
+                      <p className="text-sm text-gray-700 mb-2">Exemples de réponses attendues :</p>
+                      <div className="space-y-1 text-sm text-gray-600">
+                        <div>• Surcharge de travail (plus de 60h/semaine)</div>
+                        <div>• Conflits relationnels (harcèlement, tensions)</div>
+                        <div>• Insécurité professionnelle (restructuration, licenciements)</div>
+                        <div>• Manque de reconnaissance</div>
+                        <div>• Inadéquation entre compétences et exigences du poste</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Résultats et validation */}
+                <div className="border-t pt-6">
+                  {!showMidQuizResults ? (
+                    <div className="text-center">
+                      <Button
+                        onClick={submitMidQuiz}
+                        disabled={Object.keys(midQuizAnswers).length < 6}
+                        className="bg-violet-600 hover:bg-violet-700 text-white px-8 py-3"
+                      >
+                        Valider mes réponses ({Object.keys(midQuizAnswers).length}/6)
+                      </Button>
+                      <p className="text-sm text-gray-600 mt-2">
+                        Répondez à toutes les questions pour voir les résultats
+                      </p>
+                    </div>
+                  ) : (
+                    <div className="space-y-4">
+                      <div className="bg-violet-50 border border-violet-200 rounded-lg p-6 text-center">
+                        <h4 className="font-semibold text-violet-900 mb-3">Résultats du quiz</h4>
+                        {(() => {
+                          const correctAnswers = [
+                            midQuizAnswers[1] === "emdr",
+                            midQuizAnswers[2] === "physique_mentale",
+                            midQuizAnswers[3] === "fatigue",
+                            midQuizAnswers[4] === "true",
+                            midQuizAnswers[5] === "true",
+                            midQuizAnswers[6] === "bienveillant"
+                          ].filter(Boolean).length;
+                          const score = Math.round((correctAnswers / 6) * 100);
+
+                          return (
+                            <div>
+                              <div className="text-3xl font-bold text-violet-800 mb-2">{score}%</div>
+                              <p className="text-violet-700 mb-4">
+                                {correctAnswers}/6 réponses correctes
+                              </p>
+                              <div className={`p-4 rounded-lg ${
+                                score >= 80 ? "bg-green-100 text-green-800" :
+                                score >= 60 ? "bg-orange-100 text-orange-800" :
+                                "bg-red-100 text-red-800"
+                              }`}>
+                                {score >= 80 ? "Excellent ! Vous maîtrisez bien les concepts abordés." :
+                                 score >= 60 ? "Bien ! Quelques points à revoir mais vous êtes sur la bonne voie." :
+                                 "Il serait bénéfique de revoir les contenus avant de continuer."}
+                              </div>
+                            </div>
+                          );
+                        })()}
+                      </div>
+
+                      <div className="text-center">
+                        <p className="text-gray-600 mb-4">
+                          Vous pouvez maintenant continuer vers les séquences suivantes.
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
         {/* Bloc 5 - Séquence 3: Rôles et limites */}
         <section>
           <Card className="border-indigo-200">
