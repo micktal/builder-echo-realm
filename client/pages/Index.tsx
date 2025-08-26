@@ -284,7 +284,7 @@ export default function Index() {
 
               {/* Facteurs déclencheurs détaillés */}
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">🚨 Facteurs déclencheurs de stress</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Facteurs déclencheurs de stress</h3>
                 <div className="grid md:grid-cols-2 gap-6">
 
                   <div className="bg-red-50 border border-red-200 rounded-lg p-5">
@@ -321,7 +321,7 @@ export default function Index() {
 
               {/* Signaux d'alerte détaillés avec exemples */}
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">⚠️ Signaux d'alerte à reconnaître</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Signaux d'alerte à reconnaître</h3>
 
                 <Accordion type="single" collapsible className="w-full">
 
@@ -457,10 +457,10 @@ export default function Index() {
                           <div className="bg-white border rounded p-3">
                             <h5 className="font-medium text-gray-900 mb-2">Signaux d'alarme majeurs</h5>
                             <div className="text-sm text-gray-600 space-y-1 bg-red-50 p-2 rounded">
-                              <div>⚠️ <strong>Propos suicidaires :</strong> "La vie ne vaut plus la peine"</div>
-                              <div>⚠️ <strong>Désinvestissement total :</strong> "Plus rien n'a d'importance"</div>
-                              <div>⚠️ <strong>Idées de fuite :</strong> "Je vais tout plaquer"</div>
-                              <div className="text-red-600 font-medium mt-2">→ Orientation urgente nécessaire</div>
+                              <div><strong>Propos suicidaires :</strong> "La vie ne vaut plus la peine"</div>
+                              <div><strong>Désinvestissement total :</strong> "Plus rien n'a d'importance"</div>
+                              <div><strong>Idées de fuite :</strong> "Je vais tout plaquer"</div>
+                              <div className="text-red-600 font-medium mt-2">Orientation urgente nécessaire</div>
                             </div>
                           </div>
                         </div>
@@ -472,7 +472,7 @@ export default function Index() {
 
               {/* Cas pratiques détaillés */}
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">📝 Cas pratiques et situations concrètes</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Cas pratiques et situations concrètes</h3>
 
                 <div className="space-y-4">
                   {[
@@ -502,9 +502,9 @@ export default function Index() {
                       <h4 className="font-semibold text-gray-900 mb-3">{cas.title}</h4>
                       <div className="grid md:grid-cols-2 gap-4">
                         <div>
-                          <h5 className="font-medium text-gray-700 mb-2">🎯 Situation :</h5>
+                          <h5 className="font-medium text-gray-700 mb-2">Situation :</h5>
                           <p className="text-sm text-gray-600 mb-3">{cas.situation}</p>
-                          <h5 className="font-medium text-gray-700 mb-2">🔍 Signaux identifiés :</h5>
+                          <h5 className="font-medium text-gray-700 mb-2">Signaux identifiés :</h5>
                           <div className="flex flex-wrap gap-1">
                             {cas.signaux.map((signal, idx) => (
                               <span key={idx} className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">
@@ -514,7 +514,7 @@ export default function Index() {
                           </div>
                         </div>
                         <div className="bg-white rounded p-3">
-                          <h5 className="font-medium text-green-700 mb-2">✅ Action recommandée :</h5>
+                          <h5 className="font-medium text-green-700 mb-2">Action recommandée :</h5>
                           <p className="text-sm text-green-800">{cas.action}</p>
                         </div>
                       </div>
@@ -525,7 +525,7 @@ export default function Index() {
 
               {/* Phrases d'approche bienveillantes */}
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-                <h4 className="font-semibold text-blue-900 mb-4">💬 Exemples de phrases d'approche bienveillantes</h4>
+                <h4 className="font-semibold text-blue-900 mb-4">Exemples de phrases d'approche bienveillantes</h4>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-3">
                     <div className="bg-white rounded p-3">
@@ -554,7 +554,7 @@ export default function Index() {
 
               {/* Scénarios interactifs enrichis */}
               <div>
-                <h4 className="font-semibold text-gray-900 mb-4">🎮 Scénarios interactifs</h4>
+                <h4 className="font-semibold text-gray-900 mb-4">Scénarios interactifs</h4>
                 <div className="space-y-4">
                   <div className="bg-gray-50 border rounded-lg p-4">
                     <p className="text-gray-700 mb-4">
@@ -568,27 +568,27 @@ export default function Index() {
                         {
                           id: "ignore",
                           text: "J'attends que ça passe, c'est peut-être temporaire",
-                          feedback: "❌ L'attentisme peut laisser la situation se dégrader. Les signaux sont multiples et préoccupants."
+                          feedback: "Réponse inadaptée : L'attentisme peut laisser la situation se dégrader. Les signaux sont multiples et préoccupants."
                         },
                         {
                           id: "manager",
                           text: "J'en parle immédiatement à son manager pour signaler ses erreurs",
-                          feedback: "⚠️ Approche possible mais qui peut créer de la méfiance. Mieux vaut d'abord essayer le contact direct."
+                          feedback: "Attention : Approche possible mais qui peut créer de la méfiance. Mieux vaut d'abord essayer le contact direct."
                         },
                         {
                           id: "bienveillant",
                           text: "Je l'approche en privé avec bienveillance pour lui proposer d'échanger",
-                          feedback: "✅ Excellente approche ! Vous montrez de l'empathie tout en respectant sa dignité. C'est le premier pas vers l'aide."
+                          feedback: "Correct : Excellente approche ! Vous montrez de l'empathie tout en respectant sa dignité. C'est le premier pas vers l'aide."
                         },
                         {
                           id: "direct",
                           text: "Je lui dis directement qu'il fait des erreurs et qu'il doit se ressaisir",
-                          feedback: "❌ Approche contre-productive qui risque d'augmenter son stress et sa dévalorisation."
+                          feedback: "Inadapté : Approche contre-productive qui risque d'augmenter son stress et sa dévalorisation."
                         },
                         {
                           id: "collectif",
                           text: "J'en parle avec d'autres collègues pour avoir leur avis",
-                          feedback: "❌ Violation de la confidentialité. Cela peut créer des rumeurs et aggraver l'isolement de Thomas."
+                          feedback: "Inadapté : Violation de la confidentialité. Cela peut créer des rumeurs et aggraver l'isolement de Thomas."
                         }
                       ].map((choice) => (
                         <div key={choice.id}>
@@ -673,7 +673,7 @@ export default function Index() {
               )}
 
               <div className="mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                <h4 className="font-medium text-yellow-900 mb-2">⚠️ Limite essentielle :</h4>
+                <h4 className="font-medium text-yellow-900 mb-2">Limite essentielle :</h4>
                 <p className="text-yellow-800">
                   Ne jamais se substituer aux professionnels de santé. Le rôle de chacun est d'accompagner, 
                   pas de diagnostiquer ou soigner.
@@ -802,7 +802,7 @@ export default function Index() {
             </CardHeader>
             <CardContent className="pt-6 space-y-6">
               <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-                <h4 className="font-medium text-amber-900 mb-2">⚠️ Attention au stress secondaire</h4>
+                <h4 className="font-medium text-amber-900 mb-2">Attention au stress secondaire</h4>
                 <p className="text-amber-800 text-sm">
                   L'accompagnant peut lui-même subir du stress en aidant les autres. 
                   Il est essentiel de reconnaître ses limites et de se préserver.
@@ -888,7 +888,7 @@ export default function Index() {
                           ? "bg-green-50 text-green-800 border border-green-200" 
                           : "bg-red-50 text-red-800 border border-red-200"
                       }`}>
-                        {quizAnswers[q.id] === q.correct ? "✅ Correct !" : "❌ Incorrect"}
+                        {quizAnswers[q.id] === q.correct ? "Correct !" : "Incorrect"}
                       </div>
                     )}
                   </div>
