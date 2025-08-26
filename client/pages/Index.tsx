@@ -113,7 +113,7 @@ Module 5 - Formation Fiducial
 💬 COMMUNICATION ADAPTÉE
 À l'entreprise :
 • ✅ "Nous avons des ressources pour t'aider"
-• ✅ "La médecine du travail peut te recevoir"
+�� ✅ "La médecine du travail peut te recevoir"
 • ✅ "Les RH sont là pour t'accompagner"
 • ✅ Information claire sur les dispositifs
 • ✅ Respect de la procédure interne
@@ -179,7 +179,7 @@ Module 5 - Formation Fiducial
 • ✅ Respect du rythme de la personne
 • ✅ Disponibilité continue sans insistance
 
-🔄 PASSATION DU RELAIS SI NÉCESSAIRE
+�� PASSATION DU RELAIS SI NÉCESSAIRE
 • ✅ Evaluation du besoin de transmission aux professionnels
 • ✅ Accord de la personne pour la passation
 • ✅ Transmission des éléments essentiels uniquement
@@ -1743,10 +1743,16 @@ Document confidentiel - Usage interne uniquement
               </div>
 
               <div className="text-center">
-                <Button className="bg-amber-600 hover:bg-amber-700 text-white">
+                <Button
+                  onClick={downloadChecklist}
+                  className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3"
+                >
                   <Download className="h-4 w-4 mr-2" />
                   Télécharger la checklist "Avant-Pendant-Après"
                 </Button>
+                <p className="text-sm text-gray-600 mt-2">
+                  Guide complet avec toutes les étapes d'accompagnement
+                </p>
               </div>
             </CardContent>
           </Card>
