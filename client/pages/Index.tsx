@@ -26,6 +26,14 @@ export default function Index() {
     setShowQuizResults(true);
   };
 
+  const handleMidQuizAnswer = (questionId: number, answer: string) => {
+    setMidQuizAnswers(prev => ({ ...prev, [questionId]: answer }));
+  };
+
+  const submitMidQuiz = () => {
+    setShowMidQuizResults(true);
+  };
+
   const therapeuticApproaches = [
     {
       title: "Thérapies cognitivo-comportementales (TCC)",
@@ -419,7 +427,7 @@ export default function Index() {
                             <div className="text-sm text-gray-600 space-y-1">
                               <div>• <strong>Concentration :</strong> "Je n'arrive plus à me concentrer plus de 10 minutes"</div>
                               <div>• <strong>Mémoire :</strong> Oublie des informations importantes</div>
-                              <div>• <strong>Décisions :</strong> ��vite de prendre des décisions simples</div>
+                              <div>• <strong>Décisions :</strong> Évite de prendre des décisions simples</div>
                             </div>
                           </div>
                         </div>
