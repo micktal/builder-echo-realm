@@ -255,7 +255,7 @@ Module 5 - Formation Fiducial
 • Ton non accusateur et empathique
 • Respecter immédiatement un éventuel refus
 
-👂 ÉTAPE 3 : ��COUTER
+👂 ÉTAPE 3 : ÉCOUTER
 ====================
 • Appliquer l'écoute active (bienveillance, neutralité, non-jugement)
 • Poser des questions ouvertes
@@ -1921,7 +1921,7 @@ RAPPELS ESSENTIELS :
                           Télécharger la checklist complète "Avant-Pendant-Après"
                         </Button>
                         <Button
-                          onClick={downloadChecklist}
+                          onClick={download7StepsGuide}
                           variant="outline"
                           className="border-violet-300 text-violet-700 hover:bg-violet-50"
                         >
