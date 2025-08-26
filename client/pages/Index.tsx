@@ -43,7 +43,7 @@ Module 5 - Formation Fiducial
 📋 AVANT L'ACCOMPAGNEMENT
 ========================
 
-🎯 PRÉPARATION PERSONNELLE
+��� PRÉPARATION PERSONNELLE
 • ✅ J'ai vérifié mon propre état émotionnel
 • ✅ Je me sens disponible et serein(e)
 • ✅ J'ai prévu suffisamment de temps (pas de rush)
@@ -74,7 +74,7 @@ Module 5 - Formation Fiducial
 🌟 PENDANT L'ACCOMPAGNEMENT
 ===========================
 
-🗣️ AMORCE DU DIALOGUE
+🗣��� AMORCE DU DIALOGUE
 • ✅ "J'ai remarqué que tu sembles préoccupé(e), est-ce que ça va ?"
 • ✅ Ton bienveillant et non accusateur
 • ✅ Cadre posé : "Je suis là pour t'écouter si tu en as besoin"
@@ -1833,10 +1833,23 @@ Document confidentiel - Usage interne uniquement
                         <h4 className="font-medium text-violet-900 mb-2">Félicitations !</h4>
                         <p className="text-violet-800">Vous avez terminé le module de formation.</p>
                       </div>
-                      <Button className="bg-violet-600 hover:bg-violet-700 text-white">
-                        <Download className="h-4 w-4 mr-2" />
-                        Télécharger le guide "L'accompagnement en 7 étapes"
-                      </Button>
+                      <div className="flex flex-col space-y-3">
+                        <Button
+                          onClick={downloadChecklist}
+                          className="bg-violet-600 hover:bg-violet-700 text-white"
+                        >
+                          <Download className="h-4 w-4 mr-2" />
+                          Télécharger la checklist complète "Avant-Pendant-Après"
+                        </Button>
+                        <Button
+                          onClick={downloadChecklist}
+                          variant="outline"
+                          className="border-violet-300 text-violet-700 hover:bg-violet-50"
+                        >
+                          <Download className="h-4 w-4 mr-2" />
+                          Télécharger le guide "L'accompagnement en 7 étapes"
+                        </Button>
+                      </div>
                     </div>
                   )}
                 </div>
