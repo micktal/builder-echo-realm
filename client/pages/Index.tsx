@@ -206,17 +206,58 @@ export default function Index() {
                       <span className="font-medium">{approach.title}</span>
                     </AccordionTrigger>
                     <AccordionContent>
-                      <div className="space-y-4 pt-2">
-                        <p className="text-gray-700">{approach.description}</p>
+                      <div className="space-y-6 pt-2">
+                        <p className="text-gray-700 text-base leading-relaxed">{approach.description}</p>
+
+                        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                          <h4 className="font-semibold text-blue-900 mb-3 flex items-center">
+                            <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
+                            Qu'est-ce que c'est ?
+                          </h4>
+                          <p className="text-blue-800 text-sm leading-relaxed">{approach.whatItIs}</p>
+                        </div>
+
+                        <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                          <h4 className="font-semibold text-green-900 mb-3 flex items-center">
+                            <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                            Pourquoi ça marche ?
+                          </h4>
+                          <p className="text-green-800 text-sm leading-relaxed">{approach.whyItWorks}</p>
+                        </div>
+
+                        <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                          <h4 className="font-semibold text-purple-900 mb-3 flex items-center">
+                            <div className="w-2 h-2 bg-purple-500 rounded-full mr-2"></div>
+                            La raison d'être
+                          </h4>
+                          <p className="text-purple-800 text-sm leading-relaxed">{approach.reasoning}</p>
+                        </div>
+
                         <div className="grid md:grid-cols-2 gap-4">
-                          <div>
-                            <h4 className="font-medium text-gray-900 mb-2">Usages :</h4>
-                            <p className="text-sm text-gray-600">{approach.usage}</p>
+                          <div className="bg-white border border-gray-200 rounded-lg p-4">
+                            <h4 className="font-medium text-gray-900 mb-3">📋 Indications :</h4>
+                            <p className="text-sm text-gray-700">{approach.usage}</p>
                           </div>
-                          <div>
-                            <h4 className="font-medium text-gray-900 mb-2">Efficacité :</h4>
-                            <p className="text-sm text-gray-600">{approach.efficacy}</p>
+                          <div className="bg-white border border-gray-200 rounded-lg p-4">
+                            <h4 className="font-medium text-gray-900 mb-3">⏱️ Durée :</h4>
+                            <p className="text-sm text-gray-700">{approach.duration}</p>
                           </div>
+                        </div>
+
+                        <div className="bg-white border border-gray-200 rounded-lg p-4">
+                          <h4 className="font-medium text-gray-900 mb-3">🎯 Techniques principales :</h4>
+                          <div className="flex flex-wrap gap-2">
+                            {approach.techniques.map((technique, idx) => (
+                              <span key={idx} className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-medium">
+                                {technique}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+
+                        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                          <h4 className="font-medium text-amber-900 mb-2">✅ Efficacité prouvée :</h4>
+                          <p className="text-amber-800 text-sm">{approach.efficacy}</p>
                         </div>
                       </div>
                     </AccordionContent>
@@ -233,7 +274,7 @@ export default function Index() {
             <CardHeader className="bg-gradient-to-r from-orange-50 to-red-50">
               <CardTitle className="flex items-center space-x-2">
                 <AlertTriangle className="h-5 w-5 text-orange-600" />
-                <span>Séquence 2 : Repérage et orientation</span>
+                <span>S��quence 2 : Repérage et orientation</span>
               </CardTitle>
               <p className="text-gray-600">
                 Il est essentiel d'identifier les signaux précoces et d'agir avant qu'ils ne s'aggravent.
