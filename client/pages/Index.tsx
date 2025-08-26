@@ -614,6 +614,140 @@ export default function Index() {
           </Card>
         </section>
 
+        {/* Bloc nouveau - Cadre légal et obligations de l'entreprise */}
+        <section>
+          <Card className="border-indigo-200">
+            <CardHeader className="bg-gradient-to-r from-slate-50 to-gray-50">
+              <CardTitle className="flex items-center space-x-2">
+                <Shield className="h-5 w-5 text-slate-600" />
+                <span>Cadre légal et obligations de l'entreprise</span>
+              </CardTitle>
+              <p className="text-gray-600">
+                En France, la gestion du stress et des risques psychosociaux (RPS) ne relève pas seulement d'un choix organisationnel.
+                Elle s'inscrit dans un cadre légal précis qui engage la responsabilité de l'employeur.
+              </p>
+            </CardHeader>
+            <CardContent className="pt-6 space-y-8">
+
+              {/* Bloc 2 - Les obligations clés */}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Les obligations clés</h3>
+                <div className="bg-slate-50 border border-slate-200 rounded-lg p-6">
+                  <div className="space-y-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <p className="text-gray-800">
+                          <strong>Obligation générale de sécurité</strong> (Code du travail, art. L4121-1) :
+                          l'employeur doit protéger la santé physique et mentale des salariés.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <p className="text-gray-800">
+                          <strong>DUERP</strong> (Document Unique d'Évaluation des Risques Professionnels) :
+                          doit intégrer le stress et les RPS au même titre que les autres risques.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <p className="text-gray-800 mb-2"><strong>Conséquences en cas de manquement :</strong></p>
+                        <div className="ml-4 space-y-2 text-sm text-gray-700">
+                          <div className="flex items-center space-x-2">
+                            <div className="w-1.5 h-1.5 bg-red-400 rounded-full"></div>
+                            <span>Accident du travail reconnu.</span>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <div className="w-1.5 h-1.5 bg-red-400 rounded-full"></div>
+                            <span>Maladie professionnelle déclarée.</span>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <div className="w-1.5 h-1.5 bg-red-400 rounded-full"></div>
+                            <span>Responsabilité civile et pénale de l'entreprise.</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bloc 3 - Schéma de responsabilité */}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Schéma de responsabilité</h3>
+                <p className="text-gray-600 mb-6">
+                  La prévention des RPS repose sur une chaîne claire de responsabilités.
+                </p>
+
+                <div className="bg-white border border-gray-200 rounded-lg p-8">
+                  <div className="flex flex-col items-center space-y-6">
+
+                    {/* Employeur */}
+                    <div className="text-center">
+                      <div className="bg-red-100 border-2 border-red-300 rounded-lg p-6 max-w-sm">
+                        <div className="flex items-center justify-center mb-3">
+                          <Users className="h-8 w-8 text-red-600" />
+                        </div>
+                        <h4 className="font-semibold text-red-900 mb-2">Employeur</h4>
+                        <p className="text-sm text-red-800">Obligation légale de sécurité</p>
+                      </div>
+                    </div>
+
+                    {/* Flèche vers le bas */}
+                    <div className="flex flex-col items-center">
+                      <div className="w-0.5 h-8 bg-gray-400"></div>
+                      <div className="w-0 h-0 border-l-4 border-r-4 border-t-8 border-l-transparent border-r-transparent border-t-gray-400"></div>
+                    </div>
+
+                    {/* Managers */}
+                    <div className="text-center">
+                      <div className="bg-orange-100 border-2 border-orange-300 rounded-lg p-6 max-w-sm">
+                        <div className="flex items-center justify-center mb-3">
+                          <Users className="h-8 w-8 text-orange-600" />
+                        </div>
+                        <h4 className="font-semibold text-orange-900 mb-2">Managers</h4>
+                        <p className="text-sm text-orange-800">Mettre en œuvre les mesures, repérer et alerter</p>
+                      </div>
+                    </div>
+
+                    {/* Flèche vers le bas */}
+                    <div className="flex flex-col items-center">
+                      <div className="w-0.5 h-8 bg-gray-400"></div>
+                      <div className="w-0 h-0 border-l-4 border-r-4 border-t-8 border-l-transparent border-r-transparent border-t-gray-400"></div>
+                    </div>
+
+                    {/* Collaborateurs */}
+                    <div className="text-center">
+                      <div className="bg-blue-100 border-2 border-blue-300 rounded-lg p-6 max-w-sm">
+                        <div className="flex items-center justify-center mb-3">
+                          <Users className="h-8 w-8 text-blue-600" />
+                        </div>
+                        <h4 className="font-semibold text-blue-900 mb-2">Collaborateurs</h4>
+                        <p className="text-sm text-blue-800">Appliquer les règles, signaler les situations à risque</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              {/* Bloc 4 - Conclusion pédagogique */}
+              <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-amber-900 mb-3">Conclusion</h3>
+                <p className="text-amber-800 leading-relaxed">
+                  L'obligation de prévention du stress et des RPS ne peut être déléguée ni ignorée.
+                  Chaque acteur de l'entreprise a un rôle, mais c'est l'employeur qui porte la responsabilité finale devant la loi.
+                </p>
+              </div>
+
+            </CardContent>
+          </Card>
+        </section>
+
         {/* Bloc 5 - Séquence 3: Rôles et limites */}
         <section>
           <Card className="border-indigo-200">
