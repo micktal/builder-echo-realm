@@ -458,7 +458,7 @@ export default function Index() {
                             <h5 className="font-medium text-gray-900 mb-2">Signaux d'alarme majeurs</h5>
                             <div className="text-sm text-gray-600 space-y-1 bg-red-50 p-2 rounded">
                               <div>⚠️ <strong>Propos suicidaires :</strong> "La vie ne vaut plus la peine"</div>
-                              <div>��️ <strong>Désinvestissement total :</strong> "Plus rien n'a d'importance"</div>
+                              <div>⚠️ <strong>Désinvestissement total :</strong> "Plus rien n'a d'importance"</div>
                               <div>⚠️ <strong>Idées de fuite :</strong> "Je vais tout plaquer"</div>
                               <div className="text-red-600 font-medium mt-2">→ Orientation urgente nécessaire</div>
                             </div>
@@ -552,25 +552,49 @@ export default function Index() {
                 </div>
               </div>
 
+              {/* Scénarios interactifs enrichis */}
               <div>
-                <h4 className="font-medium text-gray-900 mb-4">Scénario interactif :</h4>
+                <h4 className="font-semibold text-gray-900 mb-4">🎮 Scénarios interactifs</h4>
                 <div className="space-y-4">
                   <div className="bg-gray-50 border rounded-lg p-4">
                     <p className="text-gray-700 mb-4">
-                      Un collègue semble épuisé et a fait plusieurs erreurs récemment. 
-                      Quelle approche choisissez-vous ?
+                      <strong>Situation :</strong> Votre collègue Thomas, habituellement jovial, est devenu silencieux.
+                      Il évite les pauses café, semble fatigué et a fait 2 erreurs importantes cette semaine.
+                      Hier, il a dit : "De toute façon, personne ne remarque ce que je fais."
                     </p>
+                    <p className="text-gray-600 mb-4 text-sm">Que faites-vous ?</p>
                     <div className="grid gap-2">
                       {[
-                        { id: "ignore", text: "Ignorer, ce n'est pas mon problème", feedback: "❌ Réponse inadaptée. L'indifférence peut aggraver la situation." },
-                        { id: "direct", text: "Lui dire directement qu'il fait trop d'erreurs", feedback: "❌ Approche trop directe qui peut créer de la défensive." },
-                        { id: "bienveillant", text: "L'approcher avec bienveillance et proposer d'échanger", feedback: "✅ Excellente approche ! L'empathie et l'ouverture au dialogue sont essentielles." },
-                        { id: "manager", text: "En parler immédiatement au manager", feedback: "⚠️ Peut être approprié, mais mieux vaut d'abord essayer le contact direct." }
+                        {
+                          id: "ignore",
+                          text: "J'attends que ça passe, c'est peut-être temporaire",
+                          feedback: "❌ L'attentisme peut laisser la situation se dégrader. Les signaux sont multiples et préoccupants."
+                        },
+                        {
+                          id: "manager",
+                          text: "J'en parle immédiatement à son manager pour signaler ses erreurs",
+                          feedback: "⚠️ Approche possible mais qui peut créer de la méfiance. Mieux vaut d'abord essayer le contact direct."
+                        },
+                        {
+                          id: "bienveillant",
+                          text: "Je l'approche en privé avec bienveillance pour lui proposer d'échanger",
+                          feedback: "✅ Excellente approche ! Vous montrez de l'empathie tout en respectant sa dignité. C'est le premier pas vers l'aide."
+                        },
+                        {
+                          id: "direct",
+                          text: "Je lui dis directement qu'il fait des erreurs et qu'il doit se ressaisir",
+                          feedback: "❌ Approche contre-productive qui risque d'augmenter son stress et sa dévalorisation."
+                        },
+                        {
+                          id: "collectif",
+                          text: "J'en parle avec d'autres collègues pour avoir leur avis",
+                          feedback: "❌ Violation de la confidentialité. Cela peut créer des rumeurs et aggraver l'isolement de Thomas."
+                        }
                       ].map((choice) => (
                         <div key={choice.id}>
                           <Button
                             variant={currentScenario === choice.id ? "default" : "outline"}
-                            className="w-full text-left justify-start"
+                            className="w-full text-left justify-start text-sm"
                             onClick={() => handleScenarioChoice(choice.id)}
                           >
                             {choice.text}
