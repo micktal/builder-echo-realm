@@ -62,7 +62,7 @@ Module 5 - Formation Fiducial
 • ✅ Je respecterai la confidentialité absolue
 • ✅ Je ne forcerai pas la personne à parler
 • ✅ Je demanderai l'autorisation avant tout signalement
-• ✅ Je ne poserai pas de questions trop personnelles
+��� ✅ Je ne poserai pas de questions trop personnelles
 • ✅ Je respecterai le rythme de la personne
 
 🔍 OBSERVATION PRÉALABLE
@@ -99,7 +99,7 @@ Module 5 - Formation Fiducial
 • ✅ Changements d'apparence, négligence inhabituelle
 • ✅ Isolement social, évitement des collègues
 • ✅ Erreurs inhabituelles, baisse de performance
-• ��� Irritabilité, réactions disproportionnées
+• ✅ Irritabilité, réactions disproportionnées
 • ✅ Expressions de dévalorisation
 • ✅ Propos inquiétants ("ça ne sert à rien", "personne ne remarque")
 
@@ -131,7 +131,7 @@ Module 5 - Formation Fiducial
 • ✅ Réseau HSE (prévention des risques)
 • ✅ Formation continue (gestion du stress)
 • ✅ Médecin généraliste (suivi médical)
-• ��� Psychologue (accompagnement spécialisé)
+• ✅ Psychologue (accompagnement spécialisé)
 • ✅ Associations spécialisées selon le besoin
 
 📝 APRÈS L'ACCOMPAGNEMENT
@@ -201,7 +201,7 @@ EXTERNES :
 • Associations d'aide locales
 • Services sociaux municipaux
 
-���️ URGENCES :
+⚠️ URGENCES :
 • SAMU : 15
 • Pompiers : 18
 • Police/Gendarmerie : 17
@@ -587,7 +587,7 @@ RAPPELS ESSENTIELS :
                       <div>• <strong>Conflits relationnels :</strong> Harcèlement, tensions équipe</div>
                       <div>• <strong>Insécurité professionnelle :</strong> Restructuration, licenciements</div>
                       <div>• <strong>Manque de reconnaissance :</strong> Efforts non valorisés</div>
-                      <div>• <strong>Évolutions n��gatives :</strong> Rétrogradation, mutation forcée</div>
+                      <div>• <strong>��volutions n��gatives :</strong> Rétrogradation, mutation forcée</div>
                       <div>• <strong>Inadéquation poste :</strong> Compétences vs exigences</div>
                     </div>
                   </div>
@@ -942,7 +942,7 @@ RAPPELS ESSENTIELS :
                       <div>• <strong>Isolement professionnel :</strong> Manque d'interactions spontanées</div>
                       <div>• <strong>Frontières floues :</strong> Vie privée / vie professionnelle</div>
                       <div>• <strong>Hyperconnexion :</strong> Disponibilit�� permanente attendue</div>
-                      <div>• <strong>Difficult��s techniques :</strong> Problèmes de connexion, équipement</div>
+                      <div>• <strong>Difficultés techniques :</strong> Problèmes de connexion, équipement</div>
                       <div>• <strong>Manque de reconnaissance :</strong> Travail moins visible</div>
                       <div>• <strong>Surcharge cognitive :</strong> Multiplication des outils numériques</div>
                     </div>
@@ -1282,7 +1282,7 @@ RAPPELS ESSENTIELS :
               <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
                 <h3 className="text-lg font-semibold text-amber-900 mb-3">Conclusion</h3>
                 <p className="text-amber-800 leading-relaxed">
-                  L'obligation de prévention du stress et des RPS ne peut être déléguée ni ignor��e.
+                  L'obligation de prévention du stress et des RPS ne peut être déléguée ni ignorée.
                   Chaque acteur de l'entreprise a un rôle, mais c'est l'employeur qui porte la responsabilité finale devant la loi.
                 </p>
               </div>
@@ -2174,8 +2174,8 @@ RAPPELS ESSENTIELS :
                   ) : (
                     <div className="space-y-4">
                       <div className="bg-violet-50 border border-violet-200 rounded-lg p-4">
-                        <h4 className="font-medium text-violet-900 mb-2">Félicitations !</h4>
-                        <p className="text-violet-800">Vous avez terminé le module de formation.</p>
+                        <h4 className="font-medium text-violet-900 mb-2">Compétences validées !</h4>
+                        <p className="text-violet-800">Vous maîtrisez maintenant l'accompagnement et la gestion du stress en entreprise.</p>
                       </div>
                       <div className="flex flex-col space-y-3">
                         <Button
