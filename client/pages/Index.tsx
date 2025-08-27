@@ -830,7 +830,7 @@ RAPPELS ESSENTIELS :
                   </div>
                   <div className="space-y-3">
                     <div className="bg-white rounded p-3">
-                      <p className="text-sm text-blue-800 italic">"Ce n'est pas ton style habituel, y a-t-il quelque chose qui te préoccupe ?"</p>
+                      <p className="text-sm text-blue-800 italic">"Ce n'est pas ton style habituel, y a-t-il quelque chose qui te pr��occupe ?"</p>
                     </div>
                     <div className="bg-white rounded p-3">
                       <p className="text-sm text-blue-800 italic">"J'ai l'impression que tu traverses une période difficile, comment puis-je t'aider ?"</p>
@@ -2096,7 +2096,7 @@ RAPPELS ESSENTIELS :
             <CardHeader className="bg-gradient-to-r from-violet-50 to-purple-50">
               <CardTitle className="flex items-center space-x-2">
                 <Award className="h-5 w-5 text-violet-600" />
-                <span>Évaluation finale</span>
+                <span>Validation des compétences</span>
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6">
