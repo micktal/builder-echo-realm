@@ -161,7 +161,7 @@ Module 5 - Formation Fiducial
 🧠 AUTO-ÉVALUATION DE L'ACCOMPAGNANT
 • ✅ Comment je me sens après cet échange ?
 • ✅ Ai-je respecté mes limites de rôle ?
-• ��� Ai-je été bienveillant(e) et professionnel(le) ?
+• ✅ Ai-je été bienveillant(e) et professionnel(le) ?
 • ✅ Quels points améliorer pour la prochaine fois ?
 • ✅ Ai-je besoin de soutien ou de supervision ?
 
@@ -957,7 +957,7 @@ RAPPELS ESSENTIELS :
                       <div>• <strong>Présence excessive :</strong> "Toujours en ligne" pour prouver qu'il travaille</div>
                       <div>• <strong>Difficultés de communication :</strong> Malentendus fréquents en visio</div>
                       <div>• <strong>Procrastination numérique :</strong> Reports constants des tâches</div>
-                      <div>��� <strong>Fatigue des écrans :</strong> Maux de tête, troubles visuels</div>
+                      <div>• <strong>Fatigue des écrans :</strong> Maux de tête, troubles visuels</div>
                       <div>• <strong>Désorganisation :</strong> Perte de routine de travail</div>
                     </div>
                   </div>
@@ -2047,7 +2047,7 @@ RAPPELS ESSENTIELS :
             <CardHeader className="bg-gradient-to-r from-amber-50 to-orange-50">
               <CardTitle className="flex items-center space-x-2">
                 <Shield className="h-5 w-5 text-amber-600" />
-                <span>Séquence 6 : Se protéger et passer le relais</span>
+                <span>Se protéger et transmettre efficacement</span>
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6 space-y-6">
