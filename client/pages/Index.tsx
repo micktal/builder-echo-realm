@@ -588,7 +588,7 @@ RAPPELS ESSENTIELS :
                       <div>• <strong>Insécurité professionnelle :</strong> Restructuration, licenciements</div>
                       <div>• <strong>Manque de reconnaissance :</strong> Efforts non valorisés</div>
                       <div>• <strong>Évolutions n��gatives :</strong> Rétrogradation, mutation forcée</div>
-                      <div>�� <strong>Inadéquation poste :</strong> Compétences vs exigences</div>
+                      <div>• <strong>Inadéquation poste :</strong> Compétences vs exigences</div>
                     </div>
                   </div>
 
@@ -2104,20 +2104,32 @@ RAPPELS ESSENTIELS :
                 {[
                   {
                     id: 1,
-                    question: "Le rôle d'un manager est de diagnostiquer un stress post-traumatique.",
+                    question: "Le burn-out digital est uniquement lié à l'utilisation excessive des réseaux sociaux.",
                     type: "boolean",
                     correct: "false"
                   },
                   {
-                    id: 2, 
-                    question: "L'écoute active repose sur la neutralité et le non-jugement.",
+                    id: 2,
+                    question: "L'accompagnement doit être adapté selon les générations (Z, Millennials, Baby-boomers).",
                     type: "boolean",
                     correct: "true"
                   },
                   {
                     id: 3,
-                    question: "Le relais vers un professionnel est une limite essentielle du rôle d'un collègue.",
-                    type: "boolean", 
+                    question: "La confidentialité absolue est un principe fondamental de l'accompagnement.",
+                    type: "boolean",
+                    correct: "true"
+                  },
+                  {
+                    id: 4,
+                    question: "L'EMDR est recommandée par l'OMS pour le traitement du stress post-traumatique.",
+                    type: "boolean",
+                    correct: "true"
+                  },
+                  {
+                    id: 5,
+                    question: "L'employeur a une obligation légale de protéger la santé mentale des salariés.",
+                    type: "boolean",
                     correct: "true"
                   }
                 ].map((q) => (
