@@ -40,7 +40,7 @@ CHECKLIST D'ACCOMPAGNEMENT - GESTION DU STRESS
 ==============================================
 Module 5 - Formation Fiducial
 
-��� AVANT L'ACCOMPAGNEMENT
+📋 AVANT L'ACCOMPAGNEMENT
 ========================
 
 🎯 PRÉPARATION PERSONNELLE
@@ -483,7 +483,7 @@ RAPPELS ESSENTIELS :
         <section>
           <Card className="border-indigo-200">
             <CardHeader className="bg-gradient-to-r from-indigo-50 to-blue-50">
-              <CardTitle className="text-xl">Séquence 1 : Les approches thérapeutiques</CardTitle>
+              <CardTitle className="text-xl">Les approches thérapeutiques validées</CardTitle>
               <p className="text-gray-600">
                 Plusieurs approches validées existent pour accompagner la gestion du stress :
               </p>
@@ -587,7 +587,7 @@ RAPPELS ESSENTIELS :
                       <div>• <strong>Conflits relationnels :</strong> Harcèlement, tensions équipe</div>
                       <div>• <strong>Insécurité professionnelle :</strong> Restructuration, licenciements</div>
                       <div>• <strong>Manque de reconnaissance :</strong> Efforts non valorisés</div>
-                      <div>• <strong>Évolutions négatives :</strong> Rétrogradation, mutation forcée</div>
+                      <div>• <strong>Évolutions n��gatives :</strong> Rétrogradation, mutation forcée</div>
                       <div>• <strong>Inadéquation poste :</strong> Compétences vs exigences</div>
                     </div>
                   </div>
@@ -1727,7 +1727,7 @@ RAPPELS ESSENTIELS :
                             <div>• Pose des questions trop personnelles</div>
                             <div>• "Raconte-moi tout en détail"</div>
                             <div>• En parle aux RH sans autorisation</div>
-                            <div>• Évoque la situation en r��union équipe</div>
+                            <div>• Évoque la situation en réunion équipe</div>
                             <div>• Donne des conseils personnels non sollicités</div>
                           </div>
                         </div>
@@ -1835,7 +1835,7 @@ RAPPELS ESSENTIELS :
               <div className="bg-teal-50 border border-teal-200 rounded-lg p-6 text-center">
                 <h4 className="font-semibold text-teal-900 mb-3">Message clé</h4>
                 <p className="text-teal-800 text-lg italic">
-                  "L'accompagnement éthique repose sur le respect, la confidentialité et la non-intrusion.
+                  "L'accompagnement éthique repose sur le respect, la confidentialit�� et la non-intrusion.
                   C'est en respectant ces principes que nous créons un environnement de confiance propice à l'aide."
                 </p>
               </div>
