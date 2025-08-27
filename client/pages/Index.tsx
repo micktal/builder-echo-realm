@@ -776,7 +776,7 @@ RAPPELS ESSENTIELS :
                     {
                       id: "cas2",
                       title: "Cas n°2 : Marc, 45 ans, technicien",
-                      situation: "Après un accident de travail sans gravité, Marc évite certaines tâches, a des sueurs, dit : 'Je n'ai plus confiance, et si ça recommence ?' Il boit plus qu'avant.",
+                      situation: "Apr��s un accident de travail sans gravité, Marc évite certaines tâches, a des sueurs, dit : 'Je n'ai plus confiance, et si ça recommence ?' Il boit plus qu'avant.",
                       signaux: ["Évitement", "Symptômes anxieux", "Perte de confiance", "Consommation d'alcool"],
                       action: "Orientation vers médecine du travail et éventuellement vers un spécialiste trauma"
                     },
@@ -900,6 +900,259 @@ RAPPELS ESSENTIELS :
                   </div>
                 </div>
               </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* Bloc nouveau - Cas spécifiques modernes */}
+        <section>
+          <Card className="border-purple-200">
+            <CardHeader className="bg-gradient-to-r from-purple-50 to-indigo-50">
+              <CardTitle className="flex items-center space-x-2">
+                <Brain className="h-5 w-5 text-purple-600" />
+                <span>Cas spécifiques modernes</span>
+              </CardTitle>
+              <p className="text-gray-600">
+                Adapter l'accompagnement aux nouvelles réalités du travail contemporain et aux défis générationnels.
+              </p>
+            </CardHeader>
+            <CardContent className="pt-6 space-y-8">
+
+              {/* Introduction */}
+              <div className="bg-purple-50 border border-purple-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-purple-900 mb-3">Pourquoi ces nouveaux défis ?</h3>
+                <p className="text-purple-800 leading-relaxed">
+                  L'évolution du monde professionnel a créé de nouveaux facteurs de stress spécifiques.
+                  Il est essentiel d'adapter notre approche d'accompagnement à ces réalités contemporaines
+                  pour une intervention efficace et pertinente.
+                </p>
+              </div>
+
+              {/* Stress du télétravail */}
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">1. Stress du télétravail et management à distance</h3>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                    <h4 className="font-semibold text-blue-900 mb-4 flex items-center">
+                      <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
+                      Nouveaux facteurs de stress
+                    </h4>
+                    <div className="space-y-3 text-sm text-blue-800">
+                      <div>• <strong>Isolement professionnel :</strong> Manque d'interactions spontanées</div>
+                      <div>• <strong>Frontières floues :</strong> Vie privée / vie professionnelle</div>
+                      <div>• <strong>Hyperconnexion :</strong> Disponibilit�� permanente attendue</div>
+                      <div>• <strong>Difficultés techniques :</strong> Problèmes de connexion, équipement</div>
+                      <div>• <strong>Manque de reconnaissance :</strong> Travail moins visible</div>
+                      <div>• <strong>Surcharge cognitive :</strong> Multiplication des outils numériques</div>
+                    </div>
+                  </div>
+
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-6">
+                    <h4 className="font-semibold text-green-900 mb-4 flex items-center">
+                      <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                      Signaux spécifiques à repérer
+                    </h4>
+                    <div className="space-y-3 text-sm text-green-800">
+                      <div>• <strong>Présence excessive :</strong> "Toujours en ligne" pour prouver qu'il travaille</div>
+                      <div>• <strong>Difficultés de communication :</strong> Malentendus fréquents en visio</div>
+                      <div>• <strong>Procrastination numérique :</strong> Reports constants des tâches</div>
+                      <div>• <strong>Fatigue des écrans :</strong> Maux de tête, troubles visuels</div>
+                      <div>• <strong>Désorganisation :</strong> Perte de routine de travail</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-white border border-gray-200 rounded-lg p-5">
+                  <h4 className="font-medium text-gray-900 mb-3">Phrases d'approche adaptées :</h4>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm">
+                    <div className="space-y-2">
+                      <div className="bg-blue-50 p-3 rounded italic text-blue-800">
+                        "Comment ça se passe pour toi, ce télétravail ?"
+                      </div>
+                      <div className="bg-blue-50 p-3 rounded italic text-blue-800">
+                        "Tu arrives à déconnecter le soir ?"
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="bg-blue-50 p-3 rounded italic text-blue-800">
+                        "As-tu l'impression d'être bien accompagné(e) à distance ?"
+                      </div>
+                      <div className="bg-blue-50 p-3 rounded italic text-blue-800">
+                        "Comment tu gères l'isolement ?"
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Burn-out digital */}
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">2. Burn-out digital et hyperconnexion</h3>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-red-50 border border-red-200 rounded-lg p-6">
+                    <h4 className="font-semibold text-red-900 mb-4 flex items-center">
+                      <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
+                      Manifestations du burn-out digital
+                    </h4>
+                    <div className="space-y-3 text-sm text-red-800">
+                      <div>• <strong>Épuisement des notifications :</strong> Stress permanent des alertes</div>
+                      <div>• <strong>FOMO professionnel :</strong> Peur de rater une information importante</div>
+                      <div>• <strong>Multitâche forcé :</strong> Jonglage constant entre applications</div>
+                      <div>• <strong>Infobésité :</strong> Surcharge d'informations à traiter</div>
+                      <div>• <strong>Nomophobie :</strong> Angoisse d'être séparé de son smartphone</div>
+                    </div>
+                  </div>
+
+                  <div className="bg-orange-50 border border-orange-200 rounded-lg p-6">
+                    <h4 className="font-semibold text-orange-900 mb-4 flex items-center">
+                      <div className="w-3 h-3 bg-orange-500 rounded-full mr-2"></div>
+                      Signaux comportementaux
+                    </h4>
+                    <div className="space-y-3 text-sm text-orange-800">
+                      <div>• Vérification compulsive des emails/messages</div>
+                      <div>• Réponses immédiates attendues et données</div>
+                      <div>• Difficultés de concentration sur une tâche unique</div>
+                      <div>• Agacement quand la technologie ne fonctionne pas</div>
+                      <div>• Travail pendant les temps de pause/congés</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-white border border-gray-200 rounded-lg p-5">
+                  <h4 className="font-medium text-gray-900 mb-3">Solutions d'accompagnement :</h4>
+                  <div className="space-y-2 text-sm text-gray-700">
+                    <div className="flex items-start space-x-2">
+                      <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                      <span>Encourager la définition de plages de déconnexion</span>
+                    </div>
+                    <div className="flex items-start space-x-2">
+                      <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                      <span>Proposer des techniques de gestion des notifications</span>
+                    </div>
+                    <div className="flex items-start space-x-2">
+                      <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                      <span>Orienter vers des formations sur l'organisation numérique</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Stress générationnel */}
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">3. Stress générationnel et différences intergénérationnelles</h3>
+
+                <div className="grid md:grid-cols-3 gap-6">
+
+                  {/* Génération Z */}
+                  <div className="bg-cyan-50 border border-cyan-200 rounded-lg p-5">
+                    <h4 className="font-semibold text-cyan-900 mb-3 flex items-center">
+                      <div className="w-3 h-3 bg-cyan-500 rounded-full mr-2"></div>
+                      Génération Z (nés après 1995)
+                    </h4>
+                    <div className="space-y-3 text-sm text-cyan-800">
+                      <div><strong>Attentes :</strong></div>
+                      <div>• Équilibre vie pro/perso immédiat</div>
+                      <div>• Sens et impact du travail</div>
+                      <div>• Feedback fréquent et instantané</div>
+                      <div>• Flexibilité maximale</div>
+
+                      <div className="pt-2"><strong>Sources de stress :</strong></div>
+                      <div>• Pression de performance constante</div>
+                      <div>• Comparaison sociale (réseaux sociaux)</div>
+                      <div>• Incertitude économique</div>
+                    </div>
+                  </div>
+
+                  {/* Millennials */}
+                  <div className="bg-teal-50 border border-teal-200 rounded-lg p-5">
+                    <h4 className="font-semibold text-teal-900 mb-3 flex items-center">
+                      <div className="w-3 h-3 bg-teal-500 rounded-full mr-2"></div>
+                      Millennials (1980-1995)
+                    </h4>
+                    <div className="space-y-3 text-sm text-teal-800">
+                      <div><strong>Attentes :</strong></div>
+                      <div>• Évolution de carrière rapide</div>
+                      <div>• Reconnaissance et autonomie</div>
+                      <div>• Intégration technologique</div>
+                      <div>• Développement personnel</div>
+
+                      <div className="pt-2"><strong>Sources de stress :</strong></div>
+                      <div>• Conciliation famille/carrière</div>
+                      <div>• Pression financière (logement)</div>
+                      <div>• Syndrome de l'imposteur</div>
+                    </div>
+                  </div>
+
+                  {/* Baby-boomers */}
+                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
+                    <h4 className="font-semibold text-amber-900 mb-3 flex items-center">
+                      <div className="w-3 h-3 bg-amber-500 rounded-full mr-2"></div>
+                      Baby-boomers (1946-1964)
+                    </h4>
+                    <div className="space-y-3 text-sm text-amber-800">
+                      <div><strong>Attentes :</strong></div>
+                      <div>• Stabilité et sécurité</div>
+                      <div>• Respect de l'expérience</div>
+                      <div>• Communication directe</div>
+                      <div>• Transmission du savoir</div>
+
+                      <div className="pt-2"><strong>Sources de stress :</strong></div>
+                      <div>• Adaptation technologique</div>
+                      <div>• Changements organisationnels</div>
+                      <div>• Préparation de la retraite</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-white border border-gray-200 rounded-lg p-5">
+                  <h4 className="font-medium text-gray-900 mb-4">Stratégies d'accompagnement intergénérationnel :</h4>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h5 className="font-medium text-green-700 mb-2">Approches adaptées :</h5>
+                      <div className="space-y-2 text-sm text-green-800">
+                        <div>• <strong>Gen Z :</strong> Communication digitale, objectifs court terme</div>
+                        <div>• <strong>Millennials :</strong> Coaching personnalisé, défis stimulants</div>
+                        <div>• <strong>Boomers :</strong> Dialogue en face-à-face, valorisation de l'expertise</div>
+                      </div>
+                    </div>
+                    <div>
+                      <h5 className="font-medium text-blue-700 mb-2">Points de vigilance :</h5>
+                      <div className="space-y-2 text-sm text-blue-800">
+                        <div>• Éviter les stéréotypes générationnels</div>
+                        <div>• Adapter le rythme de communication</div>
+                        <div>• Respecter les préférences individuelles</div>
+                        <div>• Favoriser l'entraide intergénérationnelle</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Conclusion */}
+              <div className="bg-purple-50 border border-purple-200 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-purple-900 mb-3">Points clés à retenir</h3>
+                <div className="space-y-2 text-purple-800">
+                  <div className="flex items-start space-x-2">
+                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></div>
+                    <span>Les nouveaux modes de travail créent des stress spécifiques nécessitant une adaptation de l'accompagnement</span>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></div>
+                    <span>Chaque génération a ses propres codes et sources de stress qu'il faut comprendre</span>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></div>
+                    <span>L'empathie et l'adaptation sont essentielles pour un accompagnement efficace</span>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-1.5 flex-shrink-0"></div>
+                    <span>Les ressources d'aide doivent évoluer avec ces nouvelles réalités</span>
+                  </div>
+                </div>
+              </div>
+
             </CardContent>
           </Card>
         </section>
