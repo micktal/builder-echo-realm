@@ -1596,7 +1596,7 @@ RAPPELS ESSENTIELS :
             <CardHeader className="bg-gradient-to-r from-teal-50 to-emerald-50">
               <CardTitle className="flex items-center space-x-2">
                 <Shield className="h-5 w-5 text-teal-600" />
-                <span>Éthique et confidentialité</span>
+                <span>Éthique et bonnes pratiques</span>
               </CardTitle>
               <p className="text-gray-600">
                 Savoir accompagner sans violer la vie privée : respecter les limites et maintenir la confidentialité.
