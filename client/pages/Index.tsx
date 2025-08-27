@@ -161,7 +161,7 @@ Module 5 - Formation Fiducial
 🧠 AUTO-ÉVALUATION DE L'ACCOMPAGNANT
 • ✅ Comment je me sens après cet échange ?
 • ✅ Ai-je respecté mes limites de rôle ?
-• ✅ Ai-je été bienveillant(e) et professionnel(le) ?
+• ��� Ai-je été bienveillant(e) et professionnel(le) ?
 • ✅ Quels points améliorer pour la prochaine fois ?
 • ✅ Ai-je besoin de soutien ou de supervision ?
 
@@ -957,7 +957,7 @@ RAPPELS ESSENTIELS :
                       <div>• <strong>Présence excessive :</strong> "Toujours en ligne" pour prouver qu'il travaille</div>
                       <div>• <strong>Difficultés de communication :</strong> Malentendus fréquents en visio</div>
                       <div>• <strong>Procrastination numérique :</strong> Reports constants des tâches</div>
-                      <div>• <strong>Fatigue des écrans :</strong> Maux de tête, troubles visuels</div>
+                      <div>��� <strong>Fatigue des écrans :</strong> Maux de tête, troubles visuels</div>
                       <div>• <strong>Désorganisation :</strong> Perte de routine de travail</div>
                     </div>
                   </div>
@@ -1919,7 +1919,7 @@ RAPPELS ESSENTIELS :
             <CardHeader className="bg-gradient-to-r from-green-50 to-teal-50">
               <CardTitle className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 text-green-600" />
-                <span>Séquences 4 et 5 : Ressources et Communication d'aide</span>
+                <span>Ressources et techniques de communication</span>
               </CardTitle>
               <p className="text-gray-600">
                 Identifier les ressources disponibles et maîtriser les techniques de communication pour un accompagnement efficace.
