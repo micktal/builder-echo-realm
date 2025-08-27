@@ -40,7 +40,7 @@ CHECKLIST D'ACCOMPAGNEMENT - GESTION DU STRESS
 ==============================================
 Module 5 - Formation Fiducial
 
-📋 AVANT L'ACCOMPAGNEMENT
+��� AVANT L'ACCOMPAGNEMENT
 ========================
 
 🎯 PRÉPARATION PERSONNELLE
@@ -58,7 +58,7 @@ Module 5 - Formation Fiducial
 • ✅ Je sais différencier urgence/non-urgence
 • ✅ J'ai en tête les coordonnées des professionnels (médecine du travail, RH)
 
-⚖��� RAPPEL CADRE LÉGAL ET ÉTHIQUE
+⚖️ RAPPEL CADRE LÉGAL ET ÉTHIQUE
 • ✅ Je respecterai la confidentialité absolue
 • ✅ Je ne forcerai pas la personne à parler
 • ✅ Je demanderai l'autorisation avant tout signalement
@@ -455,7 +455,7 @@ RAPPELS ESSENTIELS :
             <CardHeader className="bg-indigo-50">
               <CardTitle className="flex items-center space-x-2">
                 <Target className="h-5 w-5 text-indigo-600" />
-                <span>Objectifs pédagogiques</span>
+                <span>Objectifs de la formation</span>
               </CardTitle>
             </CardHeader>
             <CardContent className="pt-6">
@@ -1727,7 +1727,7 @@ RAPPELS ESSENTIELS :
                             <div>• Pose des questions trop personnelles</div>
                             <div>• "Raconte-moi tout en détail"</div>
                             <div>• En parle aux RH sans autorisation</div>
-                            <div>• Évoque la situation en réunion équipe</div>
+                            <div>• Évoque la situation en r��union équipe</div>
                             <div>• Donne des conseils personnels non sollicités</div>
                           </div>
                         </div>
