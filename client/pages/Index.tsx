@@ -62,14 +62,14 @@ Module 5 - Formation Fiducial
 • ✅ Je respecterai la confidentialité absolue
 • ✅ Je ne forcerai pas la personne à parler
 • ✅ Je demanderai l'autorisation avant tout signalement
-��� ✅ Je ne poserai pas de questions trop personnelles
+• ✅ Je ne poserai pas de questions trop personnelles
 • ✅ Je respecterai le rythme de la personne
 
 🔍 OBSERVATION PRÉALABLE
 • ✅ J'ai repéré des changements de comportement
 • ✅ J'ai noté la fréquence et l'intensité des signaux
 • ✅ J'ai observé sans juger ni interpréter
-• ✅ Je distingue les faits de mes impressions
+��� ✅ Je distingue les faits de mes impressions
 
 🌟 PENDANT L'ACCOMPAGNEMENT
 ===========================
@@ -587,7 +587,7 @@ RAPPELS ESSENTIELS :
                       <div>• <strong>Conflits relationnels :</strong> Harcèlement, tensions équipe</div>
                       <div>• <strong>Insécurité professionnelle :</strong> Restructuration, licenciements</div>
                       <div>• <strong>Manque de reconnaissance :</strong> Efforts non valorisés</div>
-                      <div>• <strong>��volutions n��gatives :</strong> Rétrogradation, mutation forcée</div>
+                      <div>• <strong>Évolutions n��gatives :</strong> Rétrogradation, mutation forcée</div>
                       <div>• <strong>Inadéquation poste :</strong> Compétences vs exigences</div>
                     </div>
                   </div>
@@ -2208,7 +2208,7 @@ RAPPELS ESSENTIELS :
       <footer className="bg-white border-t border-indigo-200 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600">
-            <p>© 2024 Fiducial - Formation continue | Module 5 : Gestion du stress</p>
+            <p>© 2024 Fiducial - Formation continue | Accompagnement et gestion du stress en entreprise</p>
           </div>
         </div>
       </footer>
