@@ -588,7 +588,7 @@ RAPPELS ESSENTIELS :
                       <div>• <strong>Insécurité professionnelle :</strong> Restructuration, licenciements</div>
                       <div>• <strong>Manque de reconnaissance :</strong> Efforts non valorisés</div>
                       <div>• <strong>Évolutions n��gatives :</strong> Rétrogradation, mutation forcée</div>
-                      <div>• <strong>Inadéquation poste :</strong> Compétences vs exigences</div>
+                      <div>�� <strong>Inadéquation poste :</strong> Compétences vs exigences</div>
                     </div>
                   </div>
 
@@ -830,7 +830,7 @@ RAPPELS ESSENTIELS :
                   </div>
                   <div className="space-y-3">
                     <div className="bg-white rounded p-3">
-                      <p className="text-sm text-blue-800 italic">"Ce n'est pas ton style habituel, y a-t-il quelque chose qui te pr��occupe ?"</p>
+                      <p className="text-sm text-blue-800 italic">"Ce n'est pas ton style habituel, y a-t-il quelque chose qui te préoccupe ?"</p>
                     </div>
                     <div className="bg-white rounded p-3">
                       <p className="text-sm text-blue-800 italic">"J'ai l'impression que tu traverses une période difficile, comment puis-je t'aider ?"</p>
@@ -1297,7 +1297,7 @@ RAPPELS ESSENTIELS :
             <CardHeader className="bg-gradient-to-r from-violet-50 to-purple-50">
               <CardTitle className="flex items-center space-x-2">
                 <Award className="h-5 w-5 text-violet-600" />
-                <span>Quiz d'évaluation - Module 5 (Partie 1)</span>
+                <span>Évaluation des acquis</span>
               </CardTitle>
               <p className="text-gray-600">
                 Évaluez vos connaissances sur les contenus vus jusqu'à présent : approches thérapeutiques,
