@@ -1163,7 +1163,7 @@ RAPPELS ESSENTIELS :
             <CardHeader className="bg-gradient-to-r from-slate-50 to-gray-50">
               <CardTitle className="flex items-center space-x-2">
                 <Shield className="h-5 w-5 text-slate-600" />
-                <span>Cadre légal et obligations de l'entreprise</span>
+                <span>Cadre légal et responsabilités</span>
               </CardTitle>
               <p className="text-gray-600">
                 En France, la gestion du stress et des risques psychosociaux (RPS) ne relève pas seulement d'un choix organisationnel.
