@@ -58,7 +58,7 @@ Module 5 - Formation Fiducial
 • ✅ Je sais différencier urgence/non-urgence
 • ✅ J'ai en tête les coordonnées des professionnels (médecine du travail, RH)
 
-⚖️ RAPPEL CADRE LÉGAL ET ÉTHIQUE
+⚖��� RAPPEL CADRE LÉGAL ET ÉTHIQUE
 • ✅ Je respecterai la confidentialité absolue
 • ✅ Je ne forcerai pas la personne à parler
 • ✅ Je demanderai l'autorisation avant tout signalement
@@ -426,10 +426,10 @@ RAPPELS ESSENTIELS :
         <section className="text-center space-y-6">
           <div className="bg-white rounded-xl shadow-lg p-8 border border-indigo-200">
             <Badge variant="secondary" className="bg-indigo-100 text-indigo-800 mb-4">
-              Module 5
+              Formation complète
             </Badge>
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              L'accompagnement possible sur la gestion du stress
+              Accompagnement et gestion du stress en entreprise
             </h1>
             <div className="flex items-center justify-center space-x-6 text-sm text-gray-600 mb-6">
               <div className="flex items-center space-x-2">
