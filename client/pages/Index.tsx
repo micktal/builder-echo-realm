@@ -69,7 +69,7 @@ Module 5 - Formation Fiducial
 • ✅ J'ai repéré des changements de comportement
 • ✅ J'ai noté la fréquence et l'intensité des signaux
 • ✅ J'ai observé sans juger ni interpréter
-��� ✅ Je distingue les faits de mes impressions
+• ✅ Je distingue les faits de mes impressions
 
 🌟 PENDANT L'ACCOMPAGNEMENT
 ===========================
@@ -910,7 +910,7 @@ RAPPELS ESSENTIELS :
             <CardHeader className="bg-gradient-to-r from-purple-50 to-indigo-50">
               <CardTitle className="flex items-center space-x-2">
                 <Brain className="h-5 w-5 text-purple-600" />
-                <span>Cas spécifiques modernes</span>
+                <span>Défis du travail moderne</span>
               </CardTitle>
               <p className="text-gray-600">
                 Adapter l'accompagnement aux nouvelles réalités du travail contemporain et aux défis générationnels.
