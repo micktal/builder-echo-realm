@@ -99,7 +99,7 @@ Module 5 - Formation Fiducial
 • ✅ Changements d'apparence, négligence inhabituelle
 • ✅ Isolement social, évitement des collègues
 • ✅ Erreurs inhabituelles, baisse de performance
-• ✅ Irritabilité, réactions disproportionnées
+• ��� Irritabilité, réactions disproportionnées
 • ✅ Expressions de dévalorisation
 • ✅ Propos inquiétants ("ça ne sert à rien", "personne ne remarque")
 
@@ -131,7 +131,7 @@ Module 5 - Formation Fiducial
 • ✅ Réseau HSE (prévention des risques)
 • ✅ Formation continue (gestion du stress)
 • ✅ Médecin généraliste (suivi médical)
-• ✅ Psychologue (accompagnement spécialisé)
+• ��� Psychologue (accompagnement spécialisé)
 • ✅ Associations spécialisées selon le besoin
 
 📝 APRÈS L'ACCOMPAGNEMENT
@@ -201,7 +201,7 @@ EXTERNES :
 • Associations d'aide locales
 • Services sociaux municipaux
 
-⚠️ URGENCES :
+���️ URGENCES :
 • SAMU : 15
 • Pompiers : 18
 • Police/Gendarmerie : 17
@@ -942,7 +942,7 @@ RAPPELS ESSENTIELS :
                       <div>• <strong>Isolement professionnel :</strong> Manque d'interactions spontanées</div>
                       <div>• <strong>Frontières floues :</strong> Vie privée / vie professionnelle</div>
                       <div>• <strong>Hyperconnexion :</strong> Disponibilit�� permanente attendue</div>
-                      <div>• <strong>Difficultés techniques :</strong> Problèmes de connexion, équipement</div>
+                      <div>• <strong>Difficult��s techniques :</strong> Problèmes de connexion, équipement</div>
                       <div>• <strong>Manque de reconnaissance :</strong> Travail moins visible</div>
                       <div>• <strong>Surcharge cognitive :</strong> Multiplication des outils numériques</div>
                     </div>
@@ -1282,7 +1282,7 @@ RAPPELS ESSENTIELS :
               <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
                 <h3 className="text-lg font-semibold text-amber-900 mb-3">Conclusion</h3>
                 <p className="text-amber-800 leading-relaxed">
-                  L'obligation de prévention du stress et des RPS ne peut être déléguée ni ignorée.
+                  L'obligation de prévention du stress et des RPS ne peut être déléguée ni ignor��e.
                   Chaque acteur de l'entreprise a un rôle, mais c'est l'employeur qui porte la responsabilité finale devant la loi.
                 </p>
               </div>
@@ -2166,7 +2166,7 @@ RAPPELS ESSENTIELS :
                   {!showQuizResults ? (
                     <Button 
                       onClick={submitQuiz}
-                      disabled={Object.keys(quizAnswers).length < 3}
+                      disabled={Object.keys(quizAnswers).length < 5}
                       className="bg-violet-600 hover:bg-violet-700 text-white"
                     >
                       Valider mes réponses
