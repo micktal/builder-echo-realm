@@ -965,7 +965,7 @@ RAPPELS ESSENTIELS :
                     </div>
                     <div className="space-y-2">
                       <div className="bg-blue-50 p-3 rounded italic text-blue-800">
-                        "As-tu l'impression d'être bien accompagn��(e) à distance ?"
+                        "As-tu l'impression d'être bien accompagné(e) à distance ?"
                       </div>
                       <div className="bg-blue-50 p-3 rounded italic text-blue-800">
                         "Comment tu gères l'isolement ?"
@@ -1084,7 +1084,7 @@ RAPPELS ESSENTIELS :
                       <div><strong>Attentes :</strong></div>
                       <div>• Stabilité et sécurité</div>
                       <div>• Respect de l'expérience</div>
-                      <div>�� Communication directe</div>
+                      <div>• Communication directe</div>
                       <div>• Transmission du savoir</div>
 
                       <div className="pt-2"><strong>Sources de stress :</strong></div>
@@ -1152,7 +1152,7 @@ RAPPELS ESSENTIELS :
             <CardHeader className="bg-gradient-to-r from-slate-50 to-gray-50">
               <CardTitle className="flex items-center space-x-2">
                 <Shield className="h-5 w-5 text-slate-600" />
-                <span>Cadre légal et responsabilités</span>
+                <span>Le Cadre légal et vos responsabilités</span>
               </CardTitle>
               <p className="text-gray-600">
                 En France, la gestion du stress et des risques psychosociaux (RPS) ne relève pas seulement d'un choix organisationnel.
@@ -1753,7 +1753,7 @@ RAPPELS ESSENTIELS :
                           <div>• Confiance préservée</div>
                           <div>• Accompagnement adapté</div>
                           <div>• Respect de la dignité</div>
-                          <div>��� Cadre professionnel maintenu</div>
+                          <div>• Cadre professionnel maintenu</div>
                         </div>
                       </div>
                     </div>
@@ -1793,7 +1793,7 @@ RAPPELS ESSENTIELS :
                   </div>
 
                   <div>
-                    <h4 className="font-medium text-red-700 mb-3">À éviter :</h4>
+                    <h4 className="font-medium text-red-700 mb-3">�� éviter :</h4>
                     <div className="space-y-2 text-sm text-red-800">
                       <div className="flex items-start space-x-2">
                         <div className="w-1.5 h-1.5 bg-red-400 rounded-full mt-1.5 flex-shrink-0"></div>
