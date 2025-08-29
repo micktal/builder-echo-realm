@@ -162,7 +162,7 @@ Module 5 - Formation Fiducial
 • ✅ Comment je me sens après cet échange ?
 • ✅ Ai-je respecté mes limites de rôle ?
 • ✅ Ai-je été bienveillant(e) et professionnel(le) ?
-• ✅ Quels points améliorer pour la prochaine fois ?
+• ✅ Quels points am��liorer pour la prochaine fois ?
 • ✅ Ai-je besoin de soutien ou de supervision ?
 
 💡 PREVENTION DU STRESS SECONDAIRE
@@ -332,7 +332,7 @@ RAPPELS ESSENTIELS :
       whatItIs: "La pleine conscience est un état de conscience qui résulte du fait de porter son attention, intentionnellement, au moment présent, sans jugement. Le MBSR (Mindfulness-Based Stress Reduction) est un programme de 8 semaines qui enseigne diverses techniques de méditation et de yoga doux.",
       whyItWorks: "Cette approche agit sur le système nerveux en activant la réponse de relaxation et en réduisant l'activité de l'amygdale (centre de la peur). Elle développe la capacité à observer ses pensées et émotions sans s'y identifier, créant un espace de recul face au stress.",
       reasoning: "Le stress est souvent amplifié par notre tendance à ruminer le passé ou anticiper l'avenir. En ramenant l'attention au présent, on interrompt ces cycles de pensées stressantes et on cultive un état de calme intérieur. La pratique régulière modifie littéralement la structure du cerveau.",
-      usage: "Stress chronique, burnout, anxiét�� généralisée, douleurs chroniques, insomnie, dépression récurrente",
+      usage: "Stress chronique, burnout, anxiété généralisée, douleurs chroniques, insomnie, dépression récurrente",
       efficacy: "Réduction de 70% des symptômes anxieux, diminution de 40% des rechutes dépressives",
       duration: "Programme de 8 semaines, 2h30 par semaine + pratique quotidienne",
       techniques: ["Méditation assise", "Scan corporel", "Yoga mindful", "Méditation marchée", "Respiration consciente"]
@@ -751,7 +751,7 @@ RAPPELS ESSENTIELS :
 
               {/* Cas pratiques détaillés */}
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Cas pratiques et situations concrètes</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Voyons ensemble des situations concrètes</h3>
 
                 <div className="space-y-4">
                   {[
