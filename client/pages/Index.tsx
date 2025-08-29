@@ -96,7 +96,7 @@ Numéro de série : ${serialNumber}
 ────────────────────────────────────────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
-────────────────────────────────────────────────────────────────────────────────
+──────────────────────────────────────────────���─────────────────────────────────
 
 Ce certificat atteste de la validation des compétences dans le domaine de
 l'accompagnement et de la gestion du stress en milieu professionnel.
@@ -258,7 +258,7 @@ Module 5 - Formation Fiducial
 • ✅ Comment je me sens après cet échange ?
 • ✅ Ai-je respecté mes limites de rôle ?
 • ✅ Ai-je été bienveillant(e) et professionnel(le) ?
-• ✅ Quels points améliorer pour la prochaine fois ?
+• ��� Quels points améliorer pour la prochaine fois ?
 • ✅ Ai-je besoin de soutien ou de supervision ?
 
 💡 PREVENTION DU STRESS SECONDAIRE
@@ -436,7 +436,7 @@ RAPPELS ESSENTIELS :
       description: "Psychothérapie intégrative qui traite les traumatismes par stimulation bilatérale du cerveau.",
       whatItIs: "L'EMDR utilise des mouvements oculaires (ou d'autres stimulations bilatérales) pendant que la personne se concentre sur le souvenir traumatisant. Cette technique permet au cerveau de retraiter l'information traumatique et de l'intégrer de manière adaptative.",
       whyItWorks: "Les mouvements oculaires reproduisent naturellement ce qui se passe pendant le sommeil paradoxal, phase cruciale pour l'intégration des souvenirs. Cette stimulation bilatérale permet au cerveau de 'digérer' le trauma et de réduire son impact émotionnel.",
-      reasoning: "Les traumatismes créent des 'blocages' dans le traitement de l'information par le cerveau, maintenant la personne dans un état de stress post-traumatique. L'EMDR 'débloque' ces souvenirs figés et permet leur intégration naturelle, réduisant drastiquement les symptômes de stress.",
+      reasoning: "Les traumatismes créent des 'blocages' dans le traitement de l'information par le cerveau, maintenant la personne dans un état de stress post-traumatique. L'EMDR 'débloque' ces souvenirs fig��s et permet leur intégration naturelle, réduisant drastiquement les symptômes de stress.",
       usage: "Stress post-traumatique, traumatismes complexes, phobies, attaques de panique, deuils compliqués",
       efficacy: "84-90% d'efficacité pour le PTSD selon les études. Recommandée par l'OMS et l'HAS",
       duration: "Variable selon le trauma, généralement 6 �� 12 séances",
@@ -2238,27 +2238,102 @@ RAPPELS ESSENTIELS :
                     </Button>
                   ) : (
                     <div className="space-y-4">
-                      <div className="bg-violet-50 border border-violet-200 rounded-lg p-4">
-                        <h4 className="font-medium text-violet-900 mb-2">Compétences validées !</h4>
-                        <p className="text-violet-800">Vous maîtrisez maintenant l'accompagnement et la gestion du stress en entreprise.</p>
-                      </div>
-                      <div className="flex flex-col space-y-3">
-                        <Button
-                          onClick={downloadChecklist}
-                          className="bg-violet-600 hover:bg-violet-700 text-white"
-                        >
-                          <Download className="h-4 w-4 mr-2" />
-                          Télécharger la checklist complète "Avant-Pendant-Après"
-                        </Button>
-                        <Button
-                          onClick={download7StepsGuide}
-                          variant="outline"
-                          className="border-violet-300 text-violet-700 hover:bg-violet-50"
-                        >
-                          <Download className="h-4 w-4 mr-2" />
-                          Télécharger le guide "L'accompagnement en 7 étapes"
-                        </Button>
-                      </div>
+                      {(() => {
+                        const correctAnswers = [
+                          quizAnswers[1] === "false",
+                          quizAnswers[2] === "true",
+                          quizAnswers[3] === "true",
+                          quizAnswers[4] === "true",
+                          quizAnswers[5] === "true"
+                        ].filter(Boolean).length;
+                        const score = Math.round((correctAnswers / 5) * 100);
+
+                        return (
+                          <div>
+                            <div className="bg-violet-50 border border-violet-200 rounded-lg p-4 mb-4">
+                              <h4 className="font-medium text-violet-900 mb-2">
+                                Résultats de l'évaluation : {score}%
+                              </h4>
+                              <p className="text-violet-800">
+                                {score >= 80
+                                  ? "Félicitations ! Vous maîtrisez maintenant l'accompagnement et la gestion du stress en entreprise."
+                                  : "Score insuffisant pour valider les compétences. Il faut au minimum 80% (4/5 bonnes réponses)."}
+                              </p>
+                            </div>
+
+                            {score >= 80 && (
+                              <div className="space-y-4">
+                                {/* Formulaire de certificat */}
+                                <div className="bg-green-50 border border-green-200 rounded-lg p-6">
+                                  <div className="flex items-center space-x-2 mb-4">
+                                    <Award className="h-5 w-5 text-green-600" />
+                                    <h4 className="font-medium text-green-900">Certificat de compétence</h4>
+                                  </div>
+
+                                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                                    <div>
+                                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                                        Prénom *
+                                      </label>
+                                      <input
+                                        type="text"
+                                        value={studentName.firstName}
+                                        onChange={(e) => setStudentName(prev => ({ ...prev, firstName: e.target.value }))}
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent"
+                                        placeholder="Votre prénom"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                                        Nom *
+                                      </label>
+                                      <input
+                                        type="text"
+                                        value={studentName.lastName}
+                                        onChange={(e) => setStudentName(prev => ({ ...prev, lastName: e.target.value }))}
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent"
+                                        placeholder="Votre nom"
+                                      />
+                                    </div>
+                                  </div>
+
+                                  <Button
+                                    onClick={downloadCertificate}
+                                    disabled={!studentName.firstName || !studentName.lastName}
+                                    className="bg-green-600 hover:bg-green-700 text-white w-full mb-4"
+                                  >
+                                    <Award className="h-4 w-4 mr-2" />
+                                    Télécharger mon certificat de compétence
+                                  </Button>
+
+                                  <p className="text-xs text-green-700">
+                                    Le certificat sera généré avec votre nom, la date d'aujourd'hui et un numéro de série unique.
+                                  </p>
+                                </div>
+
+                                {/* Documents complémentaires */}
+                                <div className="flex flex-col space-y-3">
+                                  <Button
+                                    onClick={downloadChecklist}
+                                    className="bg-violet-600 hover:bg-violet-700 text-white"
+                                  >
+                                    <Download className="h-4 w-4 mr-2" />
+                                    Télécharger la checklist complète "Avant-Pendant-Après"
+                                  </Button>
+                                  <Button
+                                    onClick={download7StepsGuide}
+                                    variant="outline"
+                                    className="border-violet-300 text-violet-700 hover:bg-violet-50"
+                                  >
+                                    <Download className="h-4 w-4 mr-2" />
+                                    Télécharger le guide "L'accompagnement en 7 étapes"
+                                  </Button>
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })()}
                     </div>
                   )}
                 </div>
