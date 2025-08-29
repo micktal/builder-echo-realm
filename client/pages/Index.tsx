@@ -48,6 +48,167 @@ export default function Index() {
     return `FID-${timestamp}-${random.toString().padStart(4, '0')}`;
   };
 
+  const downloadCertificatePDF = async () => {
+    if (!studentName.firstName || !studentName.lastName) {
+      alert('Veuillez renseigner votre nom et prénom');
+      return;
+    }
+
+    const serialNumber = generateSerialNumber();
+    const currentDate = new Date().toLocaleDateString('fr-FR', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+
+    // Create new PDF document
+    const doc = new jsPDF();
+
+    // Set page background to light gray
+    doc.setFillColor(248, 249, 250);
+    doc.rect(0, 0, 210, 297, 'F');
+
+    // Add decorative border
+    doc.setDrawColor(0, 128, 64); // Green color matching logo
+    doc.setLineWidth(2);
+    doc.rect(15, 15, 180, 267);
+
+    // Inner border
+    doc.setLineWidth(0.5);
+    doc.rect(20, 20, 170, 257);
+
+    // Load and add logo
+    try {
+      const logoUrl = 'https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2Ff1e75468f481478b93b8bbe4af688bb7?format=webp&width=800';
+
+      // Create a promise to load the image
+      const loadImage = new Promise((resolve, reject) => {
+        const img = new Image();
+        img.crossOrigin = 'anonymous';
+        img.onload = () => resolve(img);
+        img.onerror = reject;
+        img.src = logoUrl;
+      });
+
+      const logoImg = await loadImage;
+
+      // Convert image to base64
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      canvas.width = logoImg.width;
+      canvas.height = logoImg.height;
+      ctx.drawImage(logoImg, 0, 0);
+      const logoBase64 = canvas.toDataURL('image/png');
+
+      // Add logo to PDF (centered, 40mm width)
+      doc.addImage(logoBase64, 'PNG', 85, 30, 40, 20);
+    } catch (error) {
+      console.warn('Logo could not be loaded:', error);
+      // Fallback: Add text logo
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(20);
+      doc.setTextColor(0, 128, 64);
+      doc.text('FIDUCIAL FPSG', 105, 40, { align: 'center' });
+    }
+
+    // Main title
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(24);
+    doc.setTextColor(0, 0, 0);
+    doc.text('CERTIFICAT DE COMPÉTENCE', 105, 70, { align: 'center' });
+
+    // Subtitle
+    doc.setFontSize(16);
+    doc.setTextColor(0, 128, 64);
+    doc.text('FORMATION CONTINUE', 105, 80, { align: 'center' });
+
+    // Course title
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(14);
+    doc.setTextColor(0, 0, 0);
+    doc.text('ACCOMPAGNEMENT ET GESTION DU STRESS EN ENTREPRISE', 105, 95, { align: 'center' });
+
+    // Decorative line
+    doc.setDrawColor(0, 128, 64);
+    doc.setLineWidth(1);
+    doc.line(40, 105, 170, 105);
+
+    // Certificate text
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(12);
+    doc.text('Par la présente, il est certifié que :', 105, 120, { align: 'center' });
+
+    // Student name (highlighted)
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(18);
+    doc.setTextColor(0, 128, 64);
+    doc.text(`${studentName.firstName} ${studentName.lastName}`, 105, 135, { align: 'center' });
+
+    // Achievement text
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(11);
+    doc.setTextColor(0, 0, 0);
+    const achievementText = [
+      'a suivi avec succès la formation "Accompagnement et gestion du stress en entreprise"',
+      'et a démontré sa maîtrise des compétences suivantes :'
+    ];
+
+    let yPos = 150;
+    achievementText.forEach((line) => {
+      doc.text(line, 105, yPos, { align: 'center' });
+      yPos += 8;
+    });
+
+    // Competencies list
+    const competencies = [
+      '✓ Identification des approches thérapeutiques validées',
+      '✓ Repérage et orientation des personnes en situation de stress',
+      '✓ Maîtrise des techniques d\'écoute active et de communication adaptée',
+      '✓ Connaissance du cadre légal et des responsabilités en entreprise',
+      '✓ Gestion des défis du travail moderne et du stress intergénérationnel',
+      '✓ Application des bonnes pratiques d\'accompagnement'
+    ];
+
+    yPos = 175;
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(10);
+    competencies.forEach((competency) => {
+      doc.text(competency, 30, yPos);
+      yPos += 8;
+    });
+
+    // Validation text
+    yPos += 10;
+    doc.setFontSize(11);
+    const validationLines = [
+      'Cette formation respecte les standards de qualité Fiducial et valide les compétences',
+      'nécessaires pour accompagner efficacement les collaborateurs en situation de stress.'
+    ];
+
+    validationLines.forEach((line) => {
+      doc.text(line, 105, yPos, { align: 'center' });
+      yPos += 8;
+    });
+
+    // Date and serial number
+    yPos += 15;
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(11);
+    doc.text(`Délivré le : ${currentDate}`, 30, yPos);
+    doc.text(`Numéro de série : ${serialNumber}`, 30, yPos + 10);
+
+    // Footer
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(100, 100, 100);
+    doc.text('© 2024 Fiducial FPSG - Formation Continue', 105, 270, { align: 'center' });
+    doc.text('Document certifiant authentique', 105, 278, { align: 'center' });
+
+    // Download the PDF
+    const fileName = `Certificat_${studentName.lastName}_${studentName.firstName}_${serialNumber}.pdf`;
+    doc.save(fileName);
+  };
+
   const downloadCertificate = () => {
     if (!studentName.firstName || !studentName.lastName) {
       alert('Veuillez renseigner votre nom et prénom');
