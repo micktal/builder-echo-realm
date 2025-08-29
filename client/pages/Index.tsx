@@ -145,7 +145,7 @@ Module 5 - Formation Fiducial
 • ✅ J'ai remercié la personne pour sa confiance
 
 📋 TRAÇABILITÉ (CONFIDENTIELLE)
-• ✅ Note personnelle des éléments factuels principaux
+�� ✅ Note personnelle des éléments factuels principaux
 • ✅ Actions convenues et engagements pris
 • ✅ Ressources proposées et orientations données
 • ✅ Date et contexte de l'échange
@@ -223,16 +223,14 @@ Adaptez votre approche tout en respectant ces principes fondamentaux.
 Document confidentiel - Usage interne uniquement
 `;
 
-    // Créer le fichier et déclencher le téléchargement
-    const blob = new Blob([checklistContent], { type: 'text/plain;charset=utf-8' });
-    const url = window.URL.createObjectURL(blob);
+    // Télécharge le fichier PDF fourni par l'utilisateur
     const link = document.createElement('a');
-    link.href = url;
-    link.download = 'Checklist-Accompagnement-Stress-Fiducial.txt';
+    link.href = 'https://cdn.builder.io/o/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2Fa3fbc5f4a52949e28a90fcfcae672e2a?alt=media&token=6b433921-dc51-48df-b0d4-6befd5b6fab9&apiKey=d93d9a0ec7824aa1ac4d890a1f90a2ec';
+    link.download = 'CHECKLIST_ACCOMPAGNEMENT_GESTION_DU_STRESS.pdf';
+    link.target = '_blank';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    window.URL.revokeObjectURL(url);
   };
 
   const download7StepsGuide = () => {
