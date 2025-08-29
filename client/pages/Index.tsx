@@ -99,7 +99,7 @@ Module 5 - Formation Fiducial
 • ✅ Changements d'apparence, négligence inhabituelle
 • ✅ Isolement social, évitement des collègues
 • ✅ Erreurs inhabituelles, baisse de performance
-• ✅ Irritabilité, réactions disproportionnées
+• ✅ Irritabilité, r��actions disproportionnées
 • ✅ Expressions de dévalorisation
 • ✅ Propos inquiétants ("ça ne sert à rien", "personne ne remarque")
 
@@ -202,7 +202,7 @@ EXTERNES :
 • Services sociaux municipaux
 
 ⚠️ URGENCES :
-• SAMU : 15
+�� SAMU : 15
 • Pompiers : 18
 • Police/Gendarmerie : 17
 • Numéro d'urgence européen : 112
@@ -833,7 +833,7 @@ RAPPELS ESSENTIELS :
 
               {/* Scénarios interactifs enrichis */}
               <div>
-                <h4 className="font-semibold text-gray-900 mb-4">Scénarios interactifs</h4>
+                <h4 className="font-semibold text-gray-900 mb-4">Comprenez et agissez</h4>
                 <div className="space-y-4">
                   <div className="bg-gray-50 border rounded-lg p-4">
                     <p className="text-gray-700 mb-4">
