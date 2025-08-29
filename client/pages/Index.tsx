@@ -63,7 +63,7 @@ export default function Index() {
 ════════════════════════════════════════════════════════════════════════════════
                               CERTIFICAT DE COMPÉTENCE
                                  FORMATION FIDUCIAL
-════════════════════════════════════════════════════════════════════════════════
+═════════════════════════════════════════════��══════════════════════════════════
 
                         ACCOMPAGNEMENT ET GESTION DU STRESS
                                   EN ENTREPRISE
@@ -90,7 +90,7 @@ nécessaires pour accompagner efficacement les collaborateurs en situation de st
 
 
 Délivré le : ${currentDate}
-Num��ro de série : ${serialNumber}
+Numéro de série : ${serialNumber}
 
 
 ────────────────────────────────────────────────────────────────────────────────
@@ -108,7 +108,7 @@ Module de référence : Formation Fiducial - Accompagnement et gestion du stress
 Pour toute vérification de l'authenticité de ce certificat,
 contacter le service formation Fiducial en mentionnant le numéro de série.
 
-═══════════════════════════════════════════════════════════════════════════���════
+════════════════════════════════════════════════════════════════════════════════
 `;
 
     const blob = new Blob([certificateContent], { type: 'text/plain;charset=utf-8' });
@@ -155,7 +155,7 @@ Module 5 - Formation Fiducial
 • ✅ J'ai vérifié mon propre état émotionnel
 • ✅ Je me sens disponible et serein(e)
 • ✅ J'ai prévu suffisamment de temps (pas de rush)
-• ✅ J'ai identifié un lieu calme et confidentiel
+��� ✅ J'ai identifié un lieu calme et confidentiel
 • ✅ J'ai mis mon téléphone en silencieux
 • ✅ Je me suis rappelé mes limites de rôle (ne pas jouer au thérapeute)
 
@@ -313,7 +313,7 @@ EXTERNES :
 • SAMU : 15
 • Pompiers : 18
 • Police/Gendarmerie : 17
-• Numéro d'urgence europ��en : 112
+• Numéro d'urgence européen : 112
 • SOS Amitié : 09 72 39 40 50
 
 RAPPELS IMPORTANTS :
@@ -1897,7 +1897,7 @@ RAPPELS ESSENTIELS :
                       </div>
                       <div className="flex items-start space-x-2">
                         <div className="w-1.5 h-1.5 bg-red-400 rounded-full mt-1.5 flex-shrink-0"></div>
-                        <span>Jouer le rôle du th��rapeute</span>
+                        <span>Jouer le rôle du thérapeute</span>
                       </div>
                       <div className="flex items-start space-x-2">
                         <div className="w-1.5 h-1.5 bg-red-400 rounded-full mt-1.5 flex-shrink-0"></div>
@@ -2262,15 +2262,36 @@ RAPPELS ESSENTIELS :
 
                         return (
                           <div>
-                            <div className="bg-violet-50 border border-violet-200 rounded-lg p-4 mb-4">
-                              <h4 className="font-medium text-violet-900 mb-2">
+                            <div className={`border rounded-lg p-4 mb-4 ${
+                              score >= 80
+                                ? "bg-violet-50 border-violet-200"
+                                : "bg-red-50 border-red-200"
+                            }`}>
+                              <h4 className={`font-medium mb-2 ${
+                                score >= 80 ? "text-violet-900" : "text-red-900"
+                              }`}>
                                 Résultats de l'évaluation : {score}%
                               </h4>
-                              <p className="text-violet-800">
+                              <p className={score >= 80 ? "text-violet-800" : "text-red-800"}>
                                 {score >= 80
                                   ? "Félicitations ! Vous maîtrisez maintenant l'accompagnement et la gestion du stress en entreprise."
                                   : "Score insuffisant pour valider les compétences. Il faut au minimum 80% (4/5 bonnes réponses)."}
                               </p>
+
+                              {score < 80 && (
+                                <div className="mt-4">
+                                  <Button
+                                    onClick={retryFinalExam}
+                                    className="bg-red-600 hover:bg-red-700 text-white"
+                                  >
+                                    <Award className="h-4 w-4 mr-2" />
+                                    Refaire l'examen de fin
+                                  </Button>
+                                  <p className="text-xs text-red-700 mt-2">
+                                    Vous pouvez repasser l'examen autant de fois que nécessaire pour obtenir le certificat.
+                                  </p>
+                                </div>
+                              )}
                             </div>
 
                             {score >= 80 && (
