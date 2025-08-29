@@ -99,7 +99,7 @@ Module 5 - Formation Fiducial
 • ✅ Changements d'apparence, négligence inhabituelle
 • ✅ Isolement social, évitement des collègues
 • ✅ Erreurs inhabituelles, baisse de performance
-• ✅ Irritabilité, r��actions disproportionnées
+• ✅ Irritabilité, réactions disproportionnées
 • ✅ Expressions de dévalorisation
 • ✅ Propos inquiétants ("ça ne sert à rien", "personne ne remarque")
 
@@ -202,7 +202,7 @@ EXTERNES :
 • Services sociaux municipaux
 
 ⚠️ URGENCES :
-�� SAMU : 15
+• SAMU : 15
 • Pompiers : 18
 • Police/Gendarmerie : 17
 • Numéro d'urgence européen : 112
@@ -899,7 +899,7 @@ RAPPELS ESSENTIELS :
             <CardHeader className="bg-gradient-to-r from-purple-50 to-indigo-50">
               <CardTitle className="flex items-center space-x-2">
                 <Brain className="h-5 w-5 text-purple-600" />
-                <span>Défis du travail moderne</span>
+                <span>Les défis du travail moderne</span>
               </CardTitle>
               <p className="text-gray-600">
                 Adapter l'accompagnement aux nouvelles réalités du travail contemporain et aux défis générationnels.
