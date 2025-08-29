@@ -63,7 +63,7 @@ export default function Index() {
 ════════════════════════════════════════════════════════════════════════════════
                               CERTIFICAT DE COMPÉTENCE
                                  FORMATION FIDUCIAL
-════════════════════════════════════════════════════════════════════════════════
+══════════════════════════════════════════════════════════════════════════���═════
 
                         ACCOMPAGNEMENT ET GESTION DU STRESS
                                   EN ENTREPRISE
@@ -96,7 +96,7 @@ Numéro de série : ${serialNumber}
 ────────────────────────────────────────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
-──────────────────────────────────────────────���─────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────
 
 Ce certificat atteste de la validation des compétences dans le domaine de
 l'accompagnement et de la gestion du stress en milieu professionnel.
@@ -128,6 +128,18 @@ contacter le service formation Fiducial en mentionnant le numéro de série.
 
   const submitMidQuiz = () => {
     setShowMidQuizResults(true);
+  };
+
+  const retryFinalExam = () => {
+    setQuizAnswers({});
+    setShowQuizResults(false);
+    setShowCertificateForm(false);
+    setStudentName({ firstName: '', lastName: '' });
+    // Scroll to the exam section
+    const examSection = document.querySelector('[data-section="final-exam"]');
+    if (examSection) {
+      examSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   const downloadChecklist = () => {
@@ -238,7 +250,7 @@ Module 5 - Formation Fiducial
 • ✅ J'ai clarifié les prochaines étapes
 • ✅ J'ai donné les coordonnées des ressources mentionnées
 • ✅ J'ai fixé un point de suivi si approprié
-• ✅ J'ai remercié la personne pour sa confiance
+• �� J'ai remercié la personne pour sa confiance
 
 📋 TRAÇABILITÉ (CONFIDENTIELLE)
 �� ✅ Note personnelle des éléments factuels principaux
@@ -258,7 +270,7 @@ Module 5 - Formation Fiducial
 • ✅ Comment je me sens après cet échange ?
 • ✅ Ai-je respecté mes limites de rôle ?
 • ✅ Ai-je été bienveillant(e) et professionnel(le) ?
-• ��� Quels points améliorer pour la prochaine fois ?
+• ✅ Quels points améliorer pour la prochaine fois ?
 • ✅ Ai-je besoin de soutien ou de supervision ?
 
 💡 PREVENTION DU STRESS SECONDAIRE
@@ -349,7 +361,7 @@ Module 5 - Formation Fiducial
 • Ton non accusateur et empathique
 • Respecter immédiatement un éventuel refus
 
-👂 ÉTAPE 3 : ÉCOUTER
+👂 ��TAPE 3 : ÉCOUTER
 ====================
 • Appliquer l'écoute active (bienveillance, neutralité, non-jugement)
 • Poser des questions ouvertes
@@ -436,7 +448,7 @@ RAPPELS ESSENTIELS :
       description: "Psychothérapie intégrative qui traite les traumatismes par stimulation bilatérale du cerveau.",
       whatItIs: "L'EMDR utilise des mouvements oculaires (ou d'autres stimulations bilatérales) pendant que la personne se concentre sur le souvenir traumatisant. Cette technique permet au cerveau de retraiter l'information traumatique et de l'intégrer de manière adaptative.",
       whyItWorks: "Les mouvements oculaires reproduisent naturellement ce qui se passe pendant le sommeil paradoxal, phase cruciale pour l'intégration des souvenirs. Cette stimulation bilatérale permet au cerveau de 'digérer' le trauma et de réduire son impact émotionnel.",
-      reasoning: "Les traumatismes créent des 'blocages' dans le traitement de l'information par le cerveau, maintenant la personne dans un état de stress post-traumatique. L'EMDR 'débloque' ces souvenirs fig��s et permet leur intégration naturelle, réduisant drastiquement les symptômes de stress.",
+      reasoning: "Les traumatismes créent des 'blocages' dans le traitement de l'information par le cerveau, maintenant la personne dans un état de stress post-traumatique. L'EMDR 'débloque' ces souvenirs figés et permet leur intégration naturelle, réduisant drastiquement les symptômes de stress.",
       usage: "Stress post-traumatique, traumatismes complexes, phobies, attaques de panique, deuils compliqués",
       efficacy: "84-90% d'efficacité pour le PTSD selon les études. Recommandée par l'OMS et l'HAS",
       duration: "Variable selon le trauma, généralement 6 �� 12 séances",
@@ -730,7 +742,7 @@ RAPPELS ESSENTIELS :
                             <h5 className="font-medium text-gray-900 mb-2">Symptômes physiques</h5>
                             <div className="text-sm text-gray-600 space-y-1">
                               <div>• Maux de tête fréquents sans cause médicale</div>
-                              <div>• Tensions musculaires (nuque, épaules)</div>
+                              <div>��� Tensions musculaires (nuque, épaules)</div>
                               <div>• Troubles digestifs persistants</div>
                               <div>• Palpitations, oppression thoracique</div>
                             </div>
@@ -1793,7 +1805,7 @@ RAPPELS ESSENTIELS :
                             <div>• "Raconte-moi tout en détail"</div>
                             <div>• En parle aux RH sans autorisation</div>
                             <div>• Évoque la situation en réunion équipe</div>
-                            <div>• Donne des conseils personnels non sollicités</div>
+                            <div>• Donne des conseils personnels non sollicit��s</div>
                           </div>
                         </div>
                         <div className="bg-red-100 p-3 rounded">
