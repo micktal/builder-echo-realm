@@ -63,7 +63,7 @@ export default function Index() {
 ════════════════════════════════════════════════════════════════════════════════
                               CERTIFICAT DE COMPÉTENCE
                                  FORMATION FIDUCIAL
-══════════════════════════════════════════════════════════════════════════���═════
+════════════════════════════════════════════════════════════════════════════════
 
                         ACCOMPAGNEMENT ET GESTION DU STRESS
                                   EN ENTREPRISE
@@ -90,7 +90,7 @@ nécessaires pour accompagner efficacement les collaborateurs en situation de st
 
 
 Délivré le : ${currentDate}
-Numéro de série : ${serialNumber}
+Num��ro de série : ${serialNumber}
 
 
 ────────────────────────────────────────────────────────────────────────────────
@@ -108,7 +108,7 @@ Module de référence : Formation Fiducial - Accompagnement et gestion du stress
 Pour toute vérification de l'authenticité de ce certificat,
 contacter le service formation Fiducial en mentionnant le numéro de série.
 
-════════════════════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════════════���════
 `;
 
     const blob = new Blob([certificateContent], { type: 'text/plain;charset=utf-8' });
@@ -250,7 +250,7 @@ Module 5 - Formation Fiducial
 • ✅ J'ai clarifié les prochaines étapes
 • ✅ J'ai donné les coordonnées des ressources mentionnées
 • ✅ J'ai fixé un point de suivi si approprié
-• �� J'ai remercié la personne pour sa confiance
+• ✅ J'ai remercié la personne pour sa confiance
 
 📋 TRAÇABILITÉ (CONFIDENTIELLE)
 �� ✅ Note personnelle des éléments factuels principaux
@@ -313,7 +313,7 @@ EXTERNES :
 • SAMU : 15
 • Pompiers : 18
 • Police/Gendarmerie : 17
-• Numéro d'urgence européen : 112
+• Numéro d'urgence europ��en : 112
 • SOS Amitié : 09 72 39 40 50
 
 RAPPELS IMPORTANTS :
@@ -361,7 +361,7 @@ Module 5 - Formation Fiducial
 • Ton non accusateur et empathique
 • Respecter immédiatement un éventuel refus
 
-👂 ��TAPE 3 : ÉCOUTER
+👂 ÉTAPE 3 : ÉCOUTER
 ====================
 • Appliquer l'écoute active (bienveillance, neutralité, non-jugement)
 • Poser des questions ouvertes
@@ -742,7 +742,7 @@ RAPPELS ESSENTIELS :
                             <h5 className="font-medium text-gray-900 mb-2">Symptômes physiques</h5>
                             <div className="text-sm text-gray-600 space-y-1">
                               <div>• Maux de tête fréquents sans cause médicale</div>
-                              <div>��� Tensions musculaires (nuque, épaules)</div>
+                              <div>• Tensions musculaires (nuque, épaules)</div>
                               <div>• Troubles digestifs persistants</div>
                               <div>• Palpitations, oppression thoracique</div>
                             </div>
@@ -1805,7 +1805,7 @@ RAPPELS ESSENTIELS :
                             <div>• "Raconte-moi tout en détail"</div>
                             <div>• En parle aux RH sans autorisation</div>
                             <div>• Évoque la situation en réunion équipe</div>
-                            <div>• Donne des conseils personnels non sollicit��s</div>
+                            <div>• Donne des conseils personnels non sollicités</div>
                           </div>
                         </div>
                         <div className="bg-red-100 p-3 rounded">
@@ -1897,7 +1897,7 @@ RAPPELS ESSENTIELS :
                       </div>
                       <div className="flex items-start space-x-2">
                         <div className="w-1.5 h-1.5 bg-red-400 rounded-full mt-1.5 flex-shrink-0"></div>
-                        <span>Jouer le rôle du thérapeute</span>
+                        <span>Jouer le rôle du th��rapeute</span>
                       </div>
                       <div className="flex items-start space-x-2">
                         <div className="w-1.5 h-1.5 bg-red-400 rounded-full mt-1.5 flex-shrink-0"></div>
@@ -2168,7 +2168,7 @@ RAPPELS ESSENTIELS :
         </section>
 
         {/* Bloc 9 - Évaluation finale */}
-        <section>
+        <section data-section="final-exam">
           <Card className="border-indigo-200">
             <CardHeader className="bg-gradient-to-r from-violet-50 to-purple-50">
               <CardTitle className="flex items-center space-x-2">
