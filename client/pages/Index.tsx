@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import jsPDF from 'jspdf';
 import { Button } from "@/components/ui/button";
@@ -226,7 +225,7 @@ export default function Index() {
 ═══════════════════════════��════════════════════════════════════════════════════
                               CERTIFICAT DE COMPÉTENCE
                                  FORMATION FIDUCIAL
-═════════════════════════════════════════════��══════════════════════════════════
+══════════════════════════���══════════════════��══════════════════════════════════
 
                         ACCOMPAGNEMENT ET GESTION DU STRESS
                                   EN ENTREPRISE
@@ -256,7 +255,7 @@ Délivré le : ${currentDate}
 Numéro de série : ${serialNumber}
 
 
-────────────────────────────────────────────────────────────────────────────────
+──────────────────────────────────��─────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
 ────────────────────────────────────────────────────────────────────────────────
@@ -375,7 +374,7 @@ Module 5 - Formation Fiducial
 • ✅ Propos inquiétants ("ça ne sert à rien", "personne ne remarque")
 
 ⚠️ SIGNAUX D'ALARME MAJEURS
-• 🚨 Propos suicidaires ou de désespoir profond
+• 🚨 Propos suicidaires ou de d��sespoir profond
 • 🚨 Désinvestissement total ("plus rien n'a d'importance")
 • 🚨 Idées de fuite ("je vais tout plaquer")
 • 🚨 Comportements à risque (alcool, substances)
