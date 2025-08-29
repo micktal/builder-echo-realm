@@ -26,6 +26,100 @@ export default function Index() {
 
   const submitQuiz = () => {
     setShowQuizResults(true);
+    // Check if user passed the quiz (need at least 4/5 correct answers)
+    const correctAnswers = [
+      quizAnswers[1] === "false", // Burn-out digital
+      quizAnswers[2] === "true",  // Accompagnement générationnel
+      quizAnswers[3] === "true",  // Confidentialité
+      quizAnswers[4] === "true",  // EMDR
+      quizAnswers[5] === "true"   // Obligation légale employeur
+    ].filter(Boolean).length;
+
+    if (correctAnswers >= 4) {
+      setShowCertificateForm(true);
+    }
+  };
+
+  const generateSerialNumber = () => {
+    const timestamp = Date.now();
+    const random = Math.floor(Math.random() * 10000);
+    return `FID-${timestamp}-${random.toString().padStart(4, '0')}`;
+  };
+
+  const downloadCertificate = () => {
+    if (!studentName.firstName || !studentName.lastName) {
+      alert('Veuillez renseigner votre nom et prénom');
+      return;
+    }
+
+    const serialNumber = generateSerialNumber();
+    const currentDate = new Date().toLocaleDateString('fr-FR', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+
+    const certificateContent = `
+════════════════════════════════════════════════════════════════════════════════
+                              CERTIFICAT DE COMPÉTENCE
+                                 FORMATION FIDUCIAL
+════════════════════════════════════════════════════════════════════════════════
+
+                        ACCOMPAGNEMENT ET GESTION DU STRESS
+                                  EN ENTREPRISE
+
+
+Par la présente, il est certifié que :
+
+                          ${studentName.firstName} ${studentName.lastName}
+
+
+a suivi avec succès la formation "Accompagnement et gestion du stress en entreprise"
+et a démontré sa maîtrise des compétences suivantes :
+
+    ✓ Identification des approches thérapeutiques validées
+    ✓ Repérage et orientation des personnes en situation de stress
+    ✓ Maîtrise des techniques d'écoute active et de communication adaptée
+    ✓ Connaissance du cadre légal et des responsabilités en entreprise
+    ✓ Gestion des défis du travail moderne et du stress intergénérationnel
+    ✓ Application des bonnes pratiques d'accompagnement
+
+
+Cette formation respecte les standards de qualité Fiducial et valide les compétences
+nécessaires pour accompagner efficacement les collaborateurs en situation de stress.
+
+
+Délivré le : ${currentDate}
+Numéro de série : ${serialNumber}
+
+
+────────────────────────────────────────────────────────────────────────────────
+                    © 2024 Fiducial FPSG - Formation Continue
+                          Document certifiant authentique
+────────────────────────────────────────────────────────────────────────────────
+
+Ce certificat atteste de la validation des compétences dans le domaine de
+l'accompagnement et de la gestion du stress en milieu professionnel.
+
+Formation validée avec succès - Score minimum requis : 80%
+Durée de la formation : 40 minutes
+Module de référence : Formation Fiducial - Accompagnement et gestion du stress
+
+Pour toute vérification de l'authenticité de ce certificat,
+contacter le service formation Fiducial en mentionnant le numéro de série.
+
+════════════════════════════════════════════════════════════════════════════════
+`;
+
+    const blob = new Blob([certificateContent], { type: 'text/plain;charset=utf-8' });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `Certificat_Competence_${studentName.firstName}_${studentName.lastName}_${serialNumber}.txt`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
   };
 
   const handleMidQuizAnswer = (questionId: number, answer: string) => {
@@ -328,7 +422,7 @@ RAPPELS ESSENTIELS :
     },
     {
       title: "Pleine conscience (Mindfulness, MBSR)",
-      description: "Programme structuré de m��ditation et d'attention consciente développé par Jon Kabat-Zinn.",
+      description: "Programme structuré de méditation et d'attention consciente développé par Jon Kabat-Zinn.",
       whatItIs: "La pleine conscience est un état de conscience qui résulte du fait de porter son attention, intentionnellement, au moment présent, sans jugement. Le MBSR (Mindfulness-Based Stress Reduction) est un programme de 8 semaines qui enseigne diverses techniques de méditation et de yoga doux.",
       whyItWorks: "Cette approche agit sur le système nerveux en activant la réponse de relaxation et en réduisant l'activité de l'amygdale (centre de la peur). Elle développe la capacité à observer ses pensées et émotions sans s'y identifier, créant un espace de recul face au stress.",
       reasoning: "Le stress est souvent amplifié par notre tendance à ruminer le passé ou anticiper l'avenir. En ramenant l'attention au présent, on interrompt ces cycles de pensées stressantes et on cultive un état de calme intérieur. La pratique régulière modifie littéralement la structure du cerveau.",
