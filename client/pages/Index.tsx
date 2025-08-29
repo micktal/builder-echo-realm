@@ -396,7 +396,7 @@ Module 5 - Formation Fiducial
 • ✅ Rassurance sans fausse promesse
 • ✅ Respect de ses choix et de son rythme
 
-🔄 ORIENTATION ET RESSOURCES
+��� ORIENTATION ET RESSOURCES
 • ✅ Médecine du travail (santé physique et mentale)
 • ✅ Service RH (accompagnement social et administratif)
 • ✅ Réseau HSE (prévention des risques)
@@ -1257,7 +1257,7 @@ RAPPELS ESSENTIELS :
                     <div className="space-y-3 text-sm text-red-800">
                       <div>• <strong>Épuisement des notifications :</strong> Stress permanent des alertes</div>
                       <div>• <strong>FOMO professionnel :</strong> Peur de rater une information importante</div>
-                      <div>• <strong>Multitâche forcé :</strong> Jonglage constant entre applications</div>
+                      <div>• <strong>Multit��che forcé :</strong> Jonglage constant entre applications</div>
                       <div>• <strong>Infobésité :</strong> Surcharge d'informations à traiter</div>
                       <div>• <strong>Nomophobie :</strong> Angoisse d'être séparé de son smartphone</div>
                     </div>
@@ -1975,7 +1975,7 @@ RAPPELS ESSENTIELS :
                           <p className="font-medium mb-1">Violations :</p>
                           <div>• Curiosité déplacée</div>
                           <div>• Rupture de confidentialité</div>
-                          <div>• Dépassement de rôle</div>
+                          <div>• Dépassement de r��le</div>
                           <div>• Atteinte à la vie privée</div>
                         </div>
                       </div>
@@ -2494,7 +2494,7 @@ RAPPELS ESSENTIELS :
                                   </div>
 
                                   <Button
-                                    onClick={downloadCertificate}
+                                    onClick={downloadCertificatePDF}
                                     disabled={!studentName.firstName || !studentName.lastName}
                                     className="bg-green-600 hover:bg-green-700 text-white w-full mb-4"
                                   >
