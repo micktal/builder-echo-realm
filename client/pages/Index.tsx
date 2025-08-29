@@ -407,17 +407,7 @@ RAPPELS ESSENTIELS :
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Header */}
       <header className="bg-white shadow-sm border-b border-indigo-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex items-center space-x-3">
-            <div className="bg-indigo-600 p-2 rounded-lg">
-              <Brain className="h-8 w-8 text-white" />
-            </div>
-            <div>
-              <h1 className="text-2xl font-bold text-gray-900">Formation Fiducial</h1>
-              <p className="text-sm text-gray-600">Gestion du stress et accompagnement</p>
-            </div>
-          </div>
-        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6" />
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
@@ -425,11 +415,10 @@ RAPPELS ESSENTIELS :
         {/* Bloc 1 - Introduction */}
         <section className="text-center space-y-6">
           <div className="bg-white rounded-xl shadow-lg p-8 border border-indigo-200">
-            <Badge variant="secondary" className="bg-indigo-100 text-indigo-800 mb-4">
-              Formation complète
-            </Badge>
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              Accompagnement et gestion du stress en entreprise
+              <span style={{color: 'rgb(144, 19, 254)'}}>
+                Accompagnement et gestion du stress en entreprise
+              </span>
             </h1>
             <div className="flex items-center justify-center space-x-6 text-sm text-gray-600 mb-6">
               <div className="flex items-center space-x-2">
@@ -1460,7 +1449,7 @@ RAPPELS ESSENTIELS :
                           ? "bg-green-50 text-green-800 border border-green-200"
                           : "bg-red-50 text-red-800 border border-red-200"
                       }`}>
-                        {midQuizAnswers[5] === "true" ? "Correct ! C'est une obligation légale." : "Incorrect. Le DUERP doit effectivement intégrer les RPS."}
+                        {midQuizAnswers[5] === "true" ? "Correct ! C'est une obligation l��gale." : "Incorrect. Le DUERP doit effectivement intégrer les RPS."}
                       </div>
                     )}
                   </div>
