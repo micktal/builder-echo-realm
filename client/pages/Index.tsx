@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import jsPDF from 'jspdf';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
@@ -60,7 +62,7 @@ export default function Index() {
     });
 
     const certificateContent = `
-════════════════════════════════════════════════════════════════════════════════
+═══════════════════════════��════════════════════════════════════════════════════
                               CERTIFICAT DE COMPÉTENCE
                                  FORMATION FIDUCIAL
 ═════════════════════════════════════════════��══════════════════════════════════
@@ -108,7 +110,7 @@ Module de référence : Formation Fiducial - Accompagnement et gestion du stress
 Pour toute vérification de l'authenticité de ce certificat,
 contacter le service formation Fiducial en mentionnant le numéro de série.
 
-════════════════════════════════════════════════════════════════════════════════
+══════���═════════════════════════════════════════════════════════════════════════
 `;
 
     const blob = new Blob([certificateContent], { type: 'text/plain;charset=utf-8' });
@@ -175,7 +177,7 @@ Module 5 - Formation Fiducial
 
 🔍 OBSERVATION PRÉALABLE
 • ✅ J'ai repéré des changements de comportement
-• ✅ J'ai noté la fréquence et l'intensité des signaux
+��� ✅ J'ai noté la fréquence et l'intensité des signaux
 • ✅ J'ai observé sans juger ni interpréter
 • ✅ Je distingue les faits de mes impressions
 
