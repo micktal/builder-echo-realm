@@ -919,7 +919,7 @@ RAPPELS ESSENTIELS :
 
               {/* Stress du télétravail */}
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-6">1. Stress du télétravail et management à distance</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">Le Stress du télétravail et management à distance</h3>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
@@ -965,7 +965,7 @@ RAPPELS ESSENTIELS :
                     </div>
                     <div className="space-y-2">
                       <div className="bg-blue-50 p-3 rounded italic text-blue-800">
-                        "As-tu l'impression d'être bien accompagné(e) à distance ?"
+                        "As-tu l'impression d'être bien accompagn��(e) à distance ?"
                       </div>
                       <div className="bg-blue-50 p-3 rounded italic text-blue-800">
                         "Comment tu gères l'isolement ?"
@@ -977,7 +977,7 @@ RAPPELS ESSENTIELS :
 
               {/* Burn-out digital */}
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-6">2. Burn-out digital et hyperconnexion</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">Le Burn-out digital et hyperconnexion</h3>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-red-50 border border-red-200 rounded-lg p-6">
@@ -1030,7 +1030,7 @@ RAPPELS ESSENTIELS :
 
               {/* Stress générationnel */}
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-6">3. Stress générationnel et différences intergénérationnelles</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">Le Stress générationnel et différences intergénérationnelles</h3>
 
                 <div className="grid md:grid-cols-3 gap-6">
 
@@ -1084,7 +1084,7 @@ RAPPELS ESSENTIELS :
                       <div><strong>Attentes :</strong></div>
                       <div>• Stabilité et sécurité</div>
                       <div>• Respect de l'expérience</div>
-                      <div>• Communication directe</div>
+                      <div>�� Communication directe</div>
                       <div>• Transmission du savoir</div>
 
                       <div className="pt-2"><strong>Sources de stress :</strong></div>
@@ -1753,7 +1753,7 @@ RAPPELS ESSENTIELS :
                           <div>• Confiance préservée</div>
                           <div>• Accompagnement adapté</div>
                           <div>• Respect de la dignité</div>
-                          <div>• Cadre professionnel maintenu</div>
+                          <div>��� Cadre professionnel maintenu</div>
                         </div>
                       </div>
                     </div>
