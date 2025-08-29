@@ -332,7 +332,7 @@ RAPPELS ESSENTIELS :
       whatItIs: "La pleine conscience est un état de conscience qui résulte du fait de porter son attention, intentionnellement, au moment présent, sans jugement. Le MBSR (Mindfulness-Based Stress Reduction) est un programme de 8 semaines qui enseigne diverses techniques de méditation et de yoga doux.",
       whyItWorks: "Cette approche agit sur le système nerveux en activant la réponse de relaxation et en réduisant l'activité de l'amygdale (centre de la peur). Elle développe la capacité à observer ses pensées et émotions sans s'y identifier, créant un espace de recul face au stress.",
       reasoning: "Le stress est souvent amplifié par notre tendance à ruminer le passé ou anticiper l'avenir. En ramenant l'attention au présent, on interrompt ces cycles de pensées stressantes et on cultive un état de calme intérieur. La pratique régulière modifie littéralement la structure du cerveau.",
-      usage: "Stress chronique, burnout, anxiété généralisée, douleurs chroniques, insomnie, dépression récurrente",
+      usage: "Stress chronique, burnout, anxiét�� généralisée, douleurs chroniques, insomnie, dépression récurrente",
       efficacy: "Réduction de 70% des symptômes anxieux, diminution de 40% des rechutes dépressives",
       duration: "Programme de 8 semaines, 2h30 par semaine + pratique quotidienne",
       techniques: ["Méditation assise", "Scan corporel", "Yoga mindful", "Méditation marchée", "Respiration consciente"]
@@ -553,7 +553,7 @@ RAPPELS ESSENTIELS :
             <CardHeader className="bg-gradient-to-r from-orange-50 to-red-50">
               <CardTitle className="flex items-center space-x-2">
                 <AlertTriangle className="h-5 w-5 text-orange-600" />
-                <span>S��quence 2 : Repérage et orientation</span>
+                <span>Le Repérage et orientation</span>
               </CardTitle>
               <p className="text-gray-600">
                 Il est essentiel d'identifier les signaux précoces et d'agir avant qu'ils ne s'aggravent.
