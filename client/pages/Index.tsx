@@ -162,7 +162,7 @@ Module 5 - Formation Fiducial
 • ✅ Comment je me sens après cet échange ?
 • ✅ Ai-je respecté mes limites de rôle ?
 • ✅ Ai-je été bienveillant(e) et professionnel(le) ?
-• ✅ Quels points am��liorer pour la prochaine fois ?
+• ✅ Quels points améliorer pour la prochaine fois ?
 • ✅ Ai-je besoin de soutien ou de supervision ?
 
 💡 PREVENTION DU STRESS SECONDAIRE
@@ -757,21 +757,21 @@ RAPPELS ESSENTIELS :
                   {[
                     {
                       id: "cas1",
-                      title: "Cas n°1 : Sarah, 35 ans, manager",
+                      title: "Sarah, 35 ans, manager",
                       situation: "Depuis la réorganisation il y a 2 mois, Sarah mange à son bureau, ne sourit plus, fait des erreurs dans ses rapports. Elle dit : 'Je n'y arrive plus, j'ai l'impression de décevoir tout le monde.'",
                       signaux: ["Changement alimentaire", "Modification comportement social", "Erreurs inhabituelles", "Dévalorisation"],
                       action: "Entretien bienveillant pour explorer les difficultés et proposer un soutien RH"
                     },
                     {
                       id: "cas2",
-                      title: "Cas n°2 : Marc, 45 ans, technicien",
+                      title: "Marc, 45 ans, technicien",
                       situation: "Apr��s un accident de travail sans gravité, Marc évite certaines tâches, a des sueurs, dit : 'Je n'ai plus confiance, et si ça recommence ?' Il boit plus qu'avant.",
                       signaux: ["Évitement", "Symptômes anxieux", "Perte de confiance", "Consommation d'alcool"],
                       action: "Orientation vers médecine du travail et éventuellement vers un spécialiste trauma"
                     },
                     {
                       id: "cas3",
-                      title: "Cas n°3 : Julie, 28 ans, assistante",
+                      title: "Julie, 28 ans, assistante",
                       situation: "Depuis son divorce, Julie arrive en retard, pleure parfois au bureau, dit : 'Je ne sais plus où j'en suis, tout se mélange.' Performance en baisse notable.",
                       signaux: ["Événement personnel", "Pleurs au travail", "Confusion", "Baisse performance"],
                       action: "Soutien empathique, aménagement temporaire, orientation cellule d'aide"
