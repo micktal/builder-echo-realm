@@ -155,7 +155,7 @@ Module 5 - Formation Fiducial
 • ✅ Information gardée strictement confidentielle
 • ✅ Aucune discussion avec d'autres collègues
 • ✅ Signalement uniquement aux personnes autorisées
-• ✅ Autorisation demandée avant tout partage d'information
+��� ✅ Autorisation demandée avant tout partage d'information
 • ✅ Respect absolu de la vie privée
 
 🧠 AUTO-ÉVALUATION DE L'ACCOMPAGNANT
@@ -1470,7 +1470,7 @@ RAPPELS ESSENTIELS :
                     <div className="space-y-2">
                       {[
                         { id: "ignorer", text: "Ignorer ces comportements, elle va se reprendre", correct: false },
-                        { id: "recadrer", text: "La recadrer immédiatement sur ses retards", correct: false },
+                        { id: "recadrer", text: "La recadrer imm��diatement sur ses retards", correct: false },
                         { id: "bienveillant", text: "L'approcher en privé avec bienveillance pour proposer d'échanger", correct: true },
                         { id: "collegues", text: "En parler avec d'autres collègues pour avoir leur avis", correct: false }
                       ].map((option) => (
@@ -1496,24 +1496,6 @@ RAPPELS ESSENTIELS :
                   </div>
                 </div>
 
-                {/* Question ouverte */}
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-6">Question de réflexion</h3>
-
-                  <div className="bg-white border border-gray-200 rounded-lg p-6 mb-6">
-                    <h4 className="font-medium text-gray-900 mb-4">Question 7 : Citez trois facteurs déclencheurs de stress professionnel</h4>
-                    <div className="bg-gray-50 border border-gray-200 rounded p-4">
-                      <p className="text-sm text-gray-700 mb-2">Exemples de réponses attendues :</p>
-                      <div className="space-y-1 text-sm text-gray-600">
-                        <div>• Surcharge de travail (plus de 60h/semaine)</div>
-                        <div>• Conflits relationnels (harcèlement, tensions)</div>
-                        <div>• Insécurité professionnelle (restructuration, licenciements)</div>
-                        <div>• Manque de reconnaissance</div>
-                        <div>• Inadéquation entre compétences et exigences du poste</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
                 {/* Résultats et validation */}
                 <div className="border-t pt-6">
