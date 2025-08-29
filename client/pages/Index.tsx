@@ -13,6 +13,8 @@ export default function Index() {
   const [showQuizResults, setShowQuizResults] = useState(false);
   const [midQuizAnswers, setMidQuizAnswers] = useState<Record<number, string>>({});
   const [showMidQuizResults, setShowMidQuizResults] = useState(false);
+  const [studentName, setStudentName] = useState({ firstName: '', lastName: '' });
+  const [showCertificateForm, setShowCertificateForm] = useState(false);
 
   const handleScenarioChoice = (choice: string) => {
     setCurrentScenario(choice);
@@ -326,7 +328,7 @@ RAPPELS ESSENTIELS :
     },
     {
       title: "Pleine conscience (Mindfulness, MBSR)",
-      description: "Programme structuré de méditation et d'attention consciente développé par Jon Kabat-Zinn.",
+      description: "Programme structuré de m��ditation et d'attention consciente développé par Jon Kabat-Zinn.",
       whatItIs: "La pleine conscience est un état de conscience qui résulte du fait de porter son attention, intentionnellement, au moment présent, sans jugement. Le MBSR (Mindfulness-Based Stress Reduction) est un programme de 8 semaines qui enseigne diverses techniques de méditation et de yoga doux.",
       whyItWorks: "Cette approche agit sur le système nerveux en activant la réponse de relaxation et en réduisant l'activité de l'amygdale (centre de la peur). Elle développe la capacité à observer ses pensées et émotions sans s'y identifier, créant un espace de recul face au stress.",
       reasoning: "Le stress est souvent amplifié par notre tendance à ruminer le passé ou anticiper l'avenir. En ramenant l'attention au présent, on interrompt ces cycles de pensées stressantes et on cultive un état de calme intérieur. La pratique régulière modifie littéralement la structure du cerveau.",
