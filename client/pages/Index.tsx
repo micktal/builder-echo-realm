@@ -225,7 +225,7 @@ export default function Index() {
 ═══════════════════════════��════════════════════════════════════════════════════
                               CERTIFICAT DE COMPÉTENCE
                                  FORMATION FIDUCIAL
-═══════════════��══════════���══════════════════��══════════════════════════════════
+══════════════════════════���═══���══════════════��══════════════════════════════════
 
                         ACCOMPAGNEMENT ET GESTION DU STRESS
                                   EN ENTREPRISE
@@ -255,7 +255,7 @@ Délivré le : ${currentDate}
 Numéro de série : ${serialNumber}
 
 
-──────────────────────────────────��─────────────────────────────────────────────
+──────────────────────────────────��──��──────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
 ────────────────────────────────────────────────────────────────────────────────
@@ -328,12 +328,12 @@ CONNAISSANCES REQUISES
 • Je sais différencier urgence/non-urgence
 • J'ai en tête les coordonnées des professionnels (médecine du travail, RH)
 
-⚖️ RAPPEL CADRE LÉGAL ET ÉTHIQUE
-• ✅ Je respecterai la confidentialité absolue
-• ✅ Je ne forcerai pas la personne à parler
-• ✅ Je demanderai l'autorisation avant tout signalement
-• ✅ Je ne poserai pas de questions trop personnelles
-• ✅ Je respecterai le rythme de la personne
+RAPPEL CADRE LÉGAL ET ÉTHIQUE
+• Je respecterai la confidentialité absolue
+• Je ne forcerai pas la personne à parler
+• Je demanderai l'autorisation avant tout signalement
+• Je ne poserai pas de questions trop personnelles
+• Je respecterai le rythme de la personne
 
 🔍 OBSERVATION PRÉALABLE
 • ✅ J'ai repéré des changements de comportement
@@ -382,7 +382,7 @@ CONNAISSANCES REQUISES
 
 💬 COMMUNICATION ADAPTÉE
 À l'entreprise :
-• ✅ "Nous avons des ressources pour t'aider"
+��� ✅ "Nous avons des ressources pour t'aider"
 �� ✅ "La médecine du travail peut te recevoir"
 • ✅ "Les RH sont là pour t'accompagner"
 • ✅ Information claire sur les dispositifs
@@ -841,7 +841,7 @@ RAPPELS ESSENTIELS :
                     </h4>
                     <div className="space-y-2 text-sm text-red-800">
                       <div>• <strong>Surcharge de travail :</strong> Plus de 60h/semaine, délais impossibles</div>
-                      <div>• <strong>Conflits relationnels :</strong> Harc��lement, tensions équipe</div>
+                      <div>• <strong>Conflits relationnels :</strong> Harcèlement, tensions équipe</div>
                       <div>• <strong>Insécurité professionnelle :</strong> Restructuration, licenciements</div>
                       <div>• <strong>Manque de reconnaissance :</strong> Efforts non valorisés</div>
                       <div>• <strong>Évolutions n��gatives :</strong> Rétrogradation, mutation forcée</div>
@@ -1019,7 +1019,7 @@ RAPPELS ESSENTIELS :
 
               {/* Cas pratiques détaillés */}
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Voyons ensemble des situations concr��tes</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Voyons ensemble des situations concrètes</h3>
 
                 <div className="space-y-4">
                   {[
@@ -1187,7 +1187,7 @@ RAPPELS ESSENTIELS :
 
               {/* Stress du télétravail */}
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-6">Le Stress du télétravail et management à distance</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">Le Stress du télétravail et management �� distance</h3>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
@@ -1337,7 +1337,7 @@ RAPPELS ESSENTIELS :
 
                       <div className="pt-2"><strong>Sources de stress :</strong></div>
                       <div>• Conciliation famille/carrière</div>
-                      <div>• Pression financière (logement)</div>
+                      <div>• Pression financi��re (logement)</div>
                       <div>• Syndrome de l'imposteur</div>
                     </div>
                   </div>
@@ -1992,7 +1992,7 @@ RAPPELS ESSENTIELS :
                         <div className="bg-white p-3 rounded border">
                           <p className="font-medium mb-1">Actions respectueuses :</p>
                           <div className="space-y-1">
-                            <div>• ��coute sans poser de questions indiscrètes</div>
+                            <div>• Écoute sans poser de questions indiscrètes</div>
                             <div>• "Merci de ta confiance"</div>
                             <div>• Garde l'information confidentielle</div>
                             <div>• Propose des ressources appropriées</div>
