@@ -160,7 +160,7 @@ export default function Index() {
 
     // Competencies list
     const competencies = [
-      '��� Identification des approches thérapeutiques validées',
+      '✓ Identification des approches thérapeutiques validées',
       '✓ Repérage et orientation des personnes en situation de stress',
       '✓ Maîtrise des techniques d\'écoute active et de communication adaptée',
       '✓ Connaissance du cadre légal et des responsabilités en entreprise',
@@ -255,7 +255,7 @@ Délivré le : ${currentDate}
 Numéro de série : ${serialNumber}
 
 
-──────────────────────────────────��─────────────────���───────────────────────────
+──────────────────────────────────��─────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
 ────────────────────────────────────────────────────────────────────────────────
@@ -319,7 +319,7 @@ PRÉPARATION PERSONNELLE
 • J'ai prévu suffisamment de temps (pas de rush)
 • J'ai identifié un lieu calme et confidentiel
 • J'ai mis mon téléphone en silencieux
-• Je me suis rappelé mes limites de rôle (ne pas jouer au thérapeute)
+• Je me suis rappel�� mes limites de rôle (ne pas jouer au thérapeute)
 
 CONNAISSANCES REQUISES
 • Je connais les ressources internes Fiducial disponibles
@@ -350,12 +350,12 @@ AMORCE DU DIALOGUE
 • Cadre posé : "Je suis là pour t'écouter si tu en as besoin"
 • Respect immédiat si la personne refuse de parler
 
-👂 ÉCOUTE ACTIVE - ATTITUDE
-• ✅ Position d'écoute (regard, posture ouverte)
-• ✅ Bienveillance sans jugement
-• ✅ Neutralité (pas de conseil personnel)
-• ✅ Patience (je laisse des silences)
-• ✅ Empathie sans se substituer à un professionnel
+ÉCOUTE ACTIVE - ATTITUDE
+• Position d'écoute (regard, posture ouverte)
+• Bienveillance sans jugement
+• Neutralité (pas de conseil personnel)
+• Patience (je laisse des silences)
+• Empathie sans se substituer à un professionnel
 
 🎯 TECHNIQUES D'ÉCOUTE
 • ✅ Questions ouvertes : "Comment te sens-tu ?" "Peux-tu m'en dire plus ?"
@@ -946,7 +946,7 @@ RAPPELS ESSENTIELS :
                             <div className="text-sm text-gray-600 space-y-1">
                               <div>• <strong>Isolement :</strong> "Je préfère déjeuner seul maintenant"</div>
                               <div>• <strong>Évitement :</strong> Ne participe plus aux réunions informelles</div>
-                              <div>• <strong>Irritabilité :</strong> Réactions disproportionnées pour des détails</div>
+                              <div>• <strong>Irritabilité :</strong> Réactions disproportionnées pour des d��tails</div>
                             </div>
                           </div>
                         </div>
