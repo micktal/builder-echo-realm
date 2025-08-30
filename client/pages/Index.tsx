@@ -364,14 +364,14 @@ TECHNIQUES D'ÉCOUTE
 • Pas de minimisation : éviter "ce n'est pas grave"
 • Relances douces : "Et ensuite ?" "Comment ça se passe pour toi ?"
 
-🚨 SIGNAUX D'ALERTE À REPÉRER
-• ✅ Fatigue chronique, troubles du sommeil
-• ✅ Changements d'apparence, négligence inhabituelle
-• ✅ Isolement social, évitement des collègues
-• ✅ Erreurs inhabituelles, baisse de performance
-• ✅ Irritabilité, réactions disproportionnées
-• ✅ Expressions de dévalorisation
-• ✅ Propos inquiétants ("ça ne sert à rien", "personne ne remarque")
+SIGNAUX D'ALERTE À REPÉRER
+• Fatigue chronique, troubles du sommeil
+• Changements d'apparence, négligence inhabituelle
+• Isolement social, évitement des collègues
+• Erreurs inhabituelles, baisse de performance
+• Irritabilité, réactions disproportionnées
+• Expressions de dévalorisation
+• Propos inquiétants ("ça ne sert à rien", "personne ne remarque")
 
 ⚠️ SIGNAUX D'ALARME MAJEURS
 • 🚨 Propos suicidaires ou de d���sespoir profond
@@ -944,7 +944,7 @@ RAPPELS ESSENTIELS :
                           <div className="bg-white border rounded p-3">
                             <h5 className="font-medium text-gray-900 mb-2">Relations sociales</h5>
                             <div className="text-sm text-gray-600 space-y-1">
-                              <div>• <strong>Isolement :</strong> "Je préfère d��jeuner seul maintenant"</div>
+                              <div>• <strong>Isolement :</strong> "Je préfère déjeuner seul maintenant"</div>
                               <div>• <strong>Évitement :</strong> Ne participe plus aux réunions informelles</div>
                               <div>• <strong>Irritabilité :</strong> Réactions disproportionnées pour des détails</div>
                             </div>
