@@ -255,10 +255,10 @@ Délivré le : ${currentDate}
 Numéro de série : ${serialNumber}
 
 
-──────────────────────────────────��─────────────────────────────────────────────
+───────────���──────────────────────��─────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
-─────────────────────────────────────────────────��──────────────────────────────
+────────────────────────────────────────────────────────────────────────────────
 
 Ce certificat atteste de la validation des compétences dans le domaine de
 l'accompagnement et de la gestion du stress en milieu professionnel.
@@ -383,7 +383,7 @@ SIGNAUX D'ALARME MAJEURS
 COMMUNICATION ADAPTÉE
 À l'entreprise :
 • "Nous avons des ressources pour t'aider"
-�� ✅ "La médecine du travail peut te recevoir"
+• "La médecine du travail peut te recevoir"
 • "Les RH sont là pour t'accompagner"
 • Information claire sur les dispositifs
 • Respect de la procédure interne
@@ -525,7 +525,7 @@ Module 5 - Formation Fiducial
 
 👂 ÉTAPE 3 : ÉCOUTER
 ====================
-• Appliquer l'écoute active (bienveillance, neutralité, non-jugement)
+�� Appliquer l'écoute active (bienveillance, neutralité, non-jugement)
 • Poser des questions ouvertes
 • Reformuler pour montrer la compréhension
 • Laisser du temps et des silences
