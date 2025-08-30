@@ -225,7 +225,7 @@ export default function Index() {
 ═══════════════════════════��════════════════════════════════════════════════════
                               CERTIFICAT DE COMPÉTENCE
                                  FORMATION FIDUCIAL
-══════════════════════════���══════════════════��══════════════════════════════════
+═════════════════════════������══════════════════��══════════════════════════════════
 
                         ACCOMPAGNEMENT ET GESTION DU STRESS
                                   EN ENTREPRISE
@@ -255,7 +255,7 @@ Délivré le : ${currentDate}
 Numéro de série : ${serialNumber}
 
 
-──────────────────────────────────��─────────────────────────────────────────────
+───────────────────────────────��──��─────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
 ────────────────────────────────────────────────────────────────────────────────
@@ -270,7 +270,7 @@ Module de référence : Formation Fiducial - Accompagnement et gestion du stress
 Pour toute vérification de l'authenticité de ce certificat,
 contacter le service formation Fiducial en mentionnant le numéro de série.
 
-══════���═══════════════════════════════════════════════════��═════════════════════
+══════���═════════════════════════════════════════════════════════════════════════
 `;
 
     const blob = new Blob([certificateContent], { type: 'text/plain;charset=utf-8' });
@@ -395,7 +395,7 @@ COMMUNICATION ADAPTÉE
 • Rassurance sans fausse promesse
 • Respect de ses choix et de son rythme
 
-��� ORIENTATION ET RESSOURCES
+ORIENTATION ET RESSOURCES
 • Médecine du travail (santé physique et mentale)
 • Service RH (accompagnement social et administratif)
 • Réseau HSE (prévention des risques)
@@ -598,7 +598,7 @@ RAPPELS ESSENTIELS :
       title: "Pleine conscience (Mindfulness, MBSR)",
       description: "Programme structuré de méditation et d'attention consciente développé par Jon Kabat-Zinn.",
       whatItIs: "La pleine conscience est un état de conscience qui résulte du fait de porter son attention, intentionnellement, au moment présent, sans jugement. Le MBSR (Mindfulness-Based Stress Reduction) est un programme de 8 semaines qui enseigne diverses techniques de méditation et de yoga doux.",
-      whyItWorks: "Cette approche agit sur le syst��me nerveux en activant la réponse de relaxation et en réduisant l'activité de l'amygdale (centre de la peur). Elle développe la capacité à observer ses pensées et émotions sans s'y identifier, créant un espace de recul face au stress.",
+      whyItWorks: "Cette approche agit sur le système nerveux en activant la réponse de relaxation et en réduisant l'activité de l'amygdale (centre de la peur). Elle développe la capacité à observer ses pensées et émotions sans s'y identifier, créant un espace de recul face au stress.",
       reasoning: "Le stress est souvent amplifié par notre tendance à ruminer le passé ou anticiper l'avenir. En ramenant l'attention au présent, on interrompt ces cycles de pensées stressantes et on cultive un état de calme intérieur. La pratique régulière modifie littéralement la structure du cerveau.",
       usage: "Stress chronique, burnout, anxiété généralisée, douleurs chroniques, insomnie, dépression récurrente",
       efficacy: "Réduction de 70% des symptômes anxieux, diminution de 40% des rechutes dépressives",
@@ -619,7 +619,7 @@ RAPPELS ESSENTIELS :
     {
       title: "Soutien médicamenteux",
       description: "Traitement pharmacologique ciblé pour réguler les neurotransmetteurs impliqués dans la réponse au stress.",
-      whatItIs: "Les médicaments psychotropes (anxiolytiques, antidépresseurs, régulateurs d'humeur) agissent sur les systèmes de neurotransmetteurs (sérotonine, dopamine, GABA) pour réguler l'humeur et réduire l'anxiété. Ils sont prescrits par un médecin psychiatre ou généraliste.",
+      whatItIs: "Les médicaments psychotropes (anxiolytiques, antidépresseurs, régulateurs d'humeur) agissent sur les syst��mes de neurotransmetteurs (sérotonine, dopamine, GABA) pour réguler l'humeur et réduire l'anxiété. Ils sont prescrits par un médecin psychiatre ou généraliste.",
       whyItWorks: "Le stress chronique peut créer des déséquilibres chimiques dans le cerveau. Les médicaments aident à rétablir un équilibre neurochimique, créant une 'fenêtre thérapeutique' qui permet aux autres approches d'être plus efficaces.",
       reasoning: "Dans certains cas, le niveau de stress est si élevé qu'il empêche la personne de bénéficier d'une psychothérapie. Le médicament peut être nécessaire pour stabiliser l'état émotionnel et permettre un travail psychologique approfondi.",
       usage: "Troubles anxieux sévères, dépression majeure, troubles bipolaires, troubles du sommeil s��vères",
