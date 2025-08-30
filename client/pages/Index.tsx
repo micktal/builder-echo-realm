@@ -374,7 +374,7 @@ Module 5 - Formation Fiducial
 • ✅ Propos inquiétants ("ça ne sert à rien", "personne ne remarque")
 
 ⚠️ SIGNAUX D'ALARME MAJEURS
-• 🚨 Propos suicidaires ou de d��sespoir profond
+• 🚨 Propos suicidaires ou de d���sespoir profond
 • 🚨 Désinvestissement total ("plus rien n'a d'importance")
 • 🚨 Idées de fuite ("je vais tout plaquer")
 • 🚨 Comportements à risque (alcool, substances)
@@ -409,7 +409,7 @@ Module 5 - Formation Fiducial
 
 🤝 SUIVI IMMÉDIAT
 • ✅ J'ai résumé ce qui a été dit et convenu
-• ✅ J'ai clarifié les prochaines étapes
+��� ✅ J'ai clarifié les prochaines étapes
 • ✅ J'ai donné les coordonnées des ressources mentionnées
 • ✅ J'ai fixé un point de suivi si approprié
 • ✅ J'ai remercié la personne pour sa confiance
@@ -622,7 +622,7 @@ RAPPELS ESSENTIELS :
       whatItIs: "Les médicaments psychotropes (anxiolytiques, antidépresseurs, régulateurs d'humeur) agissent sur les systèmes de neurotransmetteurs (sérotonine, dopamine, GABA) pour réguler l'humeur et réduire l'anxiété. Ils sont prescrits par un médecin psychiatre ou généraliste.",
       whyItWorks: "Le stress chronique peut créer des déséquilibres chimiques dans le cerveau. Les médicaments aident à rétablir un équilibre neurochimique, créant une 'fenêtre thérapeutique' qui permet aux autres approches d'être plus efficaces.",
       reasoning: "Dans certains cas, le niveau de stress est si élevé qu'il empêche la personne de bénéficier d'une psychothérapie. Le médicament peut être nécessaire pour stabiliser l'état émotionnel et permettre un travail psychologique approfondi.",
-      usage: "Troubles anxieux sévères, dépression majeure, troubles bipolaires, troubles du sommeil sévères",
+      usage: "Troubles anxieux sévères, dépression majeure, troubles bipolaires, troubles du sommeil s��vères",
       efficacy: "Efficace à court terme, meilleurs résultats en combinaison avec la psychothérapie",
       duration: "Variable, généralement 6 mois à 2 ans avec diminution progressive",
       techniques: ["Anxiolytiques (courte durée)", "Antidépresseurs ISRS", "Régulateurs d'humeur", "Somnifères (usage ponctuel)"]
@@ -782,17 +782,17 @@ RAPPELS ESSENTIELS :
 
                         <div className="grid md:grid-cols-2 gap-4">
                           <div className="bg-white border border-gray-200 rounded-lg p-4">
-                            <h4 className="font-medium text-gray-900 mb-3">📋 Indications :</h4>
+                            <h4 className="font-medium text-gray-900 mb-3">Indications :</h4>
                             <p className="text-sm text-gray-700">{approach.usage}</p>
                           </div>
                           <div className="bg-white border border-gray-200 rounded-lg p-4">
-                            <h4 className="font-medium text-gray-900 mb-3">⏱️ Durée :</h4>
+                            <h4 className="font-medium text-gray-900 mb-3">Durée :</h4>
                             <p className="text-sm text-gray-700">{approach.duration}</p>
                           </div>
                         </div>
 
                         <div className="bg-white border border-gray-200 rounded-lg p-4">
-                          <h4 className="font-medium text-gray-900 mb-3">🎯 Techniques principales :</h4>
+                          <h4 className="font-medium text-gray-900 mb-3">Techniques principales :</h4>
                           <div className="flex flex-wrap gap-2">
                             {approach.techniques.map((technique, idx) => (
                               <span key={idx} className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-medium">
@@ -803,7 +803,7 @@ RAPPELS ESSENTIELS :
                         </div>
 
                         <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-                          <h4 className="font-medium text-amber-900 mb-2">✅ Efficacité prouvée :</h4>
+                          <h4 className="font-medium text-amber-900 mb-2">Efficacité prouvée :</h4>
                           <p className="text-amber-800 text-sm">{approach.efficacy}</p>
                         </div>
                       </div>
@@ -1779,7 +1779,7 @@ RAPPELS ESSENTIELS :
                         Valider mes réponses ({Object.keys(midQuizAnswers).length}/6)
                       </Button>
                       <p className="text-sm text-gray-600 mt-2">
-                        R��pondez à toutes les questions pour voir les résultats
+                        Répondez à toutes les questions pour voir les résultats
                       </p>
                     </div>
                   ) : (
