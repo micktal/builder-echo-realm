@@ -255,7 +255,7 @@ Délivré le : ${currentDate}
 Numéro de série : ${serialNumber}
 
 
-──────────────────────────────────��─────────────────────────────────────────────
+────────────���─────────────────────��─────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
 ────────────────────────────────────────────────────────────────────────────────
@@ -374,7 +374,7 @@ SIGNAUX D'ALERTE À REPÉRER
 • Propos inquiétants ("ça ne sert à rien", "personne ne remarque")
 
 SIGNAUX D'ALARME MAJEURS
-• 🚨 Propos suicidaires ou de d���sespoir profond
+• Propos suicidaires ou de désespoir profond
 • Désinvestissement total ("plus rien n'a d'importance")
 • Idées de fuite ("je vais tout plaquer")
 • Comportements à risque (alcool, substances)
@@ -843,7 +843,7 @@ RAPPELS ESSENTIELS :
                       <div>• <strong>Surcharge de travail :</strong> Plus de 60h/semaine, délais impossibles</div>
                       <div>• <strong>Conflits relationnels :</strong> Harcèlement, tensions équipe</div>
                       <div>• <strong>Insécurité professionnelle :</strong> Restructuration, licenciements</div>
-                      <div>• <strong>Manque de reconnaissance :</strong> Efforts non valorisés</div>
+                      <div>��� <strong>Manque de reconnaissance :</strong> Efforts non valorisés</div>
                       <div>• <strong>Évolutions n��gatives :</strong> Rétrogradation, mutation forcée</div>
                       <div>• <strong>Inadéquation poste :</strong> Compétences vs exigences</div>
                     </div>
