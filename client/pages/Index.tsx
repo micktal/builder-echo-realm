@@ -373,12 +373,12 @@ SIGNAUX D'ALERTE À REPÉRER
 • Expressions de dévalorisation
 • Propos inquiétants ("ça ne sert à rien", "personne ne remarque")
 
-⚠️ SIGNAUX D'ALARME MAJEURS
+SIGNAUX D'ALARME MAJEURS
 • 🚨 Propos suicidaires ou de d���sespoir profond
-• 🚨 Désinvestissement total ("plus rien n'a d'importance")
-• 🚨 Idées de fuite ("je vais tout plaquer")
-• 🚨 Comportements à risque (alcool, substances)
-• ➡️ ORIENTATION URGENTE vers professionnels
+• Désinvestissement total ("plus rien n'a d'importance")
+• Idées de fuite ("je vais tout plaquer")
+• Comportements à risque (alcool, substances)
+• ORIENTATION URGENTE vers professionnels
 
 💬 COMMUNICATION ADAPTÉE
 À l'entreprise :
