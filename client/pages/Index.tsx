@@ -225,7 +225,7 @@ export default function Index() {
 ═══════════════════════════��════════════════════════════════════════════════════
                               CERTIFICAT DE COMPÉTENCE
                                  FORMATION FIDUCIAL
-═════════════════════════������══════════════════��══════════════════════════════════
+══════════════════════════���══════════════════��═══════════════════��══════════════
 
                         ACCOMPAGNEMENT ET GESTION DU STRESS
                                   EN ENTREPRISE
@@ -255,7 +255,7 @@ Délivré le : ${currentDate}
 Numéro de série : ${serialNumber}
 
 
-───────────────────────────────��──��─────────────────────────────────────────────
+──────────────────────────────────��─────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
 ────────────────────────────────────────────────────────────────────────────────
@@ -390,7 +390,7 @@ COMMUNICATION ADAPTÉE
 
 À la personne :
 • "Tu n'es pas seul(e) dans cette situation"
-• "Il est normal de demander de l'aide"
+��� "Il est normal de demander de l'aide"
 • "Tu as fait le bon choix en parlant"
 • Rassurance sans fausse promesse
 • Respect de ses choix et de son rythme
@@ -404,15 +404,15 @@ ORIENTATION ET RESSOURCES
 • Psychologue (accompagnement spécialisé)
 • Associations spécialisées selon le besoin
 
-📝 APRÈS L'ACCOMPAGNEMENT
+APRÈS L'ACCOMPAGNEMENT
 =========================
 
-🤝 SUIVI IMMÉDIAT
-• ✅ J'ai résumé ce qui a été dit et convenu
+SUIVI IMMÉDIAT
+• J'ai résumé ce qui a été dit et convenu
 ��� ✅ J'ai clarifié les prochaines étapes
-• ✅ J'ai donné les coordonnées des ressources mentionnées
-• ✅ J'ai fixé un point de suivi si approprié
-• ✅ J'ai remercié la personne pour sa confiance
+• J'ai donné les coordonnées des ressources mentionnées
+• J'ai fixé un point de suivi si approprié
+• J'ai remercié la personne pour sa confiance
 
 📋 TRAÇABILITÉ (CONFIDENTIELLE)
 �� ✅ Note personnelle des éléments factuels principaux
@@ -619,7 +619,7 @@ RAPPELS ESSENTIELS :
     {
       title: "Soutien médicamenteux",
       description: "Traitement pharmacologique ciblé pour réguler les neurotransmetteurs impliqués dans la réponse au stress.",
-      whatItIs: "Les médicaments psychotropes (anxiolytiques, antidépresseurs, régulateurs d'humeur) agissent sur les syst��mes de neurotransmetteurs (sérotonine, dopamine, GABA) pour réguler l'humeur et réduire l'anxiété. Ils sont prescrits par un médecin psychiatre ou généraliste.",
+      whatItIs: "Les médicaments psychotropes (anxiolytiques, antidépresseurs, régulateurs d'humeur) agissent sur les systèmes de neurotransmetteurs (sérotonine, dopamine, GABA) pour réguler l'humeur et réduire l'anxiété. Ils sont prescrits par un médecin psychiatre ou g��néraliste.",
       whyItWorks: "Le stress chronique peut créer des déséquilibres chimiques dans le cerveau. Les médicaments aident à rétablir un équilibre neurochimique, créant une 'fenêtre thérapeutique' qui permet aux autres approches d'être plus efficaces.",
       reasoning: "Dans certains cas, le niveau de stress est si élevé qu'il empêche la personne de bénéficier d'une psychothérapie. Le médicament peut être nécessaire pour stabiliser l'état émotionnel et permettre un travail psychologique approfondi.",
       usage: "Troubles anxieux sévères, dépression majeure, troubles bipolaires, troubles du sommeil s��vères",
