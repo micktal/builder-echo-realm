@@ -258,7 +258,7 @@ Numéro de série : ${serialNumber}
 ──────────────────────────────────��─────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
-───────────────────────────────���────────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────
 
 Ce certificat atteste de la validation des compétences dans le domaine de
 l'accompagnement et de la gestion du stress en milieu professionnel.
@@ -270,7 +270,7 @@ Module de référence : Formation Fiducial - Accompagnement et gestion du stress
 Pour toute vérification de l'authenticité de ce certificat,
 contacter le service formation Fiducial en mentionnant le numéro de série.
 
-══════���═════════════════════════════════════════════════════════════════════════
+══════���═══════════════════════════════════════════════════��═════════════════════
 `;
 
     const blob = new Blob([certificateContent], { type: 'text/plain;charset=utf-8' });
@@ -324,7 +324,7 @@ PRÉPARATION PERSONNELLE
 CONNAISSANCES REQUISES
 • Je connais les ressources internes Fiducial disponibles
 • Je maîtrise les principes de l'écoute active
-��� Je connais les signaux d'alerte de stress chronique
+• Je connais les signaux d'alerte de stress chronique
 • Je sais différencier urgence/non-urgence
 • J'ai en tête les coordonnées des professionnels (médecine du travail, RH)
 
@@ -396,13 +396,13 @@ COMMUNICATION ADAPTÉE
 • Respect de ses choix et de son rythme
 
 ��� ORIENTATION ET RESSOURCES
-• ✅ Médecine du travail (santé physique et mentale)
-• ✅ Service RH (accompagnement social et administratif)
-• ✅ Réseau HSE (prévention des risques)
-• ✅ Formation continue (gestion du stress)
-• ✅ Médecin généraliste (suivi médical)
-• ✅ Psychologue (accompagnement spécialisé)
-• ✅ Associations spécialisées selon le besoin
+• Médecine du travail (santé physique et mentale)
+• Service RH (accompagnement social et administratif)
+• Réseau HSE (prévention des risques)
+• Formation continue (gestion du stress)
+• Médecin généraliste (suivi médical)
+• Psychologue (accompagnement spécialisé)
+• Associations spécialisées selon le besoin
 
 📝 APRÈS L'ACCOMPAGNEMENT
 =========================
@@ -429,7 +429,7 @@ COMMUNICATION ADAPTÉE
 • ✅ Respect absolu de la vie privée
 
 🧠 AUTO-ÉVALUATION DE L'ACCOMPAGNANT
-• �� Comment je me sens après cet échange ?
+• ✅ Comment je me sens après cet échange ?
 • ✅ Ai-je respecté mes limites de rôle ?
 • ✅ Ai-je été bienveillant(e) et professionnel(le) ?
 • ✅ Quels points améliorer pour la prochaine fois ?
@@ -598,7 +598,7 @@ RAPPELS ESSENTIELS :
       title: "Pleine conscience (Mindfulness, MBSR)",
       description: "Programme structuré de méditation et d'attention consciente développé par Jon Kabat-Zinn.",
       whatItIs: "La pleine conscience est un état de conscience qui résulte du fait de porter son attention, intentionnellement, au moment présent, sans jugement. Le MBSR (Mindfulness-Based Stress Reduction) est un programme de 8 semaines qui enseigne diverses techniques de méditation et de yoga doux.",
-      whyItWorks: "Cette approche agit sur le système nerveux en activant la réponse de relaxation et en réduisant l'activité de l'amygdale (centre de la peur). Elle développe la capacité à observer ses pensées et émotions sans s'y identifier, créant un espace de recul face au stress.",
+      whyItWorks: "Cette approche agit sur le syst��me nerveux en activant la réponse de relaxation et en réduisant l'activité de l'amygdale (centre de la peur). Elle développe la capacité à observer ses pensées et émotions sans s'y identifier, créant un espace de recul face au stress.",
       reasoning: "Le stress est souvent amplifié par notre tendance à ruminer le passé ou anticiper l'avenir. En ramenant l'attention au présent, on interrompt ces cycles de pensées stressantes et on cultive un état de calme intérieur. La pratique régulière modifie littéralement la structure du cerveau.",
       usage: "Stress chronique, burnout, anxiété généralisée, douleurs chroniques, insomnie, dépression récurrente",
       efficacy: "Réduction de 70% des symptômes anxieux, diminution de 40% des rechutes dépressives",
@@ -1257,7 +1257,7 @@ RAPPELS ESSENTIELS :
                       <div>• <strong>Épuisement des notifications :</strong> Stress permanent des alertes</div>
                       <div>• <strong>FOMO professionnel :</strong> Peur de rater une information importante</div>
                       <div>• <strong>Multit��che forcé :</strong> Jonglage constant entre applications</div>
-                      <div>�� <strong>Infobésité :</strong> Surcharge d'informations à traiter</div>
+                      <div>• <strong>Infobésité :</strong> Surcharge d'informations à traiter</div>
                       <div>• <strong>Nomophobie :</strong> Angoisse d'être séparé de son smartphone</div>
                     </div>
                   </div>
