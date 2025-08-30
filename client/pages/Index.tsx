@@ -435,7 +435,7 @@ SUIVI IMMÉDIAT
 • ✅ Quels points améliorer pour la prochaine fois ?
 • ✅ Ai-je besoin de soutien ou de supervision ?
 
-💡 PREVENTION DU STRESS SECONDAIRE
+���� PREVENTION DU STRESS SECONDAIRE
 • ✅ Je prends du recul émotionnel
 • ✅ Je ne porte pas la responsabilité de résoudre le problème
 • ✅ Je reconnais mes propres limites
@@ -889,6 +889,13 @@ RAPPELS ESSENTIELS :
 
               {/* Signaux d'alerte détaillés avec exemples */}
               <div>
+                <div className="mb-6">
+                  <img
+                    src="https://images.pexels.com/photos/8636636/pexels-photo-8636636.jpeg"
+                    alt="Employée montrant des signes de fatigue et de stress au bureau"
+                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                  />
+                </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Signaux d'alerte à reconnaître</h3>
 
                 <Accordion type="single" collapsible className="w-full">
@@ -958,7 +965,7 @@ RAPPELS ESSENTIELS :
                             <div className="text-sm text-gray-600 space-y-1">
                               <div>• <strong>Erreurs inhabituelles :</strong> Marie, comptable rigoureuse, fait 3 erreurs de calcul en une semaine</div>
                               <div>• <strong>Retards fréquents :</strong> Pierre, toujours ponctuel, arrive en retard 4 fois ce mois</div>
-                              <div>• <strong>Procrastination :</strong> Sophie reporte constamment ses tâches importantes</div>
+                              <div>��� <strong>Procrastination :</strong> Sophie reporte constamment ses tâches importantes</div>
                               <div>• <strong>Perfectionnisme excessif :</strong> Luc refait 5 fois la même présentation</div>
                             </div>
                           </div>
