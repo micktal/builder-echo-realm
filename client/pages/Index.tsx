@@ -225,7 +225,7 @@ export default function Index() {
 ═══════════════════════════��════════════════════════════════════════════════════
                               CERTIFICAT DE COMPÉTENCE
                                  FORMATION FIDUCIAL
-══════════════════════════���══════════════════��══════════════════════════════════
+═══════════════��══════════���══════════════════��══════════════════════════════════
 
                         ACCOMPAGNEMENT ET GESTION DU STRESS
                                   EN ENTREPRISE
@@ -255,7 +255,7 @@ Délivré le : ${currentDate}
 Numéro de série : ${serialNumber}
 
 
-──────────────────────���───────────��─────────────────────────────────────────────
+──────────────────────────────────��─────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
 ────────────────────────────────────────────────────────────────────────────────
@@ -321,12 +321,12 @@ PRÉPARATION PERSONNELLE
 • J'ai mis mon téléphone en silencieux
 • Je me suis rappelé mes limites de rôle (ne pas jouer au thérapeute)
 
-📚 CONNAISSANCES REQUISES
-• ✅ Je connais les ressources internes Fiducial disponibles
-• ✅ Je maîtrise les principes de l'écoute active
-• ✅ Je connais les signaux d'alerte de stress chronique
-• ✅ Je sais différencier urgence/non-urgence
-• ✅ J'ai en tête les coordonnées des professionnels (médecine du travail, RH)
+CONNAISSANCES REQUISES
+• Je connais les ressources internes Fiducial disponibles
+• Je maîtrise les principes de l'écoute active
+• Je connais les signaux d'alerte de stress chronique
+• Je sais différencier urgence/non-urgence
+• J'ai en tête les coordonnées des professionnels (médecine du travail, RH)
 
 ⚖️ RAPPEL CADRE LÉGAL ET ÉTHIQUE
 • ✅ Je respecterai la confidentialité absolue
@@ -374,11 +374,11 @@ PRÉPARATION PERSONNELLE
 • ✅ Propos inquiétants ("ça ne sert à rien", "personne ne remarque")
 
 ⚠️ SIGNAUX D'ALARME MAJEURS
-• 🚨 Propos suicidaires ou de d�����sespoir profond
+• 🚨 Propos suicidaires ou de d���sespoir profond
 • 🚨 Désinvestissement total ("plus rien n'a d'importance")
 • 🚨 Idées de fuite ("je vais tout plaquer")
 • 🚨 Comportements à risque (alcool, substances)
-• ➡��� ORIENTATION URGENTE vers professionnels
+• ➡️ ORIENTATION URGENTE vers professionnels
 
 💬 COMMUNICATION ADAPTÉE
 À l'entreprise :
@@ -841,7 +841,7 @@ RAPPELS ESSENTIELS :
                     </h4>
                     <div className="space-y-2 text-sm text-red-800">
                       <div>• <strong>Surcharge de travail :</strong> Plus de 60h/semaine, délais impossibles</div>
-                      <div>• <strong>Conflits relationnels :</strong> Harcèlement, tensions équipe</div>
+                      <div>• <strong>Conflits relationnels :</strong> Harc��lement, tensions équipe</div>
                       <div>• <strong>Insécurité professionnelle :</strong> Restructuration, licenciements</div>
                       <div>• <strong>Manque de reconnaissance :</strong> Efforts non valorisés</div>
                       <div>• <strong>Évolutions n��gatives :</strong> Rétrogradation, mutation forcée</div>
@@ -1019,7 +1019,7 @@ RAPPELS ESSENTIELS :
 
               {/* Cas pratiques détaillés */}
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Voyons ensemble des situations concrètes</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Voyons ensemble des situations concr��tes</h3>
 
                 <div className="space-y-4">
                   {[
@@ -1992,7 +1992,7 @@ RAPPELS ESSENTIELS :
                         <div className="bg-white p-3 rounded border">
                           <p className="font-medium mb-1">Actions respectueuses :</p>
                           <div className="space-y-1">
-                            <div>• Écoute sans poser de questions indiscrètes</div>
+                            <div>• ��coute sans poser de questions indiscrètes</div>
                             <div>• "Merci de ta confiance"</div>
                             <div>• Garde l'information confidentielle</div>
                             <div>• Propose des ressources appropriées</div>
