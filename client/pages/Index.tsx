@@ -160,7 +160,7 @@ export default function Index() {
 
     // Competencies list
     const competencies = [
-      '✓ Identification des approches thérapeutiques validées',
+      '��� Identification des approches thérapeutiques validées',
       '✓ Repérage et orientation des personnes en situation de stress',
       '✓ Maîtrise des techniques d\'écoute active et de communication adaptée',
       '✓ Connaissance du cadre légal et des responsabilités en entreprise',
@@ -255,7 +255,7 @@ Délivré le : ${currentDate}
 Numéro de série : ${serialNumber}
 
 
-──────────────────────────────────��─────────────────────────────────────────────
+──────────────────────────────────��─────────────────���───────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
 ────────────────────────────────────────────────────────────────────────────────
@@ -341,14 +341,14 @@ OBSERVATION PRÉALABLE
 • J'ai observé sans juger ni interpréter
 • Je distingue les faits de mes impressions
 
-🌟 PENDANT L'ACCOMPAGNEMENT
+PENDANT L'ACCOMPAGNEMENT
 ===========================
 
-🗣️ AMORCE DU DIALOGUE
-• ✅ "J'ai remarqué que tu sembles préoccupé(e), est-ce que ça va ?"
-• ✅ Ton bienveillant et non accusateur
-• ✅ Cadre posé : "Je suis là pour t'écouter si tu en as besoin"
-• ✅ Respect immédiat si la personne refuse de parler
+AMORCE DU DIALOGUE
+• "J'ai remarqué que tu sembles préoccupé(e), est-ce que ça va ?"
+• Ton bienveillant et non accusateur
+• Cadre posé : "Je suis là pour t'écouter si tu en as besoin"
+• Respect immédiat si la personne refuse de parler
 
 👂 ÉCOUTE ACTIVE - ATTITUDE
 • ✅ Position d'écoute (regard, posture ouverte)
