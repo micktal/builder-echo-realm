@@ -135,7 +135,7 @@ export default function Index() {
     // Certificate text
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(12);
-    doc.text('Par la présente, il est certifi�� que :', 105, 120, { align: 'center' });
+    doc.text('Par la présente, il est certifié que :', 105, 120, { align: 'center' });
 
     // Student name (highlighted)
     doc.setFont('helvetica', 'bold');
@@ -337,7 +337,7 @@ RAPPEL CADRE LÉGAL ET ÉTHIQUE
 
 OBSERVATION PRÉALABLE
 • J'ai repéré des changements de comportement
-��� ✅ J'ai noté la fréquence et l'intensité des signaux
+• J'ai noté la fréquence et l'intensité des signaux
 • J'ai observé sans juger ni interpréter
 • Je distingue les faits de mes impressions
 
@@ -1840,7 +1840,7 @@ RAPPELS ESSENTIELS :
                 <span>Éthique et bonnes pratiques</span>
               </CardTitle>
               <p className="text-gray-600">
-                Savoir accompagner sans violer la vie privée : respecter les limites et maintenir la confidentialit��.
+                Savoir accompagner sans violer la vie privée : respecter les limites et maintenir la confidentialité.
               </p>
             </CardHeader>
             <CardContent className="pt-6 space-y-8">
