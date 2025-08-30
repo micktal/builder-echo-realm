@@ -222,7 +222,7 @@ export default function Index() {
     });
 
     const certificateContent = `
-═══════════════════════════��══════════════════════════��═════════════════════════
+═══════════════════════════��═════════��════════════════��═════════════════════════
                               CERTIFICAT DE COMPÉTENCE
                                  FORMATION FIDUCIAL
 ══════════════════════════���══════════════════��═══════════════════��══════════════
@@ -445,7 +445,7 @@ SUIVI IMMÉDIAT
 ⏰ SUIVI À PRÉVOIR
 • ✅ Point de situation dans [délai approprié]
 • ✅ Vérification que les ressources ont été contactées
-• ✅ Maintien d'une attitude bienveillante au quotidien
+• �� Maintien d'une attitude bienveillante au quotidien
 • ✅ Respect du rythme de la personne
 • ✅ Disponibilité continue sans insistance
 
@@ -1045,7 +1045,7 @@ RAPPELS ESSENTIELS :
                 </Accordion>
               </div>
 
-              {/* Cas pratiques détaillés */}
+              {/* Cas pratiques détaill��s */}
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Voyons ensemble des situations concrètes</h3>
 
@@ -1193,6 +1193,13 @@ RAPPELS ESSENTIELS :
         <section>
           <Card className="border-purple-200">
             <CardHeader className="bg-gradient-to-r from-purple-50 to-indigo-50">
+              <div className="mb-4">
+                <img
+                  src="https://images.pexels.com/photos/8012043/pexels-photo-8012043.jpeg"
+                  alt="Femme stressée en télétravail illustrant les défis du travail moderne"
+                  className="w-full h-40 object-cover rounded-lg shadow-md"
+                />
+              </div>
               <CardTitle className="flex items-center space-x-2">
                 <Brain className="h-5 w-5 text-purple-600" />
                 <span>Les défis du travail moderne</span>
@@ -1931,7 +1938,7 @@ RAPPELS ESSENTIELS :
                           <p className="font-medium mb-1">Actions du manager :</p>
                           <div className="space-y-1">
                             <div>• Convoque Paul dans son bureau</div>
-                            <div>• "Il faut qu'on parle, je vois que ça ne va pas"</div>
+                            <div>��� "Il faut qu'on parle, je vois que ça ne va pas"</div>
                             <div>• Insiste quand Paul dit que tout va bien</div>
                             <div>• "Tu ne sortiras pas d'ici sans m'avoir dit ce qui ne va pas"</div>
                             <div>• En parle avec d'autres collègues</div>
