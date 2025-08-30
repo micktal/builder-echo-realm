@@ -1615,7 +1615,9 @@ RAPPELS ESSENTIELS :
                           className="w-full text-left justify-start"
                           onClick={() => handleMidQuizAnswer(2, option.id)}
                         >
-                          {option.text}
+                          <p>
+                            {option.text}
+                          </p>
                         </Button>
                       ))}
                     </div>
@@ -1777,7 +1779,7 @@ RAPPELS ESSENTIELS :
                         Valider mes réponses ({Object.keys(midQuizAnswers).length}/6)
                       </Button>
                       <p className="text-sm text-gray-600 mt-2">
-                        Répondez à toutes les questions pour voir les résultats
+                        R��pondez à toutes les questions pour voir les résultats
                       </p>
                     </div>
                   ) : (
