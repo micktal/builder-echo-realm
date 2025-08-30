@@ -347,7 +347,7 @@ PENDANT L'ACCOMPAGNEMENT
 AMORCE DU DIALOGUE
 • "J'ai remarqué que tu sembles préoccupé(e), est-ce que ça va ?"
 • Ton bienveillant et non accusateur
-• Cadre posé : "Je suis là pour t'écouter si tu en as besoin"
+• Cadre posé : "Je suis là pour t'��couter si tu en as besoin"
 • Respect immédiat si la personne refuse de parler
 
 ÉCOUTE ACTIVE - ATTITUDE
@@ -820,6 +820,80 @@ RAPPELS ESSENTIELS :
                           <h4 className="font-medium text-amber-900 mb-2">Efficacité prouvée :</h4>
                           <p className="text-amber-800 text-sm">{approach.efficacy}</p>
                         </div>
+
+                        {/* Vidéo explicative TCC */}
+                        {approach.title === "Thérapies cognitivo-comportementales (TCC)" && (
+                          <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-6">
+                            <h4 className="font-semibold text-indigo-900 mb-4 flex items-center">
+                              <div className="w-3 h-3 bg-indigo-500 rounded-full mr-2"></div>
+                              Vidéo explicative : Comment fonctionne la TCC ?
+                            </h4>
+                            <div className="space-y-4">
+                              <div className="bg-white rounded-lg p-4 border">
+                                <video
+                                  controls
+                                  className="w-full h-auto max-w-4xl mx-auto rounded-lg shadow-md"
+                                  preload="metadata"
+                                  style={{ maxHeight: '400px' }}
+                                >
+                                  <source
+                                    src="https://cdn.builder.io/o/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2F1d369a500e124204b58ac78e49c98396?alt=media&token=4266a7e1-66eb-4177-9bb3-325d660dc343&apiKey=d93d9a0ec7824aa1ac4d890a1f90a2ec"
+                                    type="video/mp4"
+                                  />
+                                  Votre navigateur ne supporte pas la lecture de vidéos.
+                                </video>
+                              </div>
+
+                              {/* Transcription pour accessibilité */}
+                              <div className="bg-white border border-gray-200 rounded-lg">
+                                <Accordion type="single" collapsible>
+                                  <AccordionItem value="transcription">
+                                    <AccordionTrigger className="px-4 py-3 text-left">
+                                      <span className="flex items-center space-x-2 text-sm">
+                                        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                                        <span className="font-medium">Transcription de la vidéo (pour malentendants)</span>
+                                      </span>
+                                    </AccordionTrigger>
+                                    <AccordionContent className="px-4 pb-4">
+                                      <div className="bg-blue-50 rounded-lg p-4 text-sm text-blue-900 leading-relaxed">
+                                        <p className="mb-3">
+                                          <strong>Narrateur :</strong> Vous savez, le stress provient souvent de pensées automatiques qui surgissent sans même que nous nous en rendions compte.
+                                        </p>
+                                        <p className="mb-3">
+                                          <strong>Expert :</strong> C'est vrai, et la thérapie cognitivo-comportementale, ou TCC, se concentre sur la façon dont nos pensées influencent directement nos émotions et nos comportements.
+                                        </p>
+                                        <p className="mb-3">
+                                          <strong>Narrateur :</strong> Exactement, la TCC utilise un modèle simple reliant les pensées, les émotions et les actions pour mieux comprendre nos réactions.
+                                        </p>
+                                        <p className="mb-3">
+                                          <strong>Expert :</strong> Les thérapeutes aident à identifier les schémas de pensée négatifs ou irrationnels, tels que « Je vais échouer » ou « Personne ne m'aime », qui augmentent souvent le stress.
+                                        </p>
+                                        <p className="mb-3">
+                                          <strong>Narrateur :</strong> Ensuite, ces pensées peuvent être remplacées par des alternatives plus équilibrées, telles que « Je peux apprendre » ou « Je ne suis pas seul », qui améliorent les réponses émotionnelles.
+                                        </p>
+                                        <p className="mb-3">
+                                          <strong>Expert :</strong> La recherche montre que la modification des pensées dysfonctionnelles reconnecte les voies cérébrales, transformant les signaux stressants en signaux plus calmes, ce qui entraîne de meilleurs mécanismes d'adaptation.
+                                        </p>
+                                        <p className="mb-3">
+                                          <strong>Narrateur :</strong> C'est pourquoi les gens se sentent souvent plus détendus et plus en contrôle après avoir pratiqué les techniques de TCC au fil du temps.
+                                        </p>
+                                        <p className="mb-3">
+                                          <strong>Expert :</strong> En fin de compte, la TCC aide à réduire le stress en restructurant les pensées catastrophiques, les généralisations excessives et les interprétations erronées, améliorant ainsi le bien-être général.
+                                        </p>
+                                        <p className="mb-3">
+                                          <strong>Narrateur :</strong> Ainsi, changer nos pensées change réellement nos émotions et nos comportements, ce qui constitue la principale force de la TCC.
+                                        </p>
+                                        <p>
+                                          <strong>Expert :</strong> Absolument, il s'agit d'une approche puissante soutenue par des décennies de recherche psychologique et de pratique clinique.
+                                        </p>
+                                      </div>
+                                    </AccordionContent>
+                                  </AccordionItem>
+                                </Accordion>
+                              </div>
+                            </div>
+                          </div>
+                        )}
                       </div>
                     </AccordionContent>
                   </AccordionItem>
