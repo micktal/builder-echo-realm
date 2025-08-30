@@ -255,10 +255,10 @@ Délivré le : ${currentDate}
 Numéro de série : ${serialNumber}
 
 
-───────────���──────────────────────��─────────────────────────────────────────────
+──────────────────────────────────��─────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
-────────────────────────────────────────────────────────────────────────────────
+───────────────────────────────���────────────────────────────────────────────────
 
 Ce certificat atteste de la validation des compétences dans le domaine de
 l'accompagnement et de la gestion du stress en milieu professionnel.
@@ -324,7 +324,7 @@ PRÉPARATION PERSONNELLE
 CONNAISSANCES REQUISES
 • Je connais les ressources internes Fiducial disponibles
 • Je maîtrise les principes de l'écoute active
-• Je connais les signaux d'alerte de stress chronique
+��� Je connais les signaux d'alerte de stress chronique
 • Je sais différencier urgence/non-urgence
 • J'ai en tête les coordonnées des professionnels (médecine du travail, RH)
 
@@ -389,11 +389,11 @@ COMMUNICATION ADAPTÉE
 • Respect de la procédure interne
 
 À la personne :
-• ✅ "Tu n'es pas seul(e) dans cette situation"
-• ✅ "Il est normal de demander de l'aide"
-• ✅ "Tu as fait le bon choix en parlant"
-• ✅ Rassurance sans fausse promesse
-• ✅ Respect de ses choix et de son rythme
+• "Tu n'es pas seul(e) dans cette situation"
+• "Il est normal de demander de l'aide"
+• "Tu as fait le bon choix en parlant"
+• Rassurance sans fausse promesse
+• Respect de ses choix et de son rythme
 
 ��� ORIENTATION ET RESSOURCES
 • ✅ Médecine du travail (santé physique et mentale)
@@ -429,7 +429,7 @@ COMMUNICATION ADAPTÉE
 • ✅ Respect absolu de la vie privée
 
 🧠 AUTO-ÉVALUATION DE L'ACCOMPAGNANT
-• ✅ Comment je me sens après cet échange ?
+• �� Comment je me sens après cet échange ?
 • ✅ Ai-je respecté mes limites de rôle ?
 • ✅ Ai-je été bienveillant(e) et professionnel(le) ?
 • ✅ Quels points améliorer pour la prochaine fois ?
@@ -525,7 +525,7 @@ Module 5 - Formation Fiducial
 
 👂 ÉTAPE 3 : ÉCOUTER
 ====================
-�� Appliquer l'écoute active (bienveillance, neutralité, non-jugement)
+• Appliquer l'écoute active (bienveillance, neutralité, non-jugement)
 • Poser des questions ouvertes
 • Reformuler pour montrer la compréhension
 • Laisser du temps et des silences
@@ -1257,7 +1257,7 @@ RAPPELS ESSENTIELS :
                       <div>• <strong>Épuisement des notifications :</strong> Stress permanent des alertes</div>
                       <div>• <strong>FOMO professionnel :</strong> Peur de rater une information importante</div>
                       <div>• <strong>Multit��che forcé :</strong> Jonglage constant entre applications</div>
-                      <div>• <strong>Infobésité :</strong> Surcharge d'informations à traiter</div>
+                      <div>�� <strong>Infobésité :</strong> Surcharge d'informations à traiter</div>
                       <div>• <strong>Nomophobie :</strong> Angoisse d'être séparé de son smartphone</div>
                     </div>
                   </div>
