@@ -683,6 +683,13 @@ RAPPELS ESSENTIELS :
         {/* Bloc 1 - Introduction */}
         <section className="text-center space-y-6">
           <div className="bg-white rounded-xl shadow-lg p-8 border border-indigo-200">
+            <div className="mb-6">
+              <img
+                src="https://images.pexels.com/photos/6632521/pexels-photo-6632521.jpeg"
+                alt="Environnement de travail stressant illustrant la nécessité d'accompagnement"
+                className="w-full h-48 object-cover rounded-lg shadow-md"
+              />
+            </div>
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
               <span style={{color: 'rgb(144, 19, 254)'}}>
                 Accompagnement et gestion du stress en entreprise
