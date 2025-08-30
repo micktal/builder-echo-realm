@@ -310,7 +310,7 @@ CHECKLIST D'ACCOMPAGNEMENT - GESTION DU STRESS
 ==============================================
 Module 5 - Formation Fiducial
 
-📋 AVANT L'ACCOMPAGNEMENT
+AVANT L'ACCOMPAGNEMENT
 ========================
 
 🎯 PRÉPARATION PERSONNELLE
@@ -2439,7 +2439,7 @@ RAPPELS ESSENTIELS :
                               <p className={score >= 80 ? "text-violet-800" : "text-red-800"}>
                                 {score >= 80
                                   ? "Félicitations ! Vous maîtrisez maintenant l'accompagnement et la gestion du stress en entreprise."
-                                  : "Score insuffisant pour valider les compétences. Il faut au minimum 80% (4/5 bonnes réponses)."}
+                                  : "Score insuffisant pour valider les compétences. Il faut au minimum 80% (4/5 bonnes r��ponses)."}
                               </p>
 
                               {score < 80 && (
