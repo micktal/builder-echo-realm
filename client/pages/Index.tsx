@@ -255,10 +255,10 @@ Délivré le : ${currentDate}
 Numéro de série : ${serialNumber}
 
 
-────────────���─────────────────────��─────────────────────────────────────────────
+──────────────────────────────────��─────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
-────────────────────────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────��──────────────────────────────
 
 Ce certificat atteste de la validation des compétences dans le domaine de
 l'accompagnement et de la gestion du stress en milieu professionnel.
@@ -380,13 +380,13 @@ SIGNAUX D'ALARME MAJEURS
 • Comportements à risque (alcool, substances)
 • ORIENTATION URGENTE vers professionnels
 
-💬 COMMUNICATION ADAPTÉE
+COMMUNICATION ADAPTÉE
 À l'entreprise :
-• ✅ "Nous avons des ressources pour t'aider"
+• "Nous avons des ressources pour t'aider"
 �� ✅ "La médecine du travail peut te recevoir"
-• ✅ "Les RH sont là pour t'accompagner"
-• ✅ Information claire sur les dispositifs
-• ✅ Respect de la procédure interne
+• "Les RH sont là pour t'accompagner"
+• Information claire sur les dispositifs
+• Respect de la procédure interne
 
 À la personne :
 • ✅ "Tu n'es pas seul(e) dans cette situation"
@@ -843,7 +843,7 @@ RAPPELS ESSENTIELS :
                       <div>• <strong>Surcharge de travail :</strong> Plus de 60h/semaine, délais impossibles</div>
                       <div>• <strong>Conflits relationnels :</strong> Harcèlement, tensions équipe</div>
                       <div>• <strong>Insécurité professionnelle :</strong> Restructuration, licenciements</div>
-                      <div>��� <strong>Manque de reconnaissance :</strong> Efforts non valorisés</div>
+                      <div>• <strong>Manque de reconnaissance :</strong> Efforts non valorisés</div>
                       <div>• <strong>Évolutions n��gatives :</strong> Rétrogradation, mutation forcée</div>
                       <div>• <strong>Inadéquation poste :</strong> Compétences vs exigences</div>
                     </div>
