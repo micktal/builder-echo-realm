@@ -200,7 +200,7 @@ export default function Index() {
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(9);
     doc.setTextColor(100, 100, 100);
-    doc.text('© 2024 Fiducial FPSG - Formation Continue', 105, 270, { align: 'center' });
+    doc.text('© 2025 Fiducial FPSG - Formation Continue', 105, 270, { align: 'center' });
     doc.text('Document certifiant authentique', 105, 278, { align: 'center' });
 
     // Download the PDF
@@ -222,7 +222,7 @@ export default function Index() {
     });
 
     const certificateContent = `
-═══════════════════════════��═════════��════════════════��═════════════════════════
+═══════════════════════════��═════════��════════════════����═════════════════════════
                               CERTIFICAT DE COMPÉTENCE
                                  FORMATION FIDUCIAL
 ══════════════════════════���══════════════════��═══════════════════��══════════════
@@ -256,7 +256,7 @@ Numéro de série : ${serialNumber}
 
 
 ──────────────────────────────────��─────────────────────────────────────────────
-                    © 2024 Fiducial FPSG - Formation Continue
+                    © 2025 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
 ────────────────────────────────────────────────────────────────────────────────
 
@@ -270,7 +270,7 @@ Module de référence : Formation Fiducial - Accompagnement et gestion du stress
 Pour toute vérification de l'authenticité de ce certificat,
 contacter le service formation Fiducial en mentionnant le numéro de série.
 
-══════���═══════════════���════���════════════════════════════════════════════════════
+══════���═════════════════��══���════════════════════════════════════════════════════
 `;
 
     const blob = new Blob([certificateContent], { type: 'text/plain;charset=utf-8' });
@@ -489,7 +489,7 @@ RAPPELS IMPORTANTS :
 Cette checklist est un guide, chaque situation est unique.
 Adaptez votre approche tout en respectant ces principes fondamentaux.
 
-© 2024 Fiducial - Module 5 : Gestion du stress et accompagnement
+© 2025 Fiducial - Module 5 : Gestion du stress et accompagnement
 Document confidentiel - Usage interne uniquement
 `;
 
@@ -807,7 +807,7 @@ Document confidentiel - Usage interne uniquement
     doc.setFontSize(9);
     doc.setTextColor(100, 100, 100);
     doc.text(`Édité le : ${currentDate}`, 25, 270);
-    doc.text('© 2024 Fiducial FPSG - Formation Continue', 105, 280, { align: 'center' });
+    doc.text('© 2025 Fiducial FPSG - Formation Continue', 105, 280, { align: 'center' });
     doc.text('Module : Accompagnement et gestion du stress en entreprise', 105, 285, { align: 'center' });
 
     // Download the PDF
@@ -1575,7 +1575,7 @@ Document confidentiel - Usage interne uniquement
                     </div>
                     <div className="space-y-2">
                       <div className="bg-blue-50 p-3 rounded italic text-blue-800">
-                        "As-tu l'impression d'être bien accompagné(e) à distance ?"
+                        "As-tu l'impression d'être bien accompagn��(e) à distance ?"
                       </div>
                       <div className="bg-blue-50 p-3 rounded italic text-blue-800">
                         "Comment tu gères l'isolement ?"
@@ -1679,7 +1679,7 @@ Document confidentiel - Usage interne uniquement
 
                       <div className="pt-2"><strong>Sources de stress :</strong></div>
                       <div>• Conciliation famille/carrière</div>
-                      <div>�� Pression financière (logement)</div>
+                      <div>• Pression financière (logement)</div>
                       <div>• Syndrome de l'imposteur</div>
                     </div>
                   </div>
@@ -1936,7 +1936,7 @@ Document confidentiel - Usage interne uniquement
                           ? "bg-green-50 text-green-800 border border-green-200"
                           : "bg-red-50 text-red-800 border border-red-200"
                       }`}>
-                        {midQuizAnswers[1] === "emdr" ? "Correct ! L'EMDR utilise effectivement les mouvements oculaires." : "Incorrect. La bonne r��ponse est EMDR."}
+                        {midQuizAnswers[1] === "emdr" ? "Correct ! L'EMDR utilise effectivement les mouvements oculaires." : "Incorrect. La bonne réponse est EMDR."}
                       </div>
                     )}
                   </div>
@@ -2887,7 +2887,7 @@ Document confidentiel - Usage interne uniquement
       <footer className="bg-white border-t border-indigo-200 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600">
-            <p>© 2024 Fiducial - Formation continue | Accompagnement et gestion du stress en entreprise</p>
+            <p>© 2025 Fiducial - Formation continue | Accompagnement et gestion du stress en entreprise</p>
           </div>
         </div>
       </footer>
