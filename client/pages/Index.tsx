@@ -135,7 +135,7 @@ export default function Index() {
     // Certificate text
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(12);
-    doc.text('Par la présente, il est certifié que :', 105, 120, { align: 'center' });
+    doc.text('Par la présente, il est certifi�� que :', 105, 120, { align: 'center' });
 
     // Student name (highlighted)
     doc.setFont('helvetica', 'bold');
@@ -225,7 +225,7 @@ export default function Index() {
 ═══════════════════════════��════════════════════════════════════════════════════
                               CERTIFICAT DE COMPÉTENCE
                                  FORMATION FIDUCIAL
-══════════════════════════���═══���══════════════��══════════════════════════════════
+══════════════════════════���══════════════════��══════════════════════════════════
 
                         ACCOMPAGNEMENT ET GESTION DU STRESS
                                   EN ENTREPRISE
@@ -255,7 +255,7 @@ Délivré le : ${currentDate}
 Numéro de série : ${serialNumber}
 
 
-──────────────────────────────────��──��──────────────────────────────────────────
+──────────────────────────────────��─────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
 ────────────────────────────────────────────────────────────────────────────────
@@ -335,11 +335,11 @@ RAPPEL CADRE LÉGAL ET ÉTHIQUE
 • Je ne poserai pas de questions trop personnelles
 • Je respecterai le rythme de la personne
 
-🔍 OBSERVATION PRÉALABLE
-• ✅ J'ai repéré des changements de comportement
+OBSERVATION PRÉALABLE
+• J'ai repéré des changements de comportement
 ��� ✅ J'ai noté la fréquence et l'intensité des signaux
-• ✅ J'ai observé sans juger ni interpréter
-• ✅ Je distingue les faits de mes impressions
+• J'ai observé sans juger ni interpréter
+• Je distingue les faits de mes impressions
 
 🌟 PENDANT L'ACCOMPAGNEMENT
 ===========================
@@ -382,7 +382,7 @@ RAPPEL CADRE LÉGAL ET ÉTHIQUE
 
 💬 COMMUNICATION ADAPTÉE
 À l'entreprise :
-��� ✅ "Nous avons des ressources pour t'aider"
+• ✅ "Nous avons des ressources pour t'aider"
 �� ✅ "La médecine du travail peut te recevoir"
 • ✅ "Les RH sont là pour t'accompagner"
 • ✅ Information claire sur les dispositifs
@@ -1187,7 +1187,7 @@ RAPPELS ESSENTIELS :
 
               {/* Stress du télétravail */}
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-6">Le Stress du télétravail et management �� distance</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">Le Stress du télétravail et management à distance</h3>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
@@ -1337,7 +1337,7 @@ RAPPELS ESSENTIELS :
 
                       <div className="pt-2"><strong>Sources de stress :</strong></div>
                       <div>• Conciliation famille/carrière</div>
-                      <div>• Pression financi��re (logement)</div>
+                      <div>• Pression financière (logement)</div>
                       <div>• Syndrome de l'imposteur</div>
                     </div>
                   </div>
@@ -1840,7 +1840,7 @@ RAPPELS ESSENTIELS :
                 <span>Éthique et bonnes pratiques</span>
               </CardTitle>
               <p className="text-gray-600">
-                Savoir accompagner sans violer la vie privée : respecter les limites et maintenir la confidentialité.
+                Savoir accompagner sans violer la vie privée : respecter les limites et maintenir la confidentialit��.
               </p>
             </CardHeader>
             <CardContent className="pt-6 space-y-8">
