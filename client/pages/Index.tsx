@@ -222,10 +222,10 @@ export default function Index() {
     });
 
     const certificateContent = `
-═══════════════════════════��════════════════════════════════════════════════════
+═══════════════════════════��══════════════════════════��═════════════════════════
                               CERTIFICAT DE COMPÉTENCE
                                  FORMATION FIDUCIAL
-══════════════���═══════════���══════════════════��═══════════════════��══════════════
+══════════════════════════���══════════════════��═══════════════════��══════════════
 
                         ACCOMPAGNEMENT ET GESTION DU STRESS
                                   EN ENTREPRISE
@@ -247,7 +247,7 @@ et a démontré sa maîtrise des compétences suivantes :
     ✓ Application des bonnes pratiques d'accompagnement
 
 
-Cette formation respecte les standards de qualité Fiducial et valide les compétences
+Cette formation respecte les standards de qualité Fiducial et valide les comp��tences
 nécessaires pour accompagner efficacement les collaborateurs en situation de stress.
 
 
@@ -255,7 +255,7 @@ Délivré le : ${currentDate}
 Numéro de série : ${serialNumber}
 
 
-───────────────────��──────────────��─────────────────────────────────────────────
+──────────────────────────────────��─────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
 ────────────────────────────────────────────────────────────────────────────────
@@ -270,7 +270,7 @@ Module de référence : Formation Fiducial - Accompagnement et gestion du stress
 Pour toute vérification de l'authenticité de ce certificat,
 contacter le service formation Fiducial en mentionnant le numéro de série.
 
-══════���═════════════════════════════════════════════════════════════════════════
+══════���════════════════════���════════════════════════════════════════════════════
 `;
 
     const blob = new Blob([certificateContent], { type: 'text/plain;charset=utf-8' });
@@ -315,7 +315,7 @@ AVANT L'ACCOMPAGNEMENT
 
 PRÉPARATION PERSONNELLE
 • J'ai vérifié mon propre état émotionnel
-��� Je me sens disponible et serein(e)
+• Je me sens disponible et serein(e)
 • J'ai prévu suffisamment de temps (pas de rush)
 • J'ai identifié un lieu calme et confidentiel
 • J'ai mis mon téléphone en silencieux
@@ -629,7 +629,7 @@ RAPPELS ESSENTIELS :
     },
     {
       title: "Groupes de parole et coaching",
-      description: "Accompagnement collectif ou individuel axé sur le soutien social et le d��veloppement des ressources personnelles.",
+      description: "Accompagnement collectif ou individuel axé sur le soutien social et le développement des ressources personnelles.",
       whatItIs: "Les groupes de parole rassemblent des personnes vivant des difficultés similaires dans un cadre bienveillant et confidentiel. Le coaching se concentre sur l'identification et le développement des ressources personnelles pour atteindre des objectifs spécifiques.",
       whyItWorks: "L'effet de groupe crée un sentiment d'appartenance et réduit l'isolement. Partager son expérience et entendre celle des autres normalise les difficultés et ouvre de nouvelles perspectives. Le coaching renforce l'estime de soi et la confiance en ses capacités.",
       reasoning: "L'être humain est fondamentalement social. Le stress s'amplifie dans l'isolement et diminue quand on se sent compris et soutenu. Ces approches mobilisent les ressources naturelles de résilience et créent un réseau de soutien durable.",
@@ -833,6 +833,13 @@ RAPPELS ESSENTIELS :
         <section>
           <Card className="border-indigo-200">
             <CardHeader className="bg-gradient-to-r from-orange-50 to-red-50">
+              <div className="mb-4">
+                <img
+                  src="https://images.pexels.com/photos/9064390/pexels-photo-9064390.jpeg"
+                  alt="Moment d'écoute active et de soutien entre collègues"
+                  className="w-full h-40 object-cover rounded-lg shadow-md"
+                />
+              </div>
               <CardTitle className="flex items-center space-x-2">
                 <AlertTriangle className="h-5 w-5 text-orange-600" />
                 <span>Le Repérage et orientation</span>
@@ -909,7 +916,7 @@ RAPPELS ESSENTIELS :
                             <div className="text-sm text-gray-600 space-y-1">
                               <div>• Réveils à 3h du matin avec pensées négatives</div>
                               <div>• Difficultés d'endormissement (plus d'1h)</div>
-                              <div>• Cauchemars r��currents liés au travail</div>
+                              <div>• Cauchemars récurrents liés au travail</div>
                             </div>
                           </div>
                         </div>
@@ -1006,7 +1013,7 @@ RAPPELS ESSENTIELS :
                             </div>
                           </div>
                           <div className="bg-white border rounded p-3">
-                            <h5 className="font-medium text-gray-900 mb-2">Changements ��motionnels</h5>
+                            <h5 className="font-medium text-gray-900 mb-2">Changements émotionnels</h5>
                             <div className="text-sm text-gray-600 space-y-1">
                               <div>• <strong>Pleurs fréquents :</strong> Sans raison apparente</div>
                               <div>• <strong>Colères :</strong> Explosions pour des détails mineurs</div>
