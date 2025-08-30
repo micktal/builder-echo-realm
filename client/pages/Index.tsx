@@ -225,7 +225,7 @@ export default function Index() {
 ═══════════════════════════��════════════════════════════════════════════════════
                               CERTIFICAT DE COMPÉTENCE
                                  FORMATION FIDUCIAL
-════════════════════���═════���══════════════════��══════════════════════════════════
+══════════════════════════���══════════════════��══════════════════════════════════
 
                         ACCOMPAGNEMENT ET GESTION DU STRESS
                                   EN ENTREPRISE
@@ -255,7 +255,7 @@ Délivré le : ${currentDate}
 Numéro de série : ${serialNumber}
 
 
-──────────────────────────��───────��─────────────────────────────────────────────
+──────────────────────���───────────��─────────────────────────────────────────────
                     © 2024 Fiducial FPSG - Formation Continue
                           Document certifiant authentique
 ────────────────────────────────────────────────────────────────────────────────
@@ -317,7 +317,7 @@ PRÉPARATION PERSONNELLE
 • J'ai vérifié mon propre état émotionnel
 • Je me sens disponible et serein(e)
 • J'ai prévu suffisamment de temps (pas de rush)
-��� ✅ J'ai identifié un lieu calme et confidentiel
+• J'ai identifié un lieu calme et confidentiel
 • J'ai mis mon téléphone en silencieux
 • Je me suis rappelé mes limites de rôle (ne pas jouer au thérapeute)
 
@@ -346,7 +346,7 @@ PRÉPARATION PERSONNELLE
 
 🗣️ AMORCE DU DIALOGUE
 • ✅ "J'ai remarqué que tu sembles préoccupé(e), est-ce que ça va ?"
-• �� Ton bienveillant et non accusateur
+• ✅ Ton bienveillant et non accusateur
 • ✅ Cadre posé : "Je suis là pour t'écouter si tu en as besoin"
 • ✅ Respect immédiat si la personne refuse de parler
 
@@ -374,11 +374,11 @@ PRÉPARATION PERSONNELLE
 • ✅ Propos inquiétants ("ça ne sert à rien", "personne ne remarque")
 
 ⚠️ SIGNAUX D'ALARME MAJEURS
-• 🚨 Propos suicidaires ou de d���sespoir profond
+• 🚨 Propos suicidaires ou de d�����sespoir profond
 • 🚨 Désinvestissement total ("plus rien n'a d'importance")
 • 🚨 Idées de fuite ("je vais tout plaquer")
 • 🚨 Comportements à risque (alcool, substances)
-• ���️ ORIENTATION URGENTE vers professionnels
+• ➡��� ORIENTATION URGENTE vers professionnels
 
 💬 COMMUNICATION ADAPTÉE
 À l'entreprise :
@@ -444,7 +444,7 @@ PRÉPARATION PERSONNELLE
 
 ⏰ SUIVI À PRÉVOIR
 • ✅ Point de situation dans [délai approprié]
-• ✅ Vérification que les ressources ont ��té contactées
+• ✅ Vérification que les ressources ont été contactées
 • ✅ Maintien d'une attitude bienveillante au quotidien
 • ✅ Respect du rythme de la personne
 • ✅ Disponibilité continue sans insistance
@@ -636,7 +636,7 @@ RAPPELS ESSENTIELS :
       usage: "Stress lié au travail, transitions de vie, deuil, burn-out, développement personnel, reconversion professionnelle",
       efficacy: "Amélioration de 60% de la résilience, réduction significative de l'isolement social",
       duration: "Groupes : 8 à 12 séances. Coaching : 5 à 10 séances",
-      techniques: ["Cercles de parole", "Techniques narratives", "Coaching syst��mique", "Analyse transactionnelle", "PNL"]
+      techniques: ["Cercles de parole", "Techniques narratives", "Coaching systémique", "Analyse transactionnelle", "PNL"]
     }
   ];
 
