@@ -270,7 +270,7 @@ Module de référence : Formation Fiducial - Accompagnement et gestion du stress
 Pour toute vérification de l'authenticité de ce certificat,
 contacter le service formation Fiducial en mentionnant le numéro de série.
 
-══════���════════════════════���════════════════════════════════════════════════════
+══════���═══════════════���════���════════════════════════════════════════════════════
 `;
 
     const blob = new Blob([certificateContent], { type: 'text/plain;charset=utf-8' });
@@ -503,83 +503,316 @@ Document confidentiel - Usage interne uniquement
     document.body.removeChild(link);
   };
 
-  const download7StepsGuide = () => {
-    const guideContent = `
-GUIDE D'ACCOMPAGNEMENT EN 7 ÉTAPES
-==================================
-Module 5 - Formation Fiducial
+  const download7StepsGuide = async () => {
+    const currentDate = new Date().toLocaleDateString('fr-FR', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
 
-🎯 ÉTAPE 1 : OBSERVER
-=====================
-• Repérer les changements de comportement
-• Noter les signaux d'alerte (fatigue, isolement, erreurs)
-• Distinguer les faits de vos impressions
-• Respecter la confidentialité dès l'observation
+    // Create new PDF document
+    const doc = new jsPDF();
 
-📞 ÉTAPE 2 : APPROCHER
-======================
-• Choisir un moment et lieu appropriés
-• Utiliser une phrase bienveillante : "J'ai remarqué que..."
-• Ton non accusateur et empathique
-• Respecter immédiatement un éventuel refus
+    // Set page background
+    doc.setFillColor(248, 249, 250);
+    doc.rect(0, 0, 210, 297, 'F');
 
-👂 ÉTAPE 3 : ÉCOUTER
-====================
-• Appliquer l'écoute active (bienveillance, neutralité, non-jugement)
-• Poser des questions ouvertes
-• Reformuler pour montrer la compréhension
-• Laisser du temps et des silences
+    // Add decorative border
+    doc.setDrawColor(0, 128, 64); // Green color matching Fiducial brand
+    doc.setLineWidth(2);
+    doc.rect(10, 10, 190, 277);
 
-⚠️ ÉTAPE 4 : ÉVALUER
-====================
-• Identifier le niveau d'urgence
-• Repérer les signaux d'alarme majeurs
-• Distinguer accompagnement de proximité vs orientation professionnelle
-• Ne pas diagnostiquer, rester dans son rôle
+    // Inner border
+    doc.setLineWidth(0.5);
+    doc.rect(15, 15, 180, 267);
 
-🤝 ÉTAPE 5 : ORIENTER
-=====================
-• Proposer les ressources adaptées :
-  - Médecine du travail
-  - Service RH
-  - Psychologues
-• Expliquer les dispositifs disponibles
-• Accompagner dans la démarche sans forcer
+    // Load and add logo
+    try {
+      const logoUrl = 'https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2F64719ce821bc4327b1b3dc7d5c96dc5d?format=webp&width=800';
 
-📋 ÉTAPE 6 : SUIVRE
-===================
-• Prévoir un point de situation
-• Maintenir une attitude bienveillante
-• Vérifier que les ressources ont été contactées
-• Respecter le rythme de la personne
+      const loadImage = new Promise((resolve, reject) => {
+        const img = new Image();
+        img.crossOrigin = 'anonymous';
+        img.onload = () => resolve(img);
+        img.onerror = reject;
+        img.src = logoUrl;
+      });
 
-🛡️ ÉTAPE 7 : SE PROTÉGER
-=========================
-• Prendre du recul émotionnel
-• Reconnaître ses limites
-• Chercher du soutien si nécessaire
-• Maintenir la confidentialité absolue
+      const logoImg = await loadImage;
 
-RAPPELS ESSENTIELS :
-===================
-✅ Confidentialité absolue
-✅ Pas de diagnostic, pas de thérapie
-✅ Respect du choix de la personne
-✅ Orientation vers les professionnels
-✅ Prendre soin de soi
+      // Convert image to base64
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      canvas.width = logoImg.width;
+      canvas.height = logoImg.height;
+      ctx.drawImage(logoImg, 0, 0);
+      const logoBase64 = canvas.toDataURL('image/png');
 
-© 2024 Fiducial - Module 5 : Gestion du stress
-`;
+      // Add logo to PDF (centered, appropriate size)
+      doc.addImage(logoBase64, 'PNG', 70, 20, 70, 25);
+    } catch (error) {
+      console.warn('Logo could not be loaded:', error);
+      // Fallback: Add text logo
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(18);
+      doc.setTextColor(0, 128, 64);
+      doc.text('FIDUCIAL FPSG', 105, 35, { align: 'center' });
+    }
 
-    const blob = new Blob([guideContent], { type: 'text/plain;charset=utf-8' });
-    const url = window.URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'Guide-7-Etapes-Accompagnement-Fiducial.txt';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    window.URL.revokeObjectURL(url);
+    // Main title
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(20);
+    doc.setTextColor(0, 0, 0);
+    doc.text('GUIDE D\'ACCOMPAGNEMENT', 105, 55, { align: 'center' });
+
+    doc.setFontSize(16);
+    doc.setTextColor(0, 128, 64);
+    doc.text('EN 7 ÉTAPES', 105, 63, { align: 'center' });
+
+    // Subtitle
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(12);
+    doc.setTextColor(0, 0, 0);
+    doc.text('GESTION DU STRESS ET ACCOMPAGNEMENT EN ENTREPRISE', 105, 73, { align: 'center' });
+
+    // Decorative line
+    doc.setDrawColor(0, 128, 64);
+    doc.setLineWidth(1);
+    doc.line(30, 80, 180, 80);
+
+    let yPos = 90;
+
+    // Step 1
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(12);
+    doc.setTextColor(0, 128, 64);
+    doc.text('ÉTAPE 1 : OBSERVER', 25, yPos);
+
+    yPos += 8;
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(0, 0, 0);
+    const step1Points = [
+      '• Repérer les changements de comportement',
+      '• Noter les signaux d\'alerte (fatigue, isolement, erreurs)',
+      '• Distinguer les faits de vos impressions',
+      '• Respecter la confidentialité dès l\'observation'
+    ];
+
+    step1Points.forEach(point => {
+      doc.text(point, 30, yPos);
+      yPos += 5;
+    });
+    yPos += 3;
+
+    // Step 2
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(12);
+    doc.setTextColor(0, 128, 64);
+    doc.text('ÉTAPE 2 : APPROCHER', 25, yPos);
+
+    yPos += 8;
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(0, 0, 0);
+    const step2Points = [
+      '• Choisir un moment et lieu appropriés',
+      '• Utiliser une phrase bienveillante : "J\'ai remarqué que..."',
+      '• Ton non accusateur et empathique',
+      '• Respecter immédiatement un éventuel refus'
+    ];
+
+    step2Points.forEach(point => {
+      doc.text(point, 30, yPos);
+      yPos += 5;
+    });
+    yPos += 3;
+
+    // Step 3
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(12);
+    doc.setTextColor(0, 128, 64);
+    doc.text('ÉTAPE 3 : ÉCOUTER', 25, yPos);
+
+    yPos += 8;
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(0, 0, 0);
+    const step3Points = [
+      '• Appliquer l\'écoute active (bienveillance, neutralité, non-jugement)',
+      '• Poser des questions ouvertes',
+      '• Reformuler pour montrer la compréhension',
+      '• Laisser du temps et des silences'
+    ];
+
+    step3Points.forEach(point => {
+      doc.text(point, 30, yPos);
+      yPos += 5;
+    });
+    yPos += 3;
+
+    // Step 4
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(12);
+    doc.setTextColor(0, 128, 64);
+    doc.text('ÉTAPE 4 : ÉVALUER', 25, yPos);
+
+    yPos += 8;
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(0, 0, 0);
+    const step4Points = [
+      '• Identifier le niveau d\'urgence',
+      '• Repérer les signaux d\'alarme majeurs',
+      '• Distinguer accompagnement de proximité vs orientation professionnelle',
+      '• Ne pas diagnostiquer, rester dans son rôle'
+    ];
+
+    step4Points.forEach(point => {
+      doc.text(point, 30, yPos);
+      yPos += 5;
+    });
+    yPos += 5;
+
+    // New page for remaining steps
+    doc.addPage();
+
+    // Reset page styling for second page
+    doc.setFillColor(248, 249, 250);
+    doc.rect(0, 0, 210, 297, 'F');
+    doc.setDrawColor(0, 128, 64);
+    doc.setLineWidth(2);
+    doc.rect(10, 10, 190, 277);
+    doc.setLineWidth(0.5);
+    doc.rect(15, 15, 180, 267);
+
+    yPos = 25;
+
+    // Step 5
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(12);
+    doc.setTextColor(0, 128, 64);
+    doc.text('ÉTAPE 5 : ORIENTER', 25, yPos);
+
+    yPos += 8;
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(0, 0, 0);
+    const step5Points = [
+      '• Proposer les ressources adaptées :',
+      '   - Médecine du travail',
+      '   - Service RH',
+      '   - Psychologues',
+      '• Expliquer les dispositifs disponibles',
+      '• Accompagner dans la démarche sans forcer'
+    ];
+
+    step5Points.forEach(point => {
+      doc.text(point, 30, yPos);
+      yPos += 5;
+    });
+    yPos += 3;
+
+    // Step 6
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(12);
+    doc.setTextColor(0, 128, 64);
+    doc.text('ÉTAPE 6 : SUIVRE', 25, yPos);
+
+    yPos += 8;
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(0, 0, 0);
+    const step6Points = [
+      '• Prévoir un point de situation',
+      '• Maintenir une attitude bienveillante',
+      '• Vérifier que les ressources ont été contactées',
+      '• Respecter le rythme de la personne'
+    ];
+
+    step6Points.forEach(point => {
+      doc.text(point, 30, yPos);
+      yPos += 5;
+    });
+    yPos += 3;
+
+    // Step 7
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(12);
+    doc.setTextColor(0, 128, 64);
+    doc.text('ÉTAPE 7 : SE PROTÉGER', 25, yPos);
+
+    yPos += 8;
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(0, 0, 0);
+    const step7Points = [
+      '• Prendre du recul émotionnel',
+      '• Reconnaître ses limites',
+      '• Chercher du soutien si nécessaire',
+      '• Maintenir la confidentialité absolue'
+    ];
+
+    step7Points.forEach(point => {
+      doc.text(point, 30, yPos);
+      yPos += 5;
+    });
+    yPos += 8;
+
+    // Essential reminders section
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(14);
+    doc.setTextColor(0, 128, 64);
+    doc.text('RAPPELS ESSENTIELS', 25, yPos);
+
+    yPos += 10;
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(10);
+    doc.setTextColor(0, 0, 0);
+    const reminders = [
+      '✓ Confidentialité absolue',
+      '✓ Pas de diagnostic, pas de thérapie',
+      '✓ Respect du choix de la personne',
+      '✓ Orientation vers les professionnels',
+      '✓ Prendre soin de soi'
+    ];
+
+    reminders.forEach(reminder => {
+      doc.text(reminder, 30, yPos);
+      yPos += 6;
+    });
+
+    yPos += 10;
+
+    // Important note
+    doc.setFillColor(240, 248, 255);
+    doc.rect(25, yPos, 160, 30, 'F');
+    doc.setDrawColor(59, 130, 246);
+    doc.setLineWidth(0.5);
+    doc.rect(25, yPos, 160, 30);
+
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(11);
+    doc.setTextColor(30, 64, 175);
+    doc.text('NOTE IMPORTANTE', 30, yPos + 8);
+
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(30, 64, 175);
+    doc.text('Ce guide est un support méthodologique. Chaque situation est unique.', 30, yPos + 16);
+    doc.text('Adaptez votre approche tout en respectant ces principes fondamentaux.', 30, yPos + 22);
+
+    // Footer
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(100, 100, 100);
+    doc.text(`Édité le : ${currentDate}`, 25, 270);
+    doc.text('© 2024 Fiducial FPSG - Formation Continue', 105, 280, { align: 'center' });
+    doc.text('Module : Accompagnement et gestion du stress en entreprise', 105, 285, { align: 'center' });
+
+    // Download the PDF
+    const fileName = `Guide-7-Etapes-Accompagnement-Fiducial-${new Date().getFullYear()}.pdf`;
+    doc.save(fileName);
   };
 
   const therapeuticApproaches = [
@@ -1446,7 +1679,7 @@ RAPPELS ESSENTIELS :
 
                       <div className="pt-2"><strong>Sources de stress :</strong></div>
                       <div>• Conciliation famille/carrière</div>
-                      <div>• Pression financière (logement)</div>
+                      <div>�� Pression financière (logement)</div>
                       <div>• Syndrome de l'imposteur</div>
                     </div>
                   </div>
@@ -1703,7 +1936,7 @@ RAPPELS ESSENTIELS :
                           ? "bg-green-50 text-green-800 border border-green-200"
                           : "bg-red-50 text-red-800 border border-red-200"
                       }`}>
-                        {midQuizAnswers[1] === "emdr" ? "Correct ! L'EMDR utilise effectivement les mouvements oculaires." : "Incorrect. La bonne réponse est EMDR."}
+                        {midQuizAnswers[1] === "emdr" ? "Correct ! L'EMDR utilise effectivement les mouvements oculaires." : "Incorrect. La bonne r��ponse est EMDR."}
                       </div>
                     )}
                   </div>
